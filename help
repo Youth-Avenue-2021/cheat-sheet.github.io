@@ -82,22 +82,44 @@ int main(){
 	return 0;
 } -->
 
+btw ()=>{} this is arrow functions in javascript... aaiya emojis nahi mukai m baki maja aave...
 
-complate with add my social media accounts...
-and about me section also for reach user to my portfulio
+@abhi =>(){
 
-add css animations codes...
-aniamtion name...
-animation duration 
-etc.....
+	complate with add my social media accounts...
+	and about me section also for reach user to my portfulio
 
-any tag before or afterline
-means
-::after{
-	content: '';......
+	add css animations codes...
+	aniamtion name...
+	animation duration 
+	etc.....
+
+	any tag before or afterline
+	means
+	::after{
+		content: '';......
+	}
+
+	keyboard shortcuts cheat-sheet
+
+	add fav-icon in this site...
+
+	in font awesome add any example of any icon
+	<i class="fa fa-bars menu" aria-hidden="true"></i>
+
 }
 
-keyboard shortcuts cheat-sheet
 
-in font awesome add any example of any icon
-<i class="fa fa-bars menu" aria-hidden="true"></i>
+type here your suggetions or messages for me...
+@vanshika =>(){
+	
+}
+
+
+discussion palnnel =>(){
+
+	question - answer...
+
+	=> badha codes na fonts chhe ae bold sara lage k light hoy to ?? (phone mate to light j chhe but pc ma bold chhe to kya sara lagse ?) 
+
+}
