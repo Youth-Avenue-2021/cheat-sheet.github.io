@@ -147,7 +147,7 @@ html{
     /* font-family: 'Courgette', cursive; */
 }
 .buttons{
-    margin: 25px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
 }
@@ -256,7 +256,7 @@ html{
 	position: fixed;
 	top: 17px;
 	left: 20px;
-	color: white;
+	color: var(--color-blue);
 	cursor: pointer;
 	z-index: 101;
 }
