@@ -143,6 +143,7 @@ html{
     text-align: center;
     margin: 30px auto -5px;
     width: 370px;
+    font-weight: 600;
     font-family: var(--font);
     /* font-family: 'Courgette', cursive; */
 }
@@ -500,5 +501,8 @@ html{
 	#btn1{
 		color: white;
 		background: var(--color-green);
+	}
+	.saparate-cheat-sheet img{
+		padding: 30px 0 10px;
 	}
 }
