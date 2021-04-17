@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Cheat Sheet</title>
+		<title>Cheat Sheet : CSS</title>
 		<link rel="stylesheet" href="../style.css">
 		<link rel="stylesheet" href="../prism/prism.css">
     	<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
@@ -13,17 +13,18 @@
 	<body class="flex-column">
 		
         <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-			<h1 class="heading"><span id="heading" onclick="indexPage()">CSS Cheat Sheet </span></h1>
+			<h1 class="heading"><span id="heading">CSS Cheat Sheet </span></h1>
 		
 
 		<div class="sidebar" id="sidebar">
 			<ul class="flex-column-flex-start">
-				<li class="content-display">Table of content</li>
-				<a class="webpage" href="./html.html">1. HTML</a>
-				<a class="webpage" href="./css.html">2. CSS</a>
-				<a class="webpage" href="./javascript.html">3. JAVASCRIPT</a>
-				<a class="webpage" href="./c.html">4. C</a>
-				<a class="webpage" href="./keyboard-shortcuts.html">5. Keyboard Shortcuts</a>
+				<li class="home-page"><a href="../index.html">Cheat Sheets</a></li>
+				<a class="webpage" href="html.html">1. HTML</a>
+				<a class="webpage" href="css.html">2. CSS</a>
+				<a class="webpage" href="python.html">3. Python</a>
+				<a class="webpage" href="c.html">4. C</a>
+				<a class="webpage" href="keyboard-shortcuts.html">5. Keyboard Shortcuts</a>
+				<a class="webpage" href="programming-languages.html">6. Programming Languages</a>
 				<a class="webpage" href="https://www.web-developer-abhi.tk">About Me</a>
 				<li class="social flex-row">
                 <a href="https://www.instagram.com/_abhi_dadhaniya_/" target="_blank"><i class="fa fa-instagram"
@@ -111,6 +112,56 @@ font-family: 'IBM Plex Sans', sans-serif;</code>
 </pre>
 			</div>
 
+			<div class="list-item">
+				<div class="details">3. Pseudo Elements for border-bottom</div>
+</pre>
+<pre class="language-css styling">
+<code class="font-change">
+a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s ease;
+}
+a:hover::after{
+    width: 100%;
+}</code>
+</pre>
+			</div>
+
+			<div class="list-item">
+				<div class="details">4. CSS Animations</div>
+</pre>
+<pre class="language-css styling">
+<code class="font-change">
+selector{
+    animation-name: animationName;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  	animation-direction: alternate;
+    animation-duration: .5s;
+  	animation-delay: 0s;
+}
+
+/* Animation property in one line */
+selector{
+	animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes animationName {
+	from {
+			/* css properties */
+	}	
+	to{
+			/* css properties */
+	}
+}
+</code>
+</pre>
+			</div>
+
 		</div>
 
     <div class="footer">
@@ -126,11 +177,6 @@ font-family: 'IBM Plex Sans', sans-serif;</code>
 			};
 			showmenu.onclick=function(){
 				sidebar.style.left = '0px';
-			}
-			function indexPage(){
-				location.href='../index.html';
-    			// console.log(location.href = `${webpages/html.html}`);
-				// console.log(window.location);
 			}
 		</script>
 		<!-- bootstrap scripts -->

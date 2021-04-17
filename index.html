@@ -8,23 +8,35 @@
 		<link rel="stylesheet" href="prism/prism.css">
     	<link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<style>
+    		#showmenu{
+    			position: absolute;
+    		}
+    		.heading{
+    			color: white;
+    			position: absolute;
+    			background: transparent;
+    			backdrop-filter: blur(5px);
+    		}
+    	</style>
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 	</head>
 	<body class="flex-column">
 		
         <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-			<h1 class="heading"><i class="fa fa-clone"
-                        aria-hidden="true"></i><span id="heading" onclick="indexPage()">Cheat Sheet </span><span class="useful-code">*(Useful Codes)</span></h1>
+			<h1 class="heading"><span id="heading" onclick="indexPage()"><i class="fa fa-clone"
+                        aria-hidden="true"></i>&lt;Cheat Sheets/&gt;</span></h1>
 		
 
 		<div class="sidebar" id="sidebar">
 			<ul class="flex-column-flex-start">
-				<li class="content-display">Table of content</li>
+				<li class="home-page"><a href="">Cheat Sheets</a></li>
 				<a class="webpage" href="webpages/html.html">1. HTML</a>
 				<a class="webpage" href="webpages/css.html">2. CSS</a>
-				<a class="webpage" href="webpages/javascript.html">3. JAVASCRIPT</a>
+				<a class="webpage" href="webpages/python.html">3. Python</a>
 				<a class="webpage" href="webpages/c.html">4. C</a>
 				<a class="webpage" href="webpages/keyboard-shortcuts.html">5. Keyboard Shortcuts</a>
+				<a class="webpage" href="webpages/programming-languages.html">6. Programming Languages</a>
 				<a class="webpage" href="https://www.web-developer-abhi.tk">About Me</a>
 				<li class="social flex-row">
                 <a href="https://www.instagram.com/_abhi_dadhaniya_/" target="_blank"><i class="fa fa-instagram"
@@ -38,11 +50,45 @@
 		</div>
 
 
+		<div class="container flex-column front-page" id="container">
 
-		<div class="container flex-column" id="container">
 
+		    <div class="main-content">
+		        <h1>Amazing Cheat Sheets</h1>
+		        <p>All type of cheat sheets are available here...</p>
+		        <div class="buttons">
+		            <a href="#second-section" id="btn1">Watch All</a>
+		            <!-- <a href="#availableNews" id="btn2">News Channels</a> -->
+		        </div>
+		    </div>
 
 		</div>
+
+		<section id="second-section" class="flex-column">
+			<h2>&lt;Cheat Sheets/&gt;</h2>
+			<div class="all-cheat-sheets flex-row-warp-2">
+				<div class="saparate-cheat-sheet flex-column">
+					<img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png" alt="">
+					<p class="language-name">Html cheat sheet</p>
+					<a href="webpages/python.html">Learn More</a>
+				</div>
+				<div class="saparate-cheat-sheet flex-column">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="">
+					<p class="language-name">Python cheat sheet</p>
+					<a href="webpages/python.html">Learn More</a>
+				</div>
+				<div class="saparate-cheat-sheet flex-column">
+					<img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt="">
+					<p class="language-name">Css cheat sheet</p>
+					<a href="webpages/python.html">Learn More</a>
+				</div>
+				<div class="saparate-cheat-sheet flex-column">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5WWbSL5a8MVo0U43JcgD9xljuXD4QHnp8SA&usqp=CAU" alt="">
+					<p class="language-name">Keyboard Shortcuts</p>
+					<a href="webpages/python.html">Learn More</a>
+				</div>
+			</div>
+		</section>
 
     <div class="footer">
         Copyright &#169; 2021 || Created By &#10084; Abhi Dadhaniya

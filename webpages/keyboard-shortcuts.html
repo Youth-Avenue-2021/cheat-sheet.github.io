@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Cheat Sheet</title>
+		<title>Cheat Sheet : Keyboard Shortcuts</title>
 		<link rel="stylesheet" href="../style.css">
 		<link rel="stylesheet" href="../prism/prism.css">
     	<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
@@ -15,16 +15,17 @@
 	<body class="flex-column">
 		
 		<i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-		<h1 class="heading"><span id="heading" onclick="indexPage()">Keyboard Shortcuts </span></h1>
+		<h1 class="heading"><span id="heading">Keyboard Shortcuts </span></h1>
 		
 		<div class="sidebar" id="sidebar">
 			<ul class="flex-column-flex-start">
-				<li class="content-display">Table of content</li>
+				<li class="home-page"><a href="../index.html">Cheat Sheets</a></li>
 				<a class="webpage" href="html.html">1. HTML</a>
 				<a class="webpage" href="css.html">2. CSS</a>
-				<a class="webpage" href="javascript.html">3. JAVASCRIPT</a>
+				<a class="webpage" href="python.html">3. Python</a>
 				<a class="webpage" href="c.html">4. C</a>
 				<a class="webpage" href="keyboard-shortcuts.html">5. Keyboard Shortcuts</a>
+				<a class="webpage" href="programming-languages.html">6. Programming Languages</a>
 				<a class="webpage" href="https://www.web-developer-abhi.tk">About Me</a>
 				<li class="social flex-row">
 					<a href="https://www.instagram.com/_abhi_dadhaniya_/" target="_blank"><i class="fa fa-instagram"
@@ -64,11 +65,6 @@
 			};
 			showmenu.onclick=function(){
 				sidebar.style.left = '0px';
-			}
-			function indexPage(){
-				location.href='../index.html';
-			// console.log(location.href = `${webpages/html.html}`);
-				// console.log(window.location);
 			}
 
 
