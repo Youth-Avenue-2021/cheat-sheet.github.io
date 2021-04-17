@@ -84,28 +84,35 @@ int main(){
 
 btw ()=>{} this is arrow functions in javascript... aaiya emojis nahi mukai m baki maja aave...
 
+most Important tasks()={
+	
+	don't forget to add google analytics script
+	also add meta tags for seo
+
+}
+
 @abhi =>(){
 
-	complate with add my social media accounts...
+	adjust proper squre dimention logo for fav-icon
+
+	change html files title
+
+	in add html files in heading file reaname to add heading section with cheat-sheets
+	and add that heading after heading section...
+
+	add fav-icon html tagline in html cheat-sheet
+
+	complete with add my social media accounts...
 	and about me section also for reach user to my portfulio
-
-	add css animations codes...
-	aniamtion name...
-	animation duration 
-	etc.....
-
-	any tag before or afterline
-	means
-	::after{
-		content: '';......
-	}
+	add more anchor tags link this...
+	link development, teams etc...
 
 	keyboard shortcuts cheat-sheet
+	vscode, sublime, codeblocks, notepad++,etc (in short all text editor's shortcut keys...) , microsoft softweres, windows-7 keyboard shortcuts
 
 	add fav-icon in this site...
 
-	in font awesome add any example of any icon
-	<i class="fa fa-bars menu" aria-hidden="true"></i>
+	library functions in python...
 
 }
 

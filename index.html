@@ -6,22 +6,34 @@
 		<title>Cheat Sheet</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="prism/prism.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 	</head>
 	<body class="flex-column">
 		
         <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-			<h1 class="heading"><span id="heading" onclick="indexPage()">Cheat Sheet </span><span class="useful-code">*(Useful Codes)</span></h1>
+			<h1 class="heading"><i class="fa fa-clone"
+                        aria-hidden="true"></i><span id="heading" onclick="indexPage()">Cheat Sheet </span><span class="useful-code">*(Useful Codes)</span></h1>
 		
 
 		<div class="sidebar" id="sidebar">
 			<ul class="flex-column-flex-start">
 				<li class="content-display">Table of content</li>
-				<a href="webpages/html.html">1. HTML</a>
-				<a href="webpages/css.html">2. CSS</a>
-				<a href="webpages/javascript.html">3. JAVASCRIPT</a>
-				<a href="webpages/c.html">4. C</a>
+				<a class="webpage" href="webpages/html.html">1. HTML</a>
+				<a class="webpage" href="webpages/css.html">2. CSS</a>
+				<a class="webpage" href="webpages/javascript.html">3. JAVASCRIPT</a>
+				<a class="webpage" href="webpages/c.html">4. C</a>
+				<a class="webpage" href="webpages/keyboard-shortcuts.html">5. Keyboard Shortcuts</a>
+				<a class="webpage" href="https://www.web-developer-abhi.tk">About Me</a>
+				<li class="social flex-row">
+                <a href="https://www.instagram.com/_abhi_dadhaniya_/" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="https://mobile.twitter.com/abhidadhaniya3" target="_blank"><i class="fa fa-twitter"
+                        aria-hidden="true"></i></a>
+                <a href="http://github.com/abhidadhaniya23" target="_blank"><i class="fa fa-github"
+                        aria-hidden="true"></i></a>
+				</li>
 			</ul>
 		</div>
 
@@ -29,7 +41,39 @@
 
 		<div class="container flex-column" id="container">
 
-			<div class="list-item">
+
+		</div>
+
+    <div class="footer">
+        Copyright &#169; 2021 || Created By &#10084; Abhi Dadhaniya
+    </div>
+		<script src="prism/prism.js"></script>
+		<script>
+			let sidebar=document.getElementById('sidebar');
+			let showmenu=document.getElementById('showmenu');
+			let container=document.getElementById('container');
+			container.onmouseover=function(){
+				sidebar.style.left='-300px';
+			};
+			showmenu.onclick=function(){
+				sidebar.style.left = '0px';
+			}
+			function indexPage(){
+				location.href='index.html';
+    			// console.log(location.href = `${webpages/html.html}`);
+				// console.log(window.location);
+			}
+		</script>
+		<!-- bootstrap scripts -->
+		<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+	</body>
+</html>
+
+
+
+			<!-- <div class="list-item">
 				<div class="details">1. Basic html template</div>
 			<pre class="language-html styling">
 <code class="font-change">&lt;!DOCTYPE html&gt;
@@ -58,43 +102,19 @@
 &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"&gt;&lt;/script&gt;</code>
 			</div>
 
-			<div class="list-item">
-				<div class="details">3. CSS Flexbox Properties</div>
-</pre>
-<pre class="language-css styling">
-<code class="font-change">*{
-	margin: 0;
-	padding: 0;
-	outline: none;
-	transition: 0.5s ease;
-	box-sizing: border-box;
-	font-family: sans-serif;
-}
-.flex-row{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-.flex-column{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}</code>
-</pre>	
-			</div>
 
 			<div class="list-item">
-				<div class="details">4. Font-awesome cdn</div>
+				<div class="details">3. Font-awesome cdn</div>
 </pre>
 <pre class="language-html styling">
 <code class="font-change">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"&gt;
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;</code>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+&lt;a href="redirect_link" target="_blank"&gt;&lt;i class="fa fa-icon_name" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;</code>
 </pre>	
 			</div>
 			<div class="list-item">
-				<div class="details">5. Google Fonts Links and Font-family</div>
+				<div class="details">4. Google Fonts Links and Font-family</div>
 </pre>
 <pre class="language-css styling">
 <code class="font-change">@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
@@ -135,7 +155,7 @@ font-family: 'IBM Plex Sans', sans-serif;</code>
 </pre>
 			</div>
 			<div class="list-item">
-				<div class="details">6. Prismjs cdn (code styling)</div>
+				<div class="details">5. Prismjs cdn (code styling)</div>
 </pre>
 <pre class="language-html styling">
 <code class="font-change">&lt;link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" /&gt;
@@ -146,7 +166,74 @@ font-family: 'IBM Plex Sans', sans-serif;</code>
 			</div>
 
 			<div class="list-item">
-				<div class="details">7. C Program Boiler plate</div>
+				<div class="details">6. CSS Flexbox Properties</div>
+</pre>
+<pre class="language-css styling">
+<code class="font-change">*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	transition: 0.5s ease;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}</code>
+</pre>	
+			</div>
+
+			<div class="list-item">
+				<div class="details">7. Pseudo Elements for border-bottom</div>
+</pre>
+<pre class="language-css styling">
+<code class="font-change">
+a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s ease;
+}
+a:hover::after{
+    width: 100%;
+}</code>
+</pre>
+			</div>
+
+
+			<div class="list-item">
+				<div class="details">8. C Program Boiler plate</div>
+</pre>
+<pre class="language-css styling">
+<code class="font-change">
+selector{
+    animation-name: animationName;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  	animation-direction: alternate;
+    animation-duration: .5s;
+  	animation-delay: 0s;
+}
+/* Animation in one line */
+selector{
+	animation: name duration timing-function delay iteration-count direction fill-mode;
+}</code>
+</pre>
+			</div>
+
+			<div class="list-item">
+				<div class="details">9. C Program Boiler plate</div>
 </pre>
 <pre class="language-c styling">
 <code class="font-change">#include &lt;stdio.h&gt;
@@ -156,33 +243,4 @@ int main(){
 	return 0;
 }</code>
 </pre>
-			</div>
-
-		</div>
-
-    <div class="footer">
-        Copyright &#169; 2021 || Created By &#10084; Abhi Dadhaniya
-    </div>
-		<script src="prism/prism.js"></script>
-		<script>
-			let sidebar=document.getElementById('sidebar');
-			let showmenu=document.getElementById('showmenu');
-			let container=document.getElementById('container');
-			container.onmouseover=function(){
-				sidebar.style.left='-300px';
-			};
-			showmenu.onclick=function(){
-				sidebar.style.left = '0px';
-			}
-			function indexPage(){
-				location.href='index.html';
-    			// console.log(location.href = `${webpages/html.html}`);
-				// console.log(window.location);
-			}
-		</script>
-		<!-- bootstrap scripts -->
-		<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-	</body>
-</html>
+			</div> -->

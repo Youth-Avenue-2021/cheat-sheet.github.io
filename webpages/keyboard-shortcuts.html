@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cheat Sheet</title>
+		<link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../prism/prism.css">
+    	<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
+		<link href="lightbox2-2.11.3/dist/css/lightbox.min.css" rel="stylesheet" />
+		<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+	</head>
+	<body class="flex-column">
+		
+		<i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
+		<h1 class="heading"><span id="heading" onclick="indexPage()">Keyboard Shortcuts </span></h1>
+		
+		<div class="sidebar" id="sidebar">
+			<ul class="flex-column-flex-start">
+				<li class="content-display">Table of content</li>
+				<a class="webpage" href="html.html">1. HTML</a>
+				<a class="webpage" href="css.html">2. CSS</a>
+				<a class="webpage" href="javascript.html">3. JAVASCRIPT</a>
+				<a class="webpage" href="c.html">4. C</a>
+				<a class="webpage" href="keyboard-shortcuts.html">5. Keyboard Shortcuts</a>
+				<a class="webpage" href="https://www.web-developer-abhi.tk">About Me</a>
+				<li class="social flex-row">
+					<a href="https://www.instagram.com/_abhi_dadhaniya_/" target="_blank"><i class="fa fa-instagram"
+					aria-hidden="true"></i></a>
+					<a href="https://mobile.twitter.com/abhidadhaniya3" target="_blank"><i class="fa fa-twitter"
+					aria-hidden="true"></i></a>
+					<a href="http://github.com/abhidadhaniya23" target="_blank"><i class="fa fa-github"
+					aria-hidden="true"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="container flex-row-warp" id="container">
+
+			<!-- <div class="list-item shortcuts">
+				<div class="details">1. VS Code Shortcuts</div>
+				<a href="../vscode.png" data-lightbox="example-1"><img class="example-image" src="../vscode.png" alt=""></a>
+				<div class="buttons flex-row-space-between">
+					<a href="../vscode.png" download><i class="fa fa-download"aria-hidden="true"></i>
+						Download
+						<img class="display-none" src="../vscode.png" alt="W3Schools" width="104" height="142">
+					</a>
+				</div>
+			</div> -->
+
+		</div>
+
+		<div class="footer">
+			Copyright &#169; 2021 || Created By &#10084; Abhi Dadhaniya
+		</div>
+		<script src="../prism/prism.js"></script>
+		<script>
+			let sidebar=document.getElementById('sidebar');
+			let showmenu=document.getElementById('showmenu');
+			let container=document.getElementById('container');
+			container.onmouseover=function(){
+				sidebar.style.left='-300px';
+			};
+			showmenu.onclick=function(){
+				sidebar.style.left = '0px';
+			}
+			function indexPage(){
+				location.href='../index.html';
+			// console.log(location.href = `${webpages/html.html}`);
+				// console.log(window.location);
+			}
+
+
+			let jsonData=[
+
+				{
+	                'title': 'VS Code Shortcuts',
+	                'img_src': './cheat-sheet/vscode.png'
+            	},
+				{
+	                'title': 'Sublime Text Shortcuts',
+	                'img_src': './cheat-sheet/Sublime_cheat_sheet.png'
+            	},
+				{
+	                'title': 'Notepad++ Shortcuts',
+	                'img_src': './cheat-sheet/notepad.png'
+            	}
+
+			];
+
+			Array.from(jsonData).forEach(function(e,index){
+				container.innerHTML+=`
+
+			<div class="list-item shortcuts">
+					<div class="details">${index+1}. ${e.title}</div>
+					<a href="${e.img_src}" data-lightbox="example-1" data-title="${e.title}"><img class="example-image cheat_sheet_photo" src="${e.img_src}" alt=""></a>
+					<div class="buttons flex-row-space-between">
+						<a href="${e.img_src}" download><i class="fa fa-download"aria-hidden="true"></i>
+							Download
+							<img class="display-none" src="${e.img_src}" alt="W3Schools" width="104" height="142">
+						</a>
+					</div>
+				</div>
+
+				`
+			});
+
+
+			// let cheat_sheet_photo=document.getElementsByClassName('cheat_sheet_photo');
+			// console.log(cheat_sheet_photo);
+
+			// window.onload=function(){
+			// 	console.log('test');
+			// 	cheat_sheet_photo.style.display = 'none';
+			// }
+			// 	console.log('test');
+
+
+
+		</script>
+		<!-- bootstrap scripts -->
+		<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+	</body>
+</html>
