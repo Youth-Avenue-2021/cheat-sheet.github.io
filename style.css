@@ -25,11 +25,13 @@ h2{
 	/* --font: 'Inter', sans-serif; */
 	--font: 'Manrope', sans-serif;
 	--color-blue: #080B2E;
-	--color-green: #1bcaa9;
+	--color-green: #00d0ff;
 }
 html{
 	scroll-behavior: smooth;
-	/* background: #e2e2e2 !important; */
+	/* background: #00c3ef40 !important; */
+	/* background: #00cfff2e !important; */
+	background: #e9fbff;
 }
 .display-none{
 	display: none;
@@ -84,7 +86,7 @@ html{
     text-align: center;
     width: 100%;
     font-size: 1.8em;
-    background: #ffffff82;
+    background: #bfeffa4f;
     /* background: #080b2e00; */
     color: var(--color-blue);
     font-family: var(--font);
@@ -117,7 +119,7 @@ html{
     /* background: linear-gradient(rgb(99, 230, 208),rgba(99, 230, 208, 0.514)),url(1.jpg); */
     /* background: linear-gradient(rgb(0,0,0,0.5),var(--color-blue-light)),url(photos/1.jpg); */
     /* background: linear-gradient(180deg, #00000061, #1bcaa987),url(photos/2.jpg); */
-    background: linear-gradient(180deg, #00000021, #0000007d),url(photos/6.jpg);
+    background: linear-gradient(180deg, #00000025, #0000007d),url(photos/6.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -163,17 +165,17 @@ html{
     /* border: 1px solid whitesmoke; */
     border-radius: 3px;
     padding: 15px 20px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
     cursor: pointer;
     font-family: var(--font);
     transition: .3s ease;
 }
 #btn1{
     background: whitesmoke;
-    color: #00b19f;
+    color: var(--color-green);
 }
 #btn1:hover{
-    background: #00b19f;
+    background: var(--color-green);
     color: white;	
 }
 
@@ -185,7 +187,8 @@ html{
     width: 200px;
     height: 100vh;
     /* background: #ffffff7a; */
-    background: #ffffffe0;
+    /* background: #ffffffe0; */
+    background: #f1fcffe0;
     color: whitesmoke;
     z-index: 102;
     backdrop-filter: blur(3px);
@@ -209,33 +212,19 @@ html{
 	color: #080b2e;
 	font-weight: bold;
 	overflow: hidden;
-	transition: 0.3s ease;
+	transition: 0s ease;
 	font-family: var(--font);
 }
 .sidebar ul .webpage:hover{
 	color: whitesmoke;
-}
-.sidebar ul .webpage::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
 	background: var(--color-green);
-	width: 100%;
-	height: 100%;
-	transform: translateX(-100%);
-	transition: 0.4s ease;
-}
-.sidebar ul .webpage:hover::before{
-	transform: translateX(0);
-	z-index: -1;
 }
 .sidebar ul .social{
 	margin: 10px 0 0;
 }
 .sidebar ul .social a{
 	font-size: 1.5em;
-	transition: 0.001s ease !important;
+	transition: 0s ease !important;
 }
 .sidebar ul .social a:hover{
 	color: var(--color-green);
@@ -273,6 +262,8 @@ html{
 	margin: 10px auto;
 }
 .styling{
+	background: white !important;
+	max-height: 300px;
 	padding: 2.4em 1.4em .8em !important;
 	font-size: 16px !important;
 	font-weight: 600 !important;
@@ -290,7 +281,7 @@ html{
     box-shadow: 0px 8px 20px 1px #080b2e40;
 	position: relative;
 	top: 8px;
-	padding: 17px 30px;
+	padding: 23px 30px;
 	/* font-weight: bold; */
 	/* border-radius: 10px; */
 	/* border-top-left-radius: 8px;
@@ -320,7 +311,7 @@ html{
 	background: var(--color-green);
 	text-decoration: none;
 	color: white;
-	padding: 12px 17px;
+	padding: 20px 17px;
 	font-size: 0.8rem;
 	width: 100%;
     font-family: var(--font);
@@ -330,8 +321,8 @@ html{
 	margin: 0 10px 0 0;
 }
 .list-item .buttons a:hover{
-	/* background: #05a98a; */
-	box-shadow: inset 0px 0px 20px 8px #05a98a;
+	/* background: #00000025; */
+	box-shadow: inset 0px 0px 20px 8px #00000025;
 }
 .shortcuts .details{
 	text-align: center;
@@ -356,7 +347,7 @@ html{
 	font-family: var(--font);
 }
 .toolbar-item button span:hover{
-	background: #05a98a !important;
+	background: #00b2da !important;
 }
 
 
@@ -365,9 +356,10 @@ html{
 #second-section{
 	width: 100%;
 	padding: 30px 0 60px;
-	background: #ececec9e;
+    background: #00abd421 !important;
 }
 #second-section h2{
+	text-align: center;
 	margin: 40px auto 50px;
 	font-size: 2.4em;
 	color: var(--color-blue);
@@ -405,7 +397,7 @@ html{
 	background: var(--color-green);
 }
 .saparate-cheat-sheet a:hover{
-	box-shadow: inset 0px 0px 20px 8px #05a98a;
+	box-shadow: inset 0px 0px 20px 8px #00000025;
 }
 
 
@@ -433,12 +425,25 @@ html{
 	*{
 		letter-spacing: .6px;
 	}
+	#showmenu{
+		font-size: 1.6em;
+	    position: fixed;
+	    top: 40px;
+	    left: 25px;
+	    color: var(--color-blue);
+	    cursor: pointer;
+	    z-index: 101;
+	}
 	.list-item{
+		margin: ;
 		width: 90%;
 	}
 	.container{
 		width: 100%;
-		padding: 70px 0;
+		padding: 130px 0 25px;
+	}
+	.shortcuts{
+	margin: 15px; 		
 	}
 	.styling{
 		font-weight: lighter !important;
@@ -497,6 +502,10 @@ html{
 	#heading,
 	h2{
 		letter-spacing: 1.1px;
+	    /* padding: 10px 20px; */
+	    margin: 0 60px;
+	    text-align: center;
+	    display: flex;
 	}
 	#btn1{
 		color: white;
@@ -504,5 +513,11 @@ html{
 	}
 	.saparate-cheat-sheet img{
 		padding: 30px 0 10px;
+	}
+	.list-item .buttons a{
+		padding: 15px 17px;
+	}
+	.details{
+		padding: 17px 30px;
 	}
 }
