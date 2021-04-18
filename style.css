@@ -8,6 +8,7 @@
 	outline: none !important;
 	transition: 0.4s ease;
 	letter-spacing: 1px;
+	text-decoration: none;
 }
 h1{
 	letter-spacing: 2px;
@@ -76,6 +77,9 @@ html{
     justify-content: space-around;
     align-items: center;
 }
+.overflow-hide{
+	overflow: hidden;
+}
 .heading{
 	position: fixed;
     top: 0;
@@ -119,7 +123,8 @@ html{
     /* background: linear-gradient(rgb(99, 230, 208),rgba(99, 230, 208, 0.514)),url(1.jpg); */
     /* background: linear-gradient(rgb(0,0,0,0.5),var(--color-blue-light)),url(photos/1.jpg); */
     /* background: linear-gradient(180deg, #00000061, #1bcaa987),url(photos/2.jpg); */
-    background: linear-gradient(180deg, #00000025, #0000007d),url(photos/6.jpg);
+    background: linear-gradient(180deg, #00000080, #000000b5),url(photos/4.jpg);
+    /* Best Wallpapers  :  4 , 8, 11 */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -218,6 +223,10 @@ html{
 .sidebar ul .webpage:hover{
 	color: whitesmoke;
 	background: var(--color-green);
+}
+.sidebar ul a .sidebar-icons{
+	margin-right: 5px;
+	transition: 0s ease;
 }
 .sidebar ul .social{
 	margin: 10px 0 0;
@@ -365,13 +374,17 @@ html{
 	color: var(--color-blue);
 	font-family: var(--font);
 }
+.saparate-cheat-sheet:hover{
+	--scale: scale(1.2);
+}
 .saparate-cheat-sheet img{
 	padding: 30px;
 	width: 200px;
+	transform: var(--scale);
 }
 .saparate-cheat-sheet{
-	width: 310px;
-	margin: 30px;
+    width: 290px;
+    margin: 20px 40px;
 	/* padding: 20px; */
 	border-radius: 8px; 
 	background: white;
@@ -397,12 +410,99 @@ html{
 	background: var(--color-green);
 }
 .saparate-cheat-sheet a:hover{
+	/* --scal: ; */
 	box-shadow: inset 0px 0px 20px 8px #00000025;
 }
 
 
+/* third section */
+
+
+#third-team{
+	width: 100%;
+	padding: 30px 0;
+    background: linear-gradient(#0000004f ,#0000007a),url(photos/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#third-team h2{
+	color: whitesmoke;
+	text-align: center;
+	margin: 40px auto 50px;
+	font-size: 2.4em;
+	font-family: var(--font);
+}
+#third-team .all-persons .person{
+	margin: 20px 40px;
+	background: whitesmoke;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 270px;
+}
+#third-team .all-persons .person img{
+	width: 100%;
+}
+#third-team .all-persons .person:hover img{
+	transform: scale(1.2);
+}
+#third-team .all-persons .person:hover .social{
+	top: -50px;
+	opacity: 1;
+}
+#third-team .all-persons .person .social{
+    opacity: 0;
+	position: relative;
+    top: -20px;
+}
+#third-team .all-persons .person .social a{
+	margin: 0 7px;
+	padding: 3px 8px;
+	border-radius: 50px;
+	background: white;
+	cursor: pointer;
+	color: var(--color-blue);
+	transition: .01s ease;
+}
+.fa-facebook{
+	padding: 0px 2px !important;
+}
+#third-team .all-persons .person .social a:hover{
+	color: var(--color-green);
+}
+#third-team .all-persons .person .name{
+	background: whitesmoke;
+	margin:  -30px auto 0px;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+	font-size: 1.7em;
+	font-weight: bold;
+	/* color: whitesmoke; */
+	color: var(--color-blue);
+}
+#third-team .all-persons .person .work{
+	padding: 5px 20px 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	color: var(--color-green);
+	/* font-weight: bold; */
+}
+#third-team .all-persons .person .visit-site{
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	color: whitesmoke;
+	background: var(--color-green);
+}
+#third-team .all-persons .person .visit-site:hover{
+	box-shadow: inset 0px 0px 20px 8px #00000025;
+}
+
 
 .footer {
+	position: relative;
 	width: 100%;
     text-align: center;
     padding: 17px;
@@ -410,6 +510,28 @@ html{
     color: whitesmoke;
     background: var(--color-blue);
     font-family: var(--font);
+}
+/* width */
+::-webkit-scrollbar {
+	height: 5px;
+  	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 500px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #080b2e2e;
+  border-radius: 500px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7a7f9c;
 }
 
 
@@ -435,9 +557,12 @@ html{
 	.saparate-cheat-sheet{
 		width: 70%;
 	}
-.saparate-cheat-sheet img{
-	width: 50%;
-}
+	.saparate-cheat-sheet img{
+		width: 50%;
+	}
+	#third-team .all-persons .person{
+		width: 80%;
+	}
 }
 @media (max-width: 850px){
 	*{
@@ -452,7 +577,7 @@ html{
 		padding: 130px 0 25px;
 	}
 	.shortcuts{
-	margin: 15px; 		
+		margin: 15px; 		
 	}
 	.styling{
 		font-weight: lighter !important;
@@ -528,5 +653,15 @@ html{
 	}
 	.details{
 		padding: 17px 30px;
+	}
+	#third-team .all-persons .person .social{
+	    opacity: 1;
+	    top: -60px;
+	}
+	#third-team .all-persons .person:hover img{
+		transform: scale(1);
+	}
+	#third-team .all-persons .person .visit-site {
+	    padding: 15px 0;
 	}
 }
