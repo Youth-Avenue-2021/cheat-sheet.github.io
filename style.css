@@ -413,17 +413,13 @@ html{
 }
 
 
-@media (max-width: 540px){
-.saparate-cheat-sheet{
-	width: 70%;
-}
-.saparate-cheat-sheet img{
-	width: 50%;
-}
-}
-@media (max-width: 850px){
-	*{
-		letter-spacing: .6px;
+@media (max-width: 360px){
+	#heading{
+		letter-spacing: 1.1px;
+	    /* padding: 10px 20px; */
+	    margin: 0 0 0 60px;
+	    text-align: center;
+	    display: flex;	
 	}
 	#showmenu{
 		font-size: 1.6em;
@@ -433,6 +429,19 @@ html{
 	    color: var(--color-blue);
 	    cursor: pointer;
 	    z-index: 101;
+	}
+}
+@media (max-width: 540px){
+	.saparate-cheat-sheet{
+		width: 70%;
+	}
+.saparate-cheat-sheet img{
+	width: 50%;
+}
+}
+@media (max-width: 850px){
+	*{
+		letter-spacing: .6px;
 	}
 	.list-item{
 		margin: ;
@@ -503,9 +512,9 @@ html{
 	h2{
 		letter-spacing: 1.1px;
 	    /* padding: 10px 20px; */
-	    margin: 0 60px;
+	    margin: 0 0 0 55px;
 	    text-align: center;
-	    display: flex;
+	    /* display: flex;*/
 	}
 	#btn1{
 		color: white;
