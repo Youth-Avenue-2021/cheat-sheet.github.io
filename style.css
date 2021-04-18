@@ -107,7 +107,7 @@ html{
 }
 .container{
 	position: relative;
-	padding: 100px 0;
+	padding: 100px 0 50px;
 }
 
 .main-content{
@@ -115,7 +115,7 @@ html{
     width: 100%;
     /* background: blue; */
     /* background: linear-gradient(rgb(99, 230, 208),rgba(99, 230, 208, 0.514)),url(1.jpg); */
-    /* background: linear-gradient(rgb(0,0,0,0.5),#00b19f),url(photos/1.jpg); */
+    /* background: linear-gradient(rgb(0,0,0,0.5),var(--color-blue-light)),url(photos/1.jpg); */
     /* background: linear-gradient(180deg, #00000061, #1bcaa987),url(photos/2.jpg); */
     background: linear-gradient(180deg, #00000021, #0000007d),url(photos/6.jpg);
     background-attachment: fixed;
