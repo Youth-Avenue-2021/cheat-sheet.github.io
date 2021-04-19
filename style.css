@@ -393,6 +393,7 @@ html{
 .saparate-cheat-sheet p{
 	text-align: center;
 	width: 100%;
+	color: var(--color-green);
 	padding: 25px 20px;
 	background: white;
 	font-weight: bold;
@@ -536,6 +537,22 @@ html{
 }
 
 
+/* python file */
+
+.python{
+	width: 100%;
+	position: relative;
+	padding: 100px 0 50px;
+}
+.python table{
+	background: red;
+	width: 70%;
+}
+.python th{
+	background: blue;
+	padding: 10px 0;
+}
+
 @media (max-width: 360px){
 	#heading{
 		letter-spacing: 1.1px;
@@ -552,6 +569,10 @@ html{
 	    color: var(--color-blue);
 	    cursor: pointer;
 	    z-index: 101;
+	}
+	.container{
+		width: 100%;
+		padding: 130px 0 25px !important;
 	}
 }
 @media (max-width: 540px){
@@ -575,7 +596,7 @@ html{
 	}
 	.container{
 		width: 100%;
-		padding: 130px 0 25px;
+		padding: 80px 0 25px;
 	}
 	.shortcuts{
 		margin: 15px; 		
