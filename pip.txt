@@ -1,0 +1,31 @@
+#these commands are suitable for windwos
+
+
+1. installs latest available version: pip install <name>
+2. installs specific version: pip install <package_name>==<version>
+3. any version above specified minimum version: pip install 'flask-bootstrap>=3.3.5.3' #flask-bootstrap is an example here
+4. Use -U flag to upgrade a package: pip install -U <name>
+5. installs libraries in the file along with their dependencies: pip install -r <name>
+6. installs all installed packages in the global environment: pip freeze
+7. only lists packages installed in the local virtual environment: pip freeze -1
+8. shows installed packages in the tabular format: pip list
+9. shows packages installed in local virtual environment: pip list -1
+10. lists outdated packages: pip list -0
+11. lists up-to-date packages: pip list -u
+12. shows information about a specified package: pip show <name>
+13. All packages and packages summaries containing search term: pip search <name>
+14. verify whether installed packages have compatible dependencies: pip check
+15. confirm before uninstall: pip uninstall <name>
+16. uninstall without confirmation: pip uninstall -y <name>
+17. uninstall all packages mentioned in file : pip uninstall -r <path_to_file>
+18. upgrade a package already installed: pip install <name> --upgrade
+19. create a virtual environment: virtualenv <directory_name>
+20. activate the virtual environment: (for windows) <directory_name>\Scripts\activate 
+21. deactivate the virtual environment: deactivate OR <directory_name>\Scripts\deactivate
+22. List outdated packages (excluding editables), and the latest version available: py -m pip list --outdated
+23. List installed packages with column formatting: py -m pip list --format columns
+24. List outdated packages with column formatting: py -m pip list -o --format columns
+25. List packages that are not dependencies of other packages: py -m pip list --outdated --not-required
+26. use legacy formatting: py -m pip list --format=legacy
+27. use json formatting: py -m pip list --format=json
+28. use freeze formatting: py -m pip list --format=freeze
