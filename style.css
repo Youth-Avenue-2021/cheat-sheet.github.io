@@ -518,11 +518,12 @@ html{
 /* python file */
 
 .python{
-	width: 75%;
+	width: 80%;
 	position: relative;
 	padding: 100px 0 50px;
 }
 .python .seperate-table{
+	width: 100%;
 	margin: 30px auto;
 }
 .python table{
@@ -534,8 +535,9 @@ html{
 .python td{
 	padding: 10px 15px;
 }
-.python .name-value{
-	min-width: 230px;
+.python tbody,
+.python rows{
+	width: 100%;
 }
 .python .rows:nth-child(even) {
 	background: #00d3ff38;
@@ -553,7 +555,13 @@ html{
 	width: 100%;
 	background: var(--color-green);
 }
+#table1,
+#table2,
+#table3{
+	width: 100%;
+}
 .python .seperate-table{
+	width: 100%;
 	border: 4px solid black;
 }
 
@@ -569,13 +577,13 @@ html{
 	.container{
 		width: 100%;
 	}
-	#table1{
-		margin: 50px 0 0;
+	.python .action-tkinter{
+		max-width: 160px;
 	}
 }
 @media (max-width: 540px){
 	.saparate-cheat-sheet{
-		width: 70%;
+		width: 100%;
 	}
 	.saparate-cheat-sheet img{
 		width: 50%;
@@ -583,12 +591,18 @@ html{
 	#third-team .all-persons .person{
 		width: 80%;
 	}
-	.python table{
+	.python{
 		width: 95%;
+		position: relative;
+		padding: 60px 0 0;
 	}
-	.python .name-value{
-		min-width: 0;
-	}	
+	.python td{
+		font-size: 14px;
+		padding: 10px 5px;
+	}
+	.python .seperate-table{
+		border: 2px solid black;
+	}
 }
 @media (max-width: 850px){
 	*{
@@ -659,8 +673,7 @@ html{
 	h1{
 		letter-spacing: 1.5px;
 	}
-	#heading,
-	h2{
+	#heading{
 		letter-spacing: 1.1px;
 	    /* padding: 10px 20px; */
 	    /* margin: 0 0 0 55px; */

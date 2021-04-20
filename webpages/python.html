@@ -15,8 +15,13 @@
       	*{
       		font-family: 'Manrope', sans-serif;
       	}
+		@media (max-width: 540px){
+			.python td{
+				letter-spacing: 0.1px;
+			}
+		}
 		@media (max-width: 850px){
-			#heading, h2 {
+			#heading{
 				letter-spacing: 1.1px;
 				/* padding: 10px 20px; */
 				margin: 0 0 0 85px;
@@ -24,7 +29,7 @@
 				text-align: center;
 				/* display: flex; */
 			}
-			}
+		}
 	</style>
 
 	</head>
@@ -76,8 +81,8 @@
 				<table id="table2">
 					<tbody>
 						<tr>
-							<th class="heading1">Action</th>
 							<th class="heading1">Command</th>
+							<th class="heading1">Action</th>
 						</tr>
 					</tbody>
 				</table>
@@ -355,116 +360,116 @@
 let jsonPIP=[
 
 	{
-		"action": "installs latest available version",
-		"command": "pip install <name>"
+		"command": "pip install &lt;name&gt;",
+		"action": "installs latest available version"
 	},
 	{
-		"action": "installs specific version",
-		"command": "pip install <package_name>==<version>"
+		"command": "pip install &lt;package_name&gt;==&lt;version&gt;",
+		"action": "installs specific version"
 	},
 	{
-		"action": "any version above specified minimum version",
-		"command": "pip install 'flask-bootstrap>=3.3.5.3' #flask-bootstrap is an example here"
+		"command": "pip install 'flask-bootstrap&gt;=3.3.5.3' #flask-bootstrap is an example here",
+		"action": "any version above specified minimum version"
 	},
     {
-		"action": "Use -U flag to upgrade a package",
-		"command": "pip install -U <name>"
+		"command": "pip install -U &lt;name&gt;",
+		"action": "Use -U flag to upgrade a package"
 	},
 	{
-		"action": "installs libraries in the file along with their dependencies",
-		"command": " pip install -r <name>"
+		"command": " pip install -r &lt;name&gt;",
+		"action": "installs libraries in the file along with their dependencies"
 	},
     {
-		"action": "installs all installed packages in the global environment",
-		"command": "pip freeze"
+		"command": "pip freeze",
+		"action": "installs all installed packages in the global environment"
 	},
     {
-		"action": "only lists packages installed in the local virtual environment",
-		"command": "pip freeze -1"
+		"command": "pip freeze -1",
+		"action": "only lists packages installed in the local virtual environment"
 	},
     {
-		"action": "shows installed packages in the tabular format",
-		"command": " pip list"
+		"command": " pip list",
+		"action": "shows installed packages in the tabular format"
 	},
     {
-		"action": "shows packages installed in local virtual environment",
-		"command": "pip list -1"
+		"command": "pip list -1",
+		"action": "shows packages installed in local virtual environment"
 	},
     {
-		"action": "lists outdated packages",
-		"command": "pip list -0"
+		"command": "pip list -0",
+		"action": "lists outdated packages"
 	},
     {
-		"action": "lists up-to-date packages",
-		"command": "pip list -u"
+		"command": "pip list -u",
+		"action": "lists up-to-date packages"
 	},
 	{
-		"action": "shows information about a specified package",
-		"command": " pip show <name>"
+		"command": " pip show &lt;name&gt;",
+		"action": "shows information about a specified package"
 	},
     {
-		"action": "All packages and packages summaries containing search term",
-		"command": "pip search <name>"
+		"command": "pip search &lt;name&gt;",
+		"action": "All packages and packages summaries containing search term"
 	},
 	{
-		"action": "verify whether installed packages have compatible dependencies",
-		"command": "pip check"
+		"command": "pip check",
+		"action": "verify whether installed packages have compatible dependencies"
 	},
     {
-		"action": "confirm before uninstall",
-		"command": "pip uninstall <name>"
+		"command": "pip uninstall &lt;name&gt;",
+		"action": "confirm before uninstall"
 	},
     {
-		"action": "uninstall without confirmation",
-		"command": "pip uninstall -y <name>"
+		"command": "pip uninstall -y &lt;name&gt;",
+		"action": "uninstall without confirmation"
 	},
     {
-		"action": " uninstall all packages mentioned in file",
-		"command": "pip uninstall -r <path_to_file>"
+		"command": "pip uninstall -r &lt;path_to_file&gt;",
+		"action": " uninstall all packages mentioned in file"
 	},
 	{
-		"action": "upgrade a package already installed",
-		"command": "pip install <name> --upgrade"
+		"command": "pip install &lt;name&gt; --upgrade",
+		"action": "upgrade a package already installed"
 	},
 	{
-		"action": " create a virtual environment",
-		"command": "virtualenv <directory_name>"
+		"command": "virtualenv &lt;directory_name&gt;",
+		"action": " create a virtual environment"
 	},
     {
-		"action": "activate the virtual environment",
-		"command": "(for windows) <directory_name>\Scripts\activate "
+		"command": "(for windows) &lt;directory_name&gt;\\Scripts\\activate ",
+		"action": "activate the virtual environment"
 	},
 	{
-		"action": "deactivate the virtual environment",
-		"command": " deactivate OR <directory_name>\Scripts\deactivate"
+		"command": " deactivate OR &lt;directory_name&gt;\\Scripts\\deactivate",
+		"action": "deactivate the virtual environment"
 	},
 	{
-		"action": "List outdated packages (excluding editables), and the latest version available",
-		"command": "py -m pip list --outdated"
+		"command": "py -m pip list --outdated",
+		"action": "List outdated packages (excluding editables), and the latest version available"
 	},
 	{
-		"action": "List installed packages with column formatting",
-		"command": " py -m pip list --format columns"
+		"command": " py -m pip list --format columns",
+		"action": "List installed packages with column formatting"
 	},
     {
-		"action": "List outdated packages with column formatting",
-		"command": "py -m pip list -o --format columns"
+		"command": "py -m pip list -o --format columns",
+		"action": "List outdated packages with column formatting"
 	},
     {
-		"action": "List packages that are not dependencies of other packages",
-		"command": "py -m pip list --outdated --not-required"
+		"command": "py -m pip list --outdated --not-required",
+		"action": "List packages that are not dependencies of other packages"
 	},
 	{
-		"action": "use legacy formatting",
-		"command": "py -m pip list --format=legacy"
+		"command": "py -m pip list --format=legacy",
+		"action": "use legacy formatting"
 	},
     {
-		"action": "use json formatting",
-		"command": "py -m pip list --format=json"
+		"command": "py -m pip list --format=json",
+		"action": "use json formatting"
 	},
     {
-		"action": "use freeze formatting",
-		"command": "py -m pip list --format=freeze"
+		"command": "py -m pip list --format=freeze",
+		"action": "use freeze formatting"
 	}, 
 ];
 
@@ -473,8 +478,8 @@ let jsonPIP=[
 				document.getElementById('table2').innerHTML+=`
 				<tbody class="rows">
 					<tr>
-						<td class="name-value">${index+1}. ${e.action}</td>
-						<td class="work-value">${e.command}</td>
+						<td class="work-value action-tkinter">${index+1}. ${e.command}</td>
+						<td class="name-value">${e.action}</td>
 					</tr>
 				</tbody>
 
@@ -485,128 +490,128 @@ let jsonPIP=[
 let jsonTkinter=[
 
 	{
-		"action": "to use tkinter",
-		"command": "import tkinter OR from tkinter import *"
+		"command": "import tkinter OR from tkinter import *",
+		"action": "to use tkinter"
 	},
 	{
-		"action": "to create  a window",
-		"command": "window = tkinter.Tk()"
+		"command": "window = tkinter.Tk()",
+		"action": "to create  a window"
 	},
 	{
-		"action": "to rename the title of the window",
-		"command": " window.title(\"New title of the window\")"
+		"command": " window.title(\"New title of the window\")",
+		"action": "to rename the title of the window"
 	},
     {
-		"action": " widget to place the buttons",
-		"command": "Button(<root>, <other parms>) "
+		"command": "Button(&lt;root&gt;, &lt;other parms&gt;) ",
+		"action": " widget to place the buttons"
 	},
     {
-		"action": "to draw shapes in GUI",
-		"command": "Canvas(<root>,<other parms>)"
+		"command": "Canvas(&lt;root&gt;,&lt;other parms&gt;)",
+		"action": "to draw shapes in GUI"
 	},
     {
-		"action": "to create the checkbuttons (select more than one option)",
-		"command": "Checkbutton(<root>,<other parms>)"
+		"command": "Checkbutton(&lt;root&gt;,&lt;other parms&gt;)",
+		"action": "to create the checkbuttons (select more than one option)"
 	},
     {
-		"action": " to create input fields in the GUI",
-		"command": "Entry(<root>,<other parms>)"
+		"command": "Entry(&lt;root&gt;,&lt;other parms&gt;)",
+		"action": " to create input fields in the GUI"
 	},
     {
-		"action": "to make containers",
-		"command": "Frame(<root>,<other parms>)"
+		"command": "Frame(&lt;root&gt;,&lt;other parms&gt;)",
+		"action": "to make containers"
 	},
     {
-		"action": "to create a single line widgets like images, text,etc",
-		"command": "Label(<root>,<other parms>)"
+		"command": "Label(&lt;root&gt;,&lt;other parms&gt;)",
+		"action": "to create a single line widgets like images, text,etc"
 	},
 	{
-		"action": "to create menus in the GUI",
-		"command": "Menu(<root>,<other parms>)"
+		"command": "Menu(&lt;root&gt;,&lt;other parms&gt;)",
+		"action": "to create menus in the GUI"
 	},
     {
-		"action": "to organize the widgets in the block",
-		"command": "pack()"
+		"command": "pack()",
+		"action": "to organize the widgets in the block"
 	},
 	{
-		"action": " to organize the widgets in table-like structures",
-		"command": "grid()"
+		"command": "grid()",
+		"action": " to organize the widgets in table-like structures"
 	},
     {
-		"action": "to place thw widget at a specific required position ",
-		"command": "place()"
+		"command": "place()",
+		"action": "to place thw widget at a specific required position "
 	},
     {
-		"action": "dialog to let the user choose a color",
-		"command": " tkinter.colorchoose"
+		"command": " tkinter.colorchoose",
+		"action": "dialog to let the user choose a color"
 	},
 	{
-		"action": "base class for the dialogs defined in the other modules",
-		"command": "tkinter.commondialog"
+		"command": "tkinter.commondialog",
+		"action": "base class for the dialogs defined in the other modules"
 	},
     {
-		"action": "common dialog to allow the user to specify a file to open or save",
-		"command": "tkinter.filedialog"
+		"command": "tkinter.filedialog",
+		"action": "common dialog to allow the user to specify a file to open or save"
 	},
     {
-		"action": "utilities to help work with fonts",
-		"command": "tkinter.font"
-	},
-    {
-		"action": "access to standard Tk dialog boxes",
-		"command": "tkinter.messagebox"
+		"command": "tkinter.font",
+		"action": "utilities to help work with fonts"
 	},
 	{
-		"action": "text widget with a vertical scroll bar built in",
-		"command": "tkinter.scrolledtext"
-	},
-    {
-		"action": "basic dialogs and conveniece functions",
-		"command": "tkinter.simpledialog"
-	},
-    {
-		"action": " drag and drop support for tkinter",
-		"command": "tkinter.dnd"
-	},
-    {
-		"action": " turtle graphics in a Tk window",
-		"command": " turtle"
+		"command": "tkinter.messagebox",
+		"action": "access to standard Tk dialog boxes"
 	},
 	{
-		"action": " To make a widget in Tk",
-		"command": "  classCommand newPathname options"
+		"command": "tkinter.scrolledtext",
+		"action": "text widget with a vertical scroll bar built in"
 	},
     {
-		"action": "At object creation time, using keyword arguments",
-		"command": "fred = Button(self, fg=\"<color_name>\", bg=\"<color_name>\")"
+		"command": "tkinter.simpledialog",
+		"action": "basic dialogs and conveniece functions"
 	},
     {
-		"action": " After object creation, treating the option name like a dictionary index",
-		"command": " fred[\"fg\"] = \"<color_name>\" , fred[\"bg\"] = \"<color_name>\""
+		"command": "tkinter.dnd",
+		"action": " drag and drop support for tkinter"
 	},
     {
-		"action": " Use the config() method to update multiple attrs subsequent to object creation",
-		"command": "fred.config(fg=\"<color_name>\", bg=\"<color_name>\")"
+		"command": " turtle",
+		"action": " turtle graphics in a Tk window"
+	},
+	{
+		"command": "  classCommand newPathname options",
+		"action": " To make a widget in Tk"
 	},
     {
-		"action": "form of the bind method is",
-		"command": "def bind(self, sequence, func, add=''):"
+		"command": "fred = Button(self, fg=\"&lt;color_name&gt;\", bg=\"&lt;color_name&gt;\")",
+		"action": "At object creation time, using keyword arguments"
 	},
     {
-		"action": "to register the file handler callback function func",
-		"command": "Widget.tk.createfilehandler(file, mask, func)"
+		"command": " fred[\"fg\"] = \"&lt;color_name&gt;\" , fred[\"bg\"] = \"&lt;color_name&gt;\"",
+		"action": " After object creation, treating the option name like a dictionary index"
 	},
     {
-		"action": "callback command",
-		"command": "callback(file, mask)"
+		"command": "fred.config(fg=\"&lt;color_name&gt;\", bg=\"&lt;color_name&gt;\")",
+		"action": " Use the config() method to update multiple attrs subsequent to object creation"
 	},
     {
-		"action": "to unregister a file handler",
-		"command": " Widget.tk.deletefilehandler(file)"
+		"command": "def bind(self, sequence, func, add=''):",
+		"action": "form of the bind method is"
 	},
     {
-		"action": "constants used in the mask arguments",
-		"command": "tkinter.READABLE , tkinter.WRITABLE , tkinter.EXCEPTION"
+		"command": "Widget.tk.createfilehandler(file, mask, func)",
+		"action": "to register the file handler callback function func"
+	},
+    {
+		"command": "callback(file, mask)",
+		"action": "callback command"
+	},
+    {
+		"command": " Widget.tk.deletefilehandler(file)",
+		"action": "to unregister a file handler"
+	},
+    {
+		"command": "tkinter.READABLE , tkinter.WRITABLE , tkinter.EXCEPTION",
+		"action": "constants used in the mask arguments"
 	},
 
 ];
@@ -615,8 +620,8 @@ let jsonTkinter=[
 				document.getElementById('table3').innerHTML+=`
 				<tbody class="rows">
 					<tr>
-						<td class="name-value">${index+1}. ${e.action}</td>
-						<td class="work-value">${e.command}</td>
+						<td class="work-value action-tkinter">${index+1}. ${e.command}</td>
+						<td class="name-value">${e.action}</td>
 					</tr>
 				</tbody>
 
