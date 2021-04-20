@@ -545,12 +545,26 @@ html{
 	padding: 100px 0 50px;
 }
 .python table{
-	background: red;
-	width: 70%;
+	width: 75%;
 }
 .python th{
-	background: blue;
-	padding: 10px 0;
+	padding: 20px;
+}
+.python td{
+	padding: 10px 15px;
+}
+.python .name-value{
+	min-width: 230px;
+}
+.python .rows:nth-child(even) {
+	background: #00d3ff38;
+}
+.python .rows:nth-child(odd) {
+	background: #b1f1ff59;
+}
+.python th{
+	color: whitesmoke;
+	background-color: rgb(12, 12, 12);
 }
 
 @media (max-width: 360px){
@@ -574,6 +588,9 @@ html{
 		width: 100%;
 		padding: 130px 0 25px !important;
 	}
+	#table1{
+		margin: 50px 0 0;
+	}
 }
 @media (max-width: 540px){
 	.saparate-cheat-sheet{
@@ -585,6 +602,12 @@ html{
 	#third-team .all-persons .person{
 		width: 80%;
 	}
+	.python table{
+		width: 95%;
+	}
+	.python .name-value{
+		min-width: 0;
+	}	
 }
 @media (max-width: 850px){
 	*{

@@ -9,11 +9,25 @@
     	<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+	
+	<style>
+		@media (max-width: 850px){
+			#heading, h2 {
+				letter-spacing: 1.1px;
+				/* padding: 10px 20px; */
+				margin: 0 0 0 85px;
+				/* display: flex; */
+				text-align: center;
+				/* display: flex; */
+			}
+			}
+	</style>
+
 	</head>
 	<body class="flex-column">
 		
         <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-			<h1 class="heading"><span id="heading">Python Cheat Sheet </span></h1>
+			<h1 class="heading"><span id="heading">Python CS </span></h1>
 		
 
 		<div class="sidebar" id="sidebar">
@@ -41,23 +55,13 @@
 
 		<div class="python flex-column" id="container">
 
-			<table>
-				  <tr>
-				    <th>Library</th>
-				    <th>Use Of Library</th>
-				  </tr>
-				  <tr>
-				    <th>1. Matplotlib</th>
-				    <th>It helps with data analyzing, and is a numerical plotting library</th>
-				  </tr>
-				  <tr>
-				    <th>1. Matplotlib</th>
-				    <th>It helps with data analyzing, and is a numerical plotting library</th>
-				  </tr>
-				  <tr>
-				    <th>1. Matplotlib</th>
-				    <th>It helps with data analyzing, and is a numerical plotting library</th>
-				  </tr>
+			<table id="table1">
+				<tbody>
+					<tr>
+						<th class="heading1">Name</th>
+						<th class="heading1">Work</th>
+					</tr>
+				</tbody>
 			</table>
 
 		</div>
@@ -133,7 +137,21 @@
 					"use": "This provides useful methods and class for interaction with Windows, as the name suggests."
 				},
 
-			]
+			];
+
+
+			
+			Array.from(jsonOne).forEach(function(e,index){
+				document.getElementById('table1').innerHTML+=`
+				<tbody class="rows">
+					<tr>
+						<td class="name-value">${index+1}. ${e.name}</td>
+						<td class="work-value">${e.use}</td>
+					</tr>
+				</tbody>
+
+				`
+			});
 
 
 
