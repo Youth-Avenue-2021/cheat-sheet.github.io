@@ -513,39 +513,20 @@ html{
     background: var(--color-blue);
     font-family: var(--font);
 }
-/* width */
-::-webkit-scrollbar {
-	height: 5px;
-  	width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-  border-radius: 500px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #080b2e2e;
-  border-radius: 500px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #7a7f9c;
-}
 
 
 /* python file */
 
 .python{
-	width: 100%;
+	width: 75%;
 	position: relative;
 	padding: 100px 0 50px;
 }
+.python .seperate-table{
+	margin: 30px auto;
+}
 .python table{
-	width: 75%;
+	width: 100%;
 }
 .python th{
 	padding: 20px;
@@ -566,6 +547,16 @@ html{
 	color: whitesmoke;
 	background-color: rgb(12, 12, 12);
 }
+.python .python-heading{
+	text-align: center;
+	padding: 15px 0;
+	width: 100%;
+	background: var(--color-green);
+}
+.python .seperate-table{
+	border: 4px solid black;
+}
+
 
 @media (max-width: 360px){
 	#heading{
@@ -699,4 +690,28 @@ html{
 	#third-team .all-persons .person .visit-site {
 	    padding: 15px 0;
 	}
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+	height: 5px;
+  	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 500px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #080b2e2e;
+  border-radius: 500px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7a7f9c;
 }
