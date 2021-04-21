@@ -574,6 +574,7 @@ html{
     color: var(--color-blue);
     transition: 0.2s ease;
 }
+.python .rows .download-links a:visited,
 .python .rows .download-links a:hover{
 	background: var(--color-blue);
 	color: whitesmoke;
