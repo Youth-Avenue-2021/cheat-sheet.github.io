@@ -2,9 +2,9 @@ let randomColor = document.getElementById('randomColor');
 let addColors=document.getElementById('addColors');
 let arr=[];
 
-var firstNumber;
-var secondNumber;
-var thirdNumber;
+var firstNumber=0;
+var secondNumber=208;
+var thirdNumber=255;
 
 function changeColor() {
     let body = document.querySelector('html');
@@ -35,11 +35,11 @@ function copyTextFunction() {
 function showCopy(){
 	// document.getElementById("copyTextDiv").style.animationName='show';
 	document.getElementById('copyTextDiv').style.opacity = '1';
-	document.getElementById('copyTextDiv').style.top = '80%';
+	document.getElementById('copyTextDiv').style.top = '5%';
 	// document.getElementById("randomColor").style.opacity = '1';
 	setTimeout(function hideShowCopy(){
 		document.getElementById('copyTextDiv').style.opacity = '0';
-		document.getElementById('copyTextDiv').style.top = '70%';	
+		document.getElementById('copyTextDiv').style.top = '0%';	
 	},2000);
 }
 

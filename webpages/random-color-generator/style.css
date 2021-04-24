@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap'); */
 *{
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@
     padding: 5px 10px;
 }
 #color-heading {
-    font-size: 1.7em;
+    font-size: 2em;
     font-family: var(--font);
     color: gold;
     margin: 5px 0 20px;
@@ -54,6 +54,14 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+    font-size: 1.2em;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
 button{
     font-family: var(--font);
@@ -64,13 +72,20 @@ button{
     padding: 6px 14px;
     border-radius: 2px;
     cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
 .copyTextDiv p{
     font-family: var(--font);
 }
 .copyTextDiv{
     position: absolute;
-    top: 70%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, 0);
     background: white;
@@ -79,11 +94,12 @@ button{
     border-radius: 5px;
     text-align: center;
     width: 220px;
-    box-shadow: 0px 0px 70px -12px rgb(0, 0, 0);
+    box-shadow: 0px 0px 70px -12px #00000052;
     transition: 0.5s ease;
     opacity: 0;
 }
 .note{
+    width: 200px;
     font-family: var(--font);
     font-size: .8em !important;
 }
@@ -98,5 +114,8 @@ button{
     .container-main-content{
         min-width: 0;
         width: 90%;
+    }
+    #color-heading {
+        font-weight: bold;
     }
 }
