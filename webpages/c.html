@@ -9,6 +9,14 @@
 		<link rel="stylesheet" href="../prism/prism.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+		<style>
+			td{
+				min-width: 130px;
+			}
+			.seperate-table h2{
+				font-size: 1.2em;
+			}
+		</style>
 	</head>
 	<body class="flex-column">
 		
@@ -30,26 +38,22 @@
 		</div>.
 
 
-		<div class="container flex-column" id="container">
+		<div class="python flex-column" id="container">
 
-			<div class="list-item">
-				<div class="details">1. C Program Boiler plate</div>
-</pre>
-<pre class="language-c styling">
-<code class="font-change">#include &lt;stdio.h&gt;
-
-int main(){
-	// printf('Enter your code...')
-	return 0;
-}</code>
-</pre>
+			<div class="python-library seperate-table">
+				<h2 class="python-heading">Library functions in C</h2>
+				<table id="table1">
+					<tbody>
+						<tr>
+							<th class="heading1">Name</th>
+							<th class="heading1">Use</th>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 
 		</div>
 
-    <div class="footer">
-        Copyright &#169; 2021 || All Rights Reserved.
-    </div>
 		<script src="../prism/prism.js"></script>
 		<script>
 			let sidebar=document.getElementById('sidebar');
@@ -61,6 +65,75 @@ int main(){
 			showmenu.onclick=function(){
 				sidebar.style.left = '0px';
 			}
+
+
+			let json=[
+
+				{
+					"name": "&lt;stdio.h&gt;",
+					"use": "Standard Input/Output functions"
+				},
+				{
+					"name": "&lt;stdlib.h&gt;",
+					"use": "Standard Utility functions"
+				},
+				{
+					"name": "&lt;string.h&gt;",
+					"use": "String handling functions"
+				},
+				{
+					"name": "&lt;time.h&gt;",
+					"use": "Date time functions"
+				},
+				{
+					"name": "&lt;assert.h&gt;",
+					"use": "Program assertion functions"
+				},
+				{
+					"name": "&lt;ctype.h&gt;",
+					"use": "Character type functions"
+				},
+				{
+					"name": "&lt;locale.h&gt;",
+					"use": "Localization functions"
+				},
+				{
+					"name": "&lt;math.h&gt;",
+					"use": "Mathematics functions"
+				},
+				{
+					"name": "&lt;setjmp.h&gt;",
+					"use": "Jump functions"
+				},
+				{
+					"name": "&lt;signal.h&gt;",
+					"use": "Signal handling functions"
+				},
+				{
+					"name": "&lt;stdarg.h&gt;",
+					"use": "Variable arguments handling functions"
+				},
+				{
+					"name": "&lt;stdarg.h&gt;",
+					"use": "Variable arguments handling functions"
+				}
+
+			];
+
+
+			Array.from(json).forEach(function(e,index){
+				document.getElementById('table1').innerHTML+=`
+				<tbody class="rows">
+					<tr>
+						<td class="name-value">${index+1}. ${e.name}</td>
+						<td class="work-value">${e.use}</td>
+					</tr>
+				</tbody>
+
+				`
+			});
+
+
 		</script>
 		<!-- bootstrap scripts -->
 		<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
