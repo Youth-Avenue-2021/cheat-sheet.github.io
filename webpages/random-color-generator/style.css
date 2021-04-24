@@ -54,13 +54,6 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent;
 }
 button{
     font-family: var(--font);
@@ -71,13 +64,6 @@ button{
     padding: 6px 14px;
     border-radius: 2px;
     cursor: pointer;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent;
 }
 .copyTextDiv p{
     font-family: var(--font);
@@ -108,7 +94,7 @@ button{
     max-height: fit-content !important;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
     .container-main-content{
         min-width: 0;
         width: 90%;
