@@ -19,15 +19,11 @@
 			.python td{
 				letter-spacing: 0.1px;
 			}
-		}
-		@media (max-width: 850px){
-			#heading{
-				letter-spacing: 1.1px;
-				/* padding: 10px 20px; */
-				margin: 0 0 0 85px;
-				/* display: flex; */
-				text-align: center;
-				/* display: flex; */
+			.list-item-search{
+				margin: 60px auto -10px;
+			}
+			.list-item-search #searchBox{
+				padding: 10px;
 			}
 		}
 	</style>
@@ -63,6 +59,11 @@
 
 
 		<div class="python flex-column" id="container">
+
+
+			<div class="list-item-search">
+				<input type="search" id="searchBox" placeholder="Search for only library to filter...">
+			</div>
 
 			<div class="python-library seperate-table">
 				<h2 class="python-heading">Python Libraries</h2>
@@ -336,9 +337,6 @@
 					"name": "OpenCV Python",
 					"use": "Open Source Computer Vision or OpenCV is used for image processing."
 				}
-
-
-
 
 			];
 
@@ -629,9 +627,27 @@ let jsonTkinter=[
 			});
 
 
+			let searchTxt = document.getElementById('searchBox');
 
+			searchTxt.addEventListener('input', function () {
 
+			    let inputValue = searchTxt.value.toLowerCase();
 
+			    let searchItem = document.getElementsByClassName('rows');
+
+			    Array.from(searchItem).forEach(function (element) {
+
+			        let myNote = element.innerHTML.toLocaleLowerCase();
+
+			        if (myNote.includes(inputValue)) {
+			            element.style.display = 'revert';
+			        }
+			        else {
+			            element.style.display = 'none';
+			        }
+			    })
+
+			})
 
 		</script>
 		<!-- bootstrap scripts -->

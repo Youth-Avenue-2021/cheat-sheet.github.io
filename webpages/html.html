@@ -9,11 +9,21 @@
     	<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+	<style>
+		.container{
+			width: 70vw;
+		}
+		@media (max-width: 850px) {
+			.container{
+				width: 90%;
+			}
+		}
+	</style>
 	</head>
 	<body class="flex-column">
 		
         <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-			<h1 class="heading"><span id="heading">HTML Cheat Sheet </span></h1>
+			<h1 class="heading"><span id="heading">HTML CS</span></h1>
 		
 
 		<div class="sidebar" id="sidebar">
@@ -32,6 +42,10 @@
 
 
 		<div class="container flex-column" id="container">
+
+			<div class="list-item-search">
+				<input type="search" id="searchBox" placeholder="Search to filter...">
+			</div>
 
 			<div class="list-item">
 				<div class="details">1. Basic html template</div>
@@ -129,6 +143,28 @@
 			showmenu.onclick=function(){
 				sidebar.style.left = '0px';
 			}
+
+			let searchTxt = document.getElementById('searchBox');
+
+			searchTxt.addEventListener('input', function () {
+
+			    let inputValue = searchTxt.value.toLowerCase();
+
+			    let searchItem = document.getElementsByClassName('list-item');
+
+			    Array.from(searchItem).forEach(function (element) {
+
+			        let myNote = element.innerText.toLocaleLowerCase();
+
+			        if (myNote.includes(inputValue)) {
+			            element.style.display = 'block';
+			        }
+			        else {
+			            element.style.display = 'none';
+			        }
+			    })
+
+			})
 		</script>
 		<!-- bootstrap scripts -->
 		<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
