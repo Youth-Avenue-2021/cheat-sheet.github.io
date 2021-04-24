@@ -277,7 +277,7 @@ html{
 	max-height: 300px;
 	padding: 2.4em 1.4em .8em !important;
 	font-size: 16px !important;
-	font-weight: 600 !important;
+	font-weight: bold !important;
 	/* border-radius: 8px; */
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
