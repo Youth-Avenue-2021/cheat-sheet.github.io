@@ -11,8 +11,12 @@
 <body>
     <div class="container">
         <p id="heading">Random Color Generator</p>
-        <p id="randomColor">rgb(255, 255, 255)</p>
+        <p class="note">click on color code to copy !</p>
+        <input id="randomColor" value="rgb(255, 255, 255)" onclick="copyTextFunction()"></input>
         <button type="button" onclick="changeColor()">Change Color</button>
+    </div>
+    <div class="copyTextDiv" id="copyTextDiv">
+        <p>Color Copied !</p>
     </div>
     <script src="script.js"></script>
 </body>

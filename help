@@ -112,14 +112,6 @@ most Important tasks()={
 
 	add more flexbox classes in css cheat sheet... like flex-row-space-between, flex-row-flex-start etc... 
 
-	add a absolute-center div for center any content...
-	.absolute-center{
-		position: absolute;
-		top: 50%
-		left 50%
-		transform: translate(-50%,-50%)...
-	}
-
 }
 
 

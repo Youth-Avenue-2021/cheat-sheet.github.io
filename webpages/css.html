@@ -9,8 +9,9 @@
     	<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
     	<style>
     		.list-item .details a{
+    			text-decoration: underline;
     			margin-left: 20px;
-    			color: white;
+    			color: #00d0ff;
     		}
     		.list-item .details a:hover{
     			color: #b8eee4;
@@ -44,7 +45,7 @@
 
 
 			<div class="list-item">
-				<div class="details">1. CSS Flexbox Properties</div>
+				<div class="details">1. CSS Flexbox Classes to use like bootstrap</div>
 </pre>
 <pre class="language-css styling">
 <code class="font-change">*{
@@ -162,6 +163,19 @@ selector{
 </pre>
 			</div>
 
+			<div class="list-item">
+				<div class="details">5. Center any content</div>
+</pre>
+<pre class="language-css styling">
+<code class="font-change">element{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}</code>
+</pre>
+			</div>
+
 
 			<div class="list-item">
 				<div class="details">5. Best Box-Shadow</div>
@@ -173,7 +187,38 @@ selector{
 			</div>
 
 			<div class="list-item">
-				<div class="details">6. Random Color Generator  :<a href="../webpages/random-color-generator/random-color-generator.html" target="_blank">Visit & Generate Color</a></div>
+				<div class="details">6. Best Colors for websites</div>
+</pre>
+<pre class="language-css styling">
+<code class="font-change">:root{
+	--blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+</code>
+</pre>
+			</div>
+
+			<div class="list-item">
+				<div class="details">7. Random Color Generator  :<a href="../webpages/random-color-generator/random-color-generator.html" target="_blank">Visit & Generate Color</a></div>
 			</div>
 
 		</div>
