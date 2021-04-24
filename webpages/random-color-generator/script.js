@@ -11,8 +11,8 @@ function changeColor() {
 
 function copyTextFunction() {
   var copyText = document.getElementById("randomColor");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
+  // copyText.select();
+  // copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
   // alert("Copied the text: " + copyText.innerText);
   showCopy();
