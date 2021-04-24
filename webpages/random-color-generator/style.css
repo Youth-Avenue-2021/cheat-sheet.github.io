@@ -3,19 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
     font-size: 18px;
     outline: none;
+    letter-spacing: .5px !important;
 }
-.container{
+:root{
+    --font: 'Inter', sans-serif;
+}
+#first-section-color{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-main-content{
+    font-family: var(--font);
     margin: 0 auto;
     /* padding: 15px 5px; */
     padding: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     min-width: 300px;
-    transform: translate(-50%,-50%);
     background: #1f1f1f;
     color: whitesmoke;
     text-align: center;
@@ -27,14 +34,19 @@
     align-items: center;
 
 }
-.container p{
+.container-main-content p{
+    font-family: var(--font);
     font-size: 1.3em;
     padding: 5px 10px;
 }
-#heading{
+#color-heading {
+    font-size: 1.7em;
+    font-family: var(--font);
     color: gold;
+    margin: 5px 0 20px;
 }
 #randomColor{
+    font-family: var(--font);
     width: 100%;
     background: #1f1f1f;
     color: whitesmoke;
@@ -51,6 +63,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 button{
+    font-family: var(--font);
     border: none;
     color: black;
     background: gold;
@@ -65,6 +78,9 @@ button{
     user-select: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
+}
+.copyTextDiv p{
+    font-family: var(--font);
 }
 .copyTextDiv{
     position: absolute;
@@ -82,11 +98,18 @@ button{
     opacity: 0;
 }
 .note{
+    font-family: var(--font);
     font-size: .8em !important;
+}
+#second-section{
+    padding: 40px 0 !important;
+}
+.styling {
+    max-height: fit-content !important;
 }
 
 @media (max-width: 320px) {
-    .container{
+    .container-main-content{
         min-width: 0;
         width: 90%;
     }

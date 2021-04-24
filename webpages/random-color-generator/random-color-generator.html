@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Color Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../../prism/prism.css">
+    </head>
+    <body>
+        <section id="first-section-color">
+            <div class="container-main-content">
+                <p id="color-heading">Random Color Generator</p>
+                <p class="note">click on color code to copy & add to list !</p>
+                <input id="randomColor" value="rgb(255, 255, 255)" onclick="copyTextFunction()" readonly="readonly"></input>
+                <button type="button" onclick="changeColor()">Change Color</button>
+            </div>
+            <div class="copyTextDiv" id="copyTextDiv">
+                <p>Color Copied &<br> Added your to list!</p>
+            </div>
+        </section>
+        <section id="second-section">
+            <div class="colors">
+                <div class="list-item">
+                    <div class="details">Your Colors</div>
+<pre class="language-css styling">
+<code class="font-change" id="addColors">/* Click on color-code to add colors */
+</code>
+</pre>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Color Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <p id="heading">Random Color Generator</p>
-        <p class="note">click on color code to copy !</p>
-        <input id="randomColor" value="rgb(255, 255, 255)" onclick="copyTextFunction()" readonly="readonly"></input>
-        <button type="button" onclick="changeColor()">Change Color</button>
-    </div>
-    <div class="copyTextDiv" id="copyTextDiv">
-        <p>Color Copied !</p>
-    </div>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
+    <script src="../../prism/prism.js"></script>
 </body>
-
 </html>
+
+<!-- 
+<code class="font-change language-css" id="addColors"><span class="token property">color1</span><span class="token punctuation">:</span> <span class="token color"><span class="inline-color-wrapper"><span class="inline-color" style="background-color:rgb(152,208,154);"></span></span><span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">152</span><span class="token punctuation">,</span><span class="token number">208</span><span class="token punctuation">,</span><span class="token number">154</span><span class="token punctuation">)</span></span>
+<span class="token property">color2</span><span class="token punctuation">:</span> <span class="token color"><span class="inline-color-wrapper"><span class="inline-color" style="background-color:rgb(85,92,129);"></span></span><span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">85</span><span class="token punctuation">,</span><span class="token number">92</span><span class="token punctuation">,</span><span class="token number">129</span><span class="token punctuation">)</span></span>
+<span class="token property">color3</span><span class="token punctuation">:</span> <span class="token color"><span class="inline-color-wrapper"><span class="inline-color" style="background-color:rgb(104,10,123);"></span></span><span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">104</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">123</span><span class="token punctuation">)</span></span>
+<span class="token property">color4</span><span class="token punctuation">:</span> <span class="token color"><span class="inline-color-wrapper"><span class="inline-color" style="background-color:rgb(41,58,47);"></span></span><span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">41</span><span class="token punctuation">,</span><span class="token number">58</span><span class="token punctuation">,</span><span class="token number">47</span><span class="token punctuation">)</span></span>
+<span class="token property">color5</span><span class="token punctuation">:</span> <span class="token color"><span class="inline-color-wrapper"><span class="inline-color" style="background-color:rgb(41,58,47);"></span></span><span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">41</span><span class="token punctuation">,</span><span class="token number">58</span><span class="token punctuation">,</span><span class="token number">47</span><span class="token punctuation">)</span></span>
+<span class="token property">color6</span><span class="token punctuation">:</span> <span class="token color"><span class="inline-color-wrapper"><span class="inline-color" style="background-color:rgb(11,168,27);"></span></span><span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">168</span><span class="token punctuation">,</span><span class="token number">27</span><span class="token punctuation">)</span></span>
+</code> -->
