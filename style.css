@@ -522,7 +522,7 @@ html{
 .python{
 	width: 80%;
 	position: relative;
-	padding: 100px 0 50px;
+	padding: 70px 0 50px;
 }
 .python .seperate-table{
 	width: 100%;
@@ -624,7 +624,7 @@ input[type=text]:focus, textarea:focus {
 }
 @media (max-width: 540px){
 	.saparate-cheat-sheet{
-		width: 100%;
+		width: 40%;
 	}
 	.saparate-cheat-sheet img{
 		width: 50%;
@@ -644,6 +644,13 @@ input[type=text]:focus, textarea:focus {
 	.python .seperate-table{
 		border: 2px solid black;
 	}
+	.list-item-search{
+		width: 90%;
+	}
+	.list-item-search #searchBox{
+		padding: 15px 10px;
+	}
+
 }
 @media (max-width: 850px){
 	*{
@@ -726,11 +733,22 @@ input[type=text]:focus, textarea:focus {
 		color: white;
 		background: var(--color-green);
 	}
+	.saparate-cheat-sheet{
+		margin: 20px 10px;
+	}
+	.saparate-cheat-sheet a{
+		padding: 10px;
+		font-size: .7em;
+	}
 	.saparate-cheat-sheet img{
-		padding: 30px 0 10px;
+		padding: 20px 0 10px;
+	}
+	.saparate-cheat-sheet p{
+		padding: 15px 10px;
+		font-size: .8em;
 	}
 	.list-item .buttons a{
-		padding: 15px 17px;
+		padding: 10px;
 	}
 	.details{
 		padding: 17px 30px;
@@ -744,6 +762,9 @@ input[type=text]:focus, textarea:focus {
 	}
 	#third-team .all-persons .person .visit-site {
 	    padding: 15px 0;
+	}
+	.list-item-search{
+		width: 90%;
 	}
 }
 
