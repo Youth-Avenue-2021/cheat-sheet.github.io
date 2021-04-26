@@ -24,6 +24,7 @@ h2{
 /* font-family: 'Manrope', sans-serif; */
 :root{
 	/* --font: 'Inter', sans-serif; */
+	/* founded a new color... : ; */
 	--font: 'Manrope', sans-serif;
 	--color-blue: #080B2E;
 	--color-green: #00d0ff;
@@ -818,7 +819,7 @@ input[type=text]:focus, textarea:focus {
 	}
 	.saparate-cheat-sheet p{
 		padding: 15px 10px;
-		font-size: .8em;
+		font-size: .86em;
 	}
 	.list-item .buttons a{
 		padding: 10px;
