@@ -674,6 +674,14 @@ input[type=text]:focus, textarea:focus {
 	}
 }
 @media (max-width: 540px){
+	#third-team .all-persons .person .name{
+		padding: 5px 0;
+		font-size: 1.5em;
+	}
+	#third-team .all-persons .person .work{
+		padding: 10px 10px 13px;
+		font-size: .96em;
+	}
 	.saparate-cheat-sheet{
 		width: 40%;
 	}
@@ -681,7 +689,7 @@ input[type=text]:focus, textarea:focus {
 		width: 50%;
 	}
 	#third-team .all-persons .person{
-		width: 80%;
+		width: 65%;
 	}
 	.python{
 		width: 95%;
@@ -703,7 +711,7 @@ input[type=text]:focus, textarea:focus {
 	}
 	.get-more-keyboard-shortcuts a{
 		padding: 10px !important;
-		font-size: .8em !important;
+		font-size: 1em !important;
 	}
 	#pinterest-logo{
 		margin: 0;
@@ -711,6 +719,10 @@ input[type=text]:focus, textarea:focus {
 	#forth-disclaimer p{
 		text-align: justify;
 		width: 80%;
+	}
+	#third-team .all-persons .person .visit-site {
+	    padding: 10px 0 !important;
+	    font-size: 0.9em;
 	}
 }
 @media (max-width: 850px){
