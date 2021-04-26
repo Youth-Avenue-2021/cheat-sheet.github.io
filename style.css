@@ -603,6 +603,40 @@ input[type=text]:focus, textarea:focus {
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
 }
+#forth-disclaimer{
+	width: 100%;
+	padding: 30px 0;
+    background: #00abd421;
+}
+#forth-disclaimer p{
+	text-align: center;
+	width: 50vw;
+}
+#forth-disclaimer .fa{
+	margin: 0 10px 0 0;
+	font-size: 1em;
+}
+#forth-disclaimer a{
+	margin: 20px auto;
+	padding: 10px 15px;
+	color: whitesmoke;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1.2em;
+	transition: 0.2s;
+	background: var(--color-blue);
+}
+#forth-disclaimer a:hover{
+	background: var(--color-green);
+}
+#forth-disclaimer h2{
+	color: var(--color-blue);
+	text-align: center;
+	margin: 0px auto 40px;
+	font-size: 2.4em;
+	font-family: var(--font);
+}
 
 
 @media (max-width: 360px){
@@ -620,6 +654,23 @@ input[type=text]:focus, textarea:focus {
 	}
 	.list-item-search #searchBox{
 		padding: 10px;
+	}
+	#forth-disclaimer h2{
+		font-size: 2.2em;
+	}
+	#forth-disclaimer p{
+		text-align: justify;
+		width: 80%;
+	}
+	#forth-disclaimer a{
+		margin: 20px auto;
+		padding: 10px;
+		background: var(--color-green);
+		color: whitesmoke;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 1em;
 	}
 }
 @media (max-width: 540px){
@@ -650,7 +701,17 @@ input[type=text]:focus, textarea:focus {
 	.list-item-search #searchBox{
 		padding: 15px 10px;
 	}
-
+	.get-more-keyboard-shortcuts a{
+		padding: 10px !important;
+		font-size: .8em !important;
+	}
+	#pinterest-logo{
+		margin: 0;
+	}
+	#forth-disclaimer p{
+		text-align: justify;
+		width: 80%;
+	}
 }
 @media (max-width: 850px){
 	*{
