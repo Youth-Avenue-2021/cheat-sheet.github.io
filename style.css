@@ -200,7 +200,7 @@ html{
     z-index: 102;
     backdrop-filter: blur(3px);
     box-shadow: 2px 0px 20px 1px #080b2e40;
-	transition: .8s ease;
+	transition: .6s cubic-bezier(0.15, 0.02, 0, 0.99);
 	font-family: var(--font);
     overflow-x: hidden;
     overflow-y: auto;
