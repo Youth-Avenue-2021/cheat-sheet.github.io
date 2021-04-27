@@ -85,8 +85,10 @@ html{
 	overflow: hidden;
 }
 #mainBody{
+	width: 100%;
 	position: relative;
 	z-index: 1;
+	background: #e9fbff;
 }
 .heading{
 	position: fixed;
@@ -120,6 +122,7 @@ html{
 	padding: 0 !important;
 }
 .container{
+	margin: 0 auto;
 	position: relative;
 	padding: 100px 0 50px;
 }
@@ -529,6 +532,7 @@ html{
 /* python file */
 
 .python{
+	margin: 0 auto;
 	width: 80%;
 	position: relative;
 	padding: 70px 0 50px;

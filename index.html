@@ -56,7 +56,7 @@
 
 			<div class="container flex-column front-page" id="container">
 				<div class="main-content">
-					<h1>Amazing Cheat Sheets</h1>
+					<h1>Amazing <br> Cheat Sheets</h1>
 					<p href="" class="typewrite" data-period="2000" data-type='[ "All types of cheat sheets are available here...", "HTML", "CSS", "PYTHON","And many more..." ]'>
 						<span class="wrap"></span>
 					</p>
@@ -167,8 +167,6 @@
 		let mainBody=document.getElementById('mainBody');
 		// sidebar.addEventListener('mouseout',hideSidebar);
 		container.addEventListener('click',hideSidebar);
-		document.getElementById('second-section').addEventListener('click',hideSidebar);
-		document.getElementById('third-team').addEventListener('click',hideSidebar);
 		function hideSidebar(){
 			mainBody.classList.remove('sidebar-active');
 		}
