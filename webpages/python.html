@@ -31,8 +31,6 @@
 	</head>
 	<body class="flex-column">
 		
-        <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-			<h1 class="heading"><span id="heading">Python CS </span></h1>
 		
 
 		<div class="sidebar" id="sidebar">
@@ -45,18 +43,13 @@
 				<a class="webpage" href="keyboard-shortcuts.html"><i class="fa fa-clone sidebar-icons"></i> Keyboard Shortcuts</a>
 				<a class="webpage" href="programming-languages.html"><i class="fa fa-clone sidebar-icons"></i> All Cheat Sheets</a>
             	<a class="webpage" href="../index.html#third-team"><i class="fa fa-users sidebar-icons"></i>Our Team</a>
-				<!-- <li class="social flex-row">
-                <a href="https://www.instagram.com/_abhi_dadhaniya_/" target="_blank"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a>
-                <a href="https://mobile.twitter.com/abhidadhaniya3" target="_blank"><i class="fa fa-twitter"
-                        aria-hidden="true"></i></a>
-                <a href="http://github.com/abhidadhaniya23" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i></a>
-				</li> -->
 			</ul>
 		</div>
 
+		<div class="main-body" id="mainBody">
 
+        <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
+			<h1 class="heading"><span id="heading">Python CS </span></h1>
 
 		<div class="python flex-column" id="container">
 
@@ -103,20 +96,32 @@
 
 		</div>
 
-    <div class="footer">
+    <!-- <div class="footer">
         Copyright &#169; 2021 || All Rights Reserved.
-    </div>
+    </div> -->
+
+</div>
 		<script src="../prism/prism.js"></script>
 		<script>
-			let sidebar=document.getElementById('sidebar');
-			let showmenu=document.getElementById('showmenu');
-			let container=document.getElementById('container');
-			container.onmouseover=function(){
-				sidebar.style.left='-300px';
-			};
-			showmenu.onclick=function(){
-				sidebar.style.left = '0px';
-			}
+		let sidebar=document.getElementById('sidebar');
+		let showmenu=document.getElementById('showmenu');
+		// let container=document.getElementById('container');
+		let mainBody=document.getElementById('mainBody');
+		// sidebar.addEventListener('mouseout',hideSidebar);
+		container.addEventListener('click',hideSidebar);
+		// document.getElementById('second-section').addEventListener('click',hideSidebar);
+		// document.getElementById('third-team').addEventListener('click',hideSidebar);
+		function hideSidebar(){
+			mainBody.classList.remove('sidebar-active');
+		}
+		showmenu.onclick=function(){
+			// mainBody.style.transform = 'translate(200px, 0)';
+			mainBody.classList.toggle('sidebar-active');
+			// sidebar.style.zIndex = '1000000000000000';
+		}
+		window.onscroll=function(){
+			mainBody.classList.remove('sidebar-active');
+		}
 
 
 			let jsonOne=[

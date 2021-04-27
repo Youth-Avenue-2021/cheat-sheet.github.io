@@ -13,6 +13,9 @@
 			*{
 				font-family: 'Manrope', sans-serif;
 			}
+			#mainBody{
+				top: -27px;
+			}
 			td{
 				min-width: 130px;
 			}
@@ -22,10 +25,6 @@
 		</style>
 	</head>
 	<body class="flex-column">
-		
-        <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-			<h1 class="heading"><span id="heading">C CS</span></h1>
-		
 
 		<div class="sidebar" id="sidebar">
 			<ul class="flex-column-flex-start">
@@ -40,6 +39,10 @@
 			</ul>
 		</div>.
 
+		<div class="main-body" id="mainBody">
+
+        <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
+			<h1 class="heading"><span id="heading">C CS</span></h1>
 
 		<div class="python flex-column" id="container">
 
@@ -56,18 +59,29 @@
 			</div>
 
 		</div>
+	</div>
 
 		<script src="../prism/prism.js"></script>
 		<script>
-			let sidebar=document.getElementById('sidebar');
-			let showmenu=document.getElementById('showmenu');
-			let container=document.getElementById('container');
-			container.onmouseover=function(){
-				sidebar.style.left='-300px';
-			};
-			showmenu.onclick=function(){
-				sidebar.style.left = '0px';
-			}
+		let sidebar=document.getElementById('sidebar');
+		let showmenu=document.getElementById('showmenu');
+		let container=document.getElementById('container');
+		let mainBody=document.getElementById('mainBody');
+		// sidebar.addEventListener('mouseout',hideSidebar);
+		container.addEventListener('click',hideSidebar);
+		// document.getElementById('second-section').addEventListener('click',hideSidebar);
+		// document.getElementById('third-team').addEventListener('click',hideSidebar);
+		function hideSidebar(){
+			mainBody.classList.remove('sidebar-active');
+		}
+		showmenu.onclick=function(){
+			// mainBody.style.transform = 'translate(200px, 0)';
+			mainBody.classList.toggle('sidebar-active');
+			// sidebar.style.zIndex = '1000000000000000';
+		}
+		window.onscroll=function(){
+			mainBody.classList.remove('sidebar-active');
+		}
 
 
 			let json=[
