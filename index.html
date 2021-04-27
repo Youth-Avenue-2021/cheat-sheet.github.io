@@ -67,32 +67,32 @@
       <section id="second-section" class="flex-column">
          <h2 data-aos="fade-down">&lt;Cheat Sheets/&gt;</h2>
          <div class="all-cheat-sheets flex-row-warp-2">
-            <div data-aos="fade-down" class="saparate-cheat-sheet flex-column">
+            <div data-aos="fade-down" class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png" alt="">
                <p class="language-name">Html cheat sheet</p>
                <a href="webpages/html.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div data-aos="fade-down" class="saparate-cheat-sheet flex-column">
+            <div data-aos="fade-down" class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_2">
                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="">
                <p class="language-name">Python cheat sheet</p>
                <a href="webpages/python.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div data-aos="fade-down" class="saparate-cheat-sheet flex-column">
+            <div data-aos="fade-down" class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_3">
                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt="">
                <p class="language-name">Css cheat sheet</p>
                <a href="webpages/css.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div data-aos="fade-up" class="saparate-cheat-sheet flex-column">
+            <div data-aos="fade-up" class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_4">
                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5WWbSL5a8MVo0U43JcgD9xljuXD4QHnp8SA&usqp=CAU" alt="">
                <p class="language-name">Keyboard Shortcuts</p>
                <a href="webpages/keyboard-shortcuts.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div data-aos="fade-up" class="saparate-cheat-sheet flex-column">
+            <div data-aos="fade-up" class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_5">
                <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="">
                <p class="language-name">C programming cheat sheet</p>
                <a href="webpages/c.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div data-aos="fade-up" class="saparate-cheat-sheet flex-column">
+            <div data-aos="fade-up" class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_6">
                <img src="https://qph.fs.quoracdn.net/main-qimg-011de5342604fe4790a86357beec5ee5.webp" alt="">
                <p class="language-name">Many More cheat sheets</p>
                <a href="webpages/programming-languages.html">Learn More <i class="fa fa-external-link"></i></a>
@@ -106,7 +106,7 @@
 
          <div class="all-persons flex-row-warp-2">
 
-            <div class="person flex-column" data-aos="fade-right">
+            <div class="person flex-column" data-aos="fade-right" id="Rupen">
             	<div class="overflow-hide">
 	               <img src="photos/team/rupen.webp" alt="Rupen">
             	</div>
@@ -121,7 +121,7 @@
                <!-- <a href="" class="visit-site">Website <i class="fa fa-external-link"></i></a> -->
             </div>
 
-            <div class="person flex-column" data-aos="fade-down">
+            <div class="person flex-column" data-aos="fade-down" id="Abhi">
             	<div class="overflow-hide">
 	               <img src="photos/team/abhi.webp" alt="Abhi">
             	</div>
@@ -138,7 +138,7 @@
                <a href="https://www.web-developer-abhi.tk" class="visit-site">Website <i class="fa fa-external-link"></i></a>
             </div>
 
-            <div class="person flex-column" data-aos="fade-left">
+            <div class="person flex-column" data-aos="fade-left" id="Vanshika">
             	<div class="overflow-hide">
 	               <img src="photos/team/vanshika.webp" alt="Vanshika">
             	</div>
@@ -159,7 +159,7 @@
          <div data-aos="fade-up" class="disclaimer flex-row">   
             <p>If you want to add more cheat sheets that use programmers then you may pull request from here...</p>
          </div>
-        <a data-aos="flip-up" href="https://github.com/Youth-Avenue-2021/cheat-sheet.github.io/pulls" target="_blank"><i class="fa fa-github"></i>Github Pull Request</a>
+        <a data-aos="fade-up" href="https://github.com/Youth-Avenue-2021/cheat-sheet.github.io/pulls" target="_blank"><i class="fa fa-github"></i>Github Pull Request</a>
       </section>
 
 
@@ -186,6 +186,19 @@
          function indexPage(){
          	location.href='index.html';
          }
+
+		if(window.innerWidth < 700){
+			document.getElementById('saparate_cheat_sheet_1').setAttribute("data-aos", "fade-right");
+			document.getElementById('saparate_cheat_sheet_2').setAttribute("data-aos", "fade-left");
+			document.getElementById('saparate_cheat_sheet_3').setAttribute("data-aos", "fade-right");
+			document.getElementById('saparate_cheat_sheet_4').setAttribute("data-aos", "fade-left");
+			document.getElementById('saparate_cheat_sheet_5').setAttribute("data-aos", "fade-right");
+			document.getElementById('saparate_cheat_sheet_6').setAttribute("data-aos", "fade-left");
+
+			document.getElementById('Rupen').setAttribute("data-aos", "fade-right");
+			document.getElementById('Abhi').setAttribute("data-aos", "fade-left");
+			document.getElementById('Vanshika').setAttribute("data-aos", "fade-right");
+		}
       </script>
       <script>
          var TxtType = function(el, toRotate, period) {
