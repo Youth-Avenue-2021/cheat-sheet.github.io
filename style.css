@@ -261,6 +261,51 @@ html{
 	color: whitesmoke !important;
 }
 
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: #2e86de;
+}
+
+input#openSidebarMenu{
+    display: none;
+}
+.sidebarIconToggle {
+  	height: 32px;
+    width: 32px;
+    position: absolute;
+    z-index: 100000000000000;
+    top: 22px;
+    left: 25px;
+    transition: all 0.3s;
+    cursor: pointer; 
+}
+.spinner {
+    height: 4px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.spinner.middle ,
+.spinner.bottom{
+    margin-top: 7px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+    opacity: 0;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+    transform: rotate(-135deg);
+    margin-top: -14px;
+}
 #showmenu{
 	font-size: 1.5em;
 	position: fixed;

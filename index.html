@@ -51,7 +51,12 @@
 
 		<div class="main-body" id="mainBody">
 
-			<i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
+			<input type="checkbox" id="openSidebarMenu">
+		    <label for="openSidebarMenu" class="sidebarIconToggle">
+		        <div class="spinner top"></div>
+		        <div class="spinner middle"></div>
+		        <div class="spinner bottom"></div>
+		    </label>
 			<h1 class="heading"><span id="heading">&lt;Cheat Sheets/&gt;</span></h1>
 
 			<div class="container flex-column front-page" id="container">
@@ -161,25 +166,25 @@
 		</div>
 		<script src="prism/prism.js"></script>
 		<script>
-		let sidebar=document.getElementById('sidebar');
-		let showmenu=document.getElementById('showmenu');
-		let container=document.getElementById('container');
+		// let sidebar=document.getElementById('sidebar');
+		let showmenu=document.getElementById('openSidebarMenu');
+		// let container=document.getElementById('container');
 		let mainBody=document.getElementById('mainBody');
 		// sidebar.addEventListener('mouseout',hideSidebar);
-		container.addEventListener('click',hideSidebar);
-		document.getElementById('second-section').addEventListener('click',hideSidebar);
-		document.getElementById('third-team').addEventListener('click',hideSidebar);
-		function hideSidebar(){
-			mainBody.classList.remove('sidebar-active');
-		}
+		// container.addEventListener('click',hideSidebar);
+		// document.getElementById('second-section').addEventListener('click',hideSidebar);
+		// document.getElementById('third-team').addEventListener('click',hideSidebar);
+		// function hideSidebar(){
+		// 	mainBody.classList.remove('sidebar-active');
+		// }
 		showmenu.onclick=function(){
 			// mainBody.style.transform = 'translate(200px, 0)';
 			mainBody.classList.toggle('sidebar-active');
 			// sidebar.style.zIndex = '1000000000000000';
 		}
-		window.onscroll=function(){
-			mainBody.classList.remove('sidebar-active');
-		}
+		// window.onscroll=function(){
+		// 	mainBody.classList.remove('sidebar-active');
+		// }
 		function indexPage(){
 			location.href='index.html';
 		}
