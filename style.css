@@ -35,6 +35,7 @@ html{
 	/* background: #00c3ef40 !important; */
 	/* background: #00cfff2e !important; */
 	background: #e9fbff;
+	overflow-x: hidden;
 }
 .display-none{
 	display: none;
@@ -82,6 +83,10 @@ html{
 }
 .overflow-hide{
 	overflow: hidden;
+}
+#mainBody{
+	position: relative;
+	z-index: 1;
 }
 .heading{
 	position: fixed;
@@ -191,17 +196,17 @@ html{
 .sidebar{
     position: fixed;
     top: 0;
-    left: -300px;
+    left: 0px;
     width: 200px;
     height: 100vh;
     /* background: #ffffff7a; */
     /* background: #ffffffe0; */
     background: #f1fcffe0;
     color: whitesmoke;
-    z-index: 102;
+    z-index: 0;
     backdrop-filter: blur(3px);
     box-shadow: 2px 0px 20px 1px #080b2e40;
-	transition: .6s cubic-bezier(0.15, 0.02, 0, 0.99);
+	transition: .4s cubic-bezier(0.15, 0.02, 0.8, -0.17);
 	font-family: var(--font);
     overflow-x: hidden;
     overflow-y: auto;
@@ -264,6 +269,9 @@ html{
 	color: var(--color-blue);
 	cursor: pointer;
 	z-index: 101;
+}
+.sidebar-active{
+	transform: translate(200px, 0);
 }
 
 
@@ -368,7 +376,7 @@ html{
 #second-section{
 	width: 100%;
 	padding: 30px 0 60px;
-    background: #00abd421 !important;
+    background: #e6faff !important;
 }
 #second-section h2{
 	text-align: center;
@@ -607,7 +615,7 @@ input[type=text]:focus, textarea:focus {
 #forth-disclaimer{
 	width: 100%;
 	padding: 30px 0;
-    background: #00abd421;
+    background: #e6faff;
 }
 #forth-disclaimer p{
 	text-align: center;
@@ -746,6 +754,9 @@ input[type=text]:focus, textarea:focus {
 	}
 	.sidebar{
 	    width: 180px;
+	}	
+	.sidebar-active{
+		transform: translate(180px, 0);
 	}
 	.sidebar ul a{
 		font-size: 1.3em;
