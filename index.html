@@ -33,23 +33,27 @@
       <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
    </head>
    <body class="flex-column">
-      <!-- <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
-         <h1 class="heading"><span id="heading"><i class="fa fa-clone"
-                              aria-hidden="true"></i>&lt;Cheat Sheets/&gt;</span></h1> -->
+    <!-- <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
+    <h1 class="heading"><span id="heading"><i class="fa fa-clone"
+    aria-hidden="true"></i>&lt;Cheat Sheets/&gt;</span></h1> -->
+    <div class="sidebar" id="sidebar">
+      <ul class="flex-column-flex-start">
+        <li class="home-page"><a href="">Cheat Sheets</a></li>
+        <a class="webpage" href="webpages/html.html"><i class="fa fa-clone sidebar-icons"></i> HTML</a>
+        <a class="webpage" href="webpages/css.html"><i class="fa fa-clone sidebar-icons"></i> CSS</a>
+        <a class="webpage" href="webpages/python.html"><i class="fa fa-clone sidebar-icons"></i> Python</a>
+        <a class="webpage" href="webpages/c.html"><i class="fa fa-clone sidebar-icons"></i> C</a>
+        <a class="webpage" href="webpages/keyboard-shortcuts.html"><i class="fa fa-clone sidebar-icons"></i> Keyboard Shortcuts</a>
+        <a class="webpage" href="webpages/programming-languages.html"><i class="fa fa-clone sidebar-icons"></i> All Cheat Sheets</a>
+        <a class="webpage" href="#third-team"><i class="fa fa-users sidebar-icons"></i>Our Team</a>
+      </ul>
+    </div>
+
+    <div class="main-body" id="mainBody">
+
       <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
       <h1 class="heading"><span id="heading">&lt;Cheat Sheets/&gt;</span></h1>
-      <div class="sidebar" id="sidebar">
-         <ul class="flex-column-flex-start">
-            <li class="home-page"><a href="">Cheat Sheets</a></li>
-            <a class="webpage" href="webpages/html.html"><i class="fa fa-clone sidebar-icons"></i> HTML</a>
-            <a class="webpage" href="webpages/css.html"><i class="fa fa-clone sidebar-icons"></i> CSS</a>
-            <a class="webpage" href="webpages/python.html"><i class="fa fa-clone sidebar-icons"></i> Python</a>
-            <a class="webpage" href="webpages/c.html"><i class="fa fa-clone sidebar-icons"></i> C</a>
-            <a class="webpage" href="webpages/keyboard-shortcuts.html"><i class="fa fa-clone sidebar-icons"></i> Keyboard Shortcuts</a>
-            <a class="webpage" href="webpages/programming-languages.html"><i class="fa fa-clone sidebar-icons"></i> All Cheat Sheets</a>
-            <a class="webpage" href="#third-team"><i class="fa fa-users sidebar-icons"></i>Our Team</a>
-         </ul>
-      </div>
+
       <div class="container flex-column front-page" id="container">
          <div class="main-content">
             <h1>Amazing Cheat Sheets</h1>
@@ -165,23 +169,26 @@
       <div class="footer">
          Copyright &#169; 2021 || Created By &#10084; Youth-Avenue Team.
       </div>
+    </div>
       <script src="prism/prism.js"></script>
       <script>
-         let sidebar=document.getElementById('sidebar');
-         let showmenu=document.getElementById('showmenu');
-         let container=document.getElementById('container');
-
-         // sidebar.addEventListener('mouseout',hideSidebar);
-         container.addEventListener('click',hideSidebar);
-         document.getElementById('second-section').addEventListener('click',hideSidebar);
-         document.getElementById('third-team').addEventListener('click',hideSidebar);
-
-         function hideSidebar(){
-         	sidebar.style.left='-300px';
-         }
-         showmenu.onclick=function(){
-         	sidebar.style.left = '0px';
-         }
+	    let sidebar=document.getElementById('sidebar');
+	    let showmenu=document.getElementById('showmenu');
+	    let container=document.getElementById('container');
+	    let mainBody=document.getElementById('mainBody');
+	    // sidebar.addEventListener('mouseout',hideSidebar);
+	    container.addEventListener('click',hideSidebar);
+	    function hideSidebar(){
+	      mainBody.classList.remove('sidebar-active');
+	    }
+	    showmenu.onclick=function(){
+	      // mainBody.style.transform = 'translate(200px, 0)';
+	      mainBody.classList.toggle('sidebar-active');
+	      // sidebar.style.zIndex = '1000000000000000';
+	    }
+	    window.onscroll=function(){
+	      mainBody.classList.remove('sidebar-active');
+	    }
          function indexPage(){
          	location.href='index.html';
          }
