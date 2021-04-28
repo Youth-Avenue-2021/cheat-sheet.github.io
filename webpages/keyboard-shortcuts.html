@@ -39,8 +39,16 @@
 				font-size: 1.2em;
 				margin: 0 10px 0;
 			}
-			.buttons a{
-				margin: 0 auto !important;
+			.buttons .photo-download-btn{
+				font-weight: bold !important;
+				border-radius: 0 !important;
+				margin: -7px auto !important;
+				color: black !important;
+				font-size: .97em !important;
+			}
+			.get-more-keyboard-shortcuts a{
+				color: black !important;
+				font-weight: bold;
 			}
 
 		</style>
@@ -146,7 +154,7 @@
 					<div class="details">${index+1}. ${e.title}</div>
 					<a href="${e.img_src}" data-lightbox="example-1" data-title="${e.title}"><img class="example-image cheat_sheet_photo" src="${e.img_src}" alt=""></a>
 					<div class="buttons flex-row-space-between">
-						<a href="${e.img_src}" download><i class="fa fa-download"aria-hidden="true"></i>
+						<a class="photo-download-btn" href="${e.img_src}" download><i class="fa fa-download"aria-hidden="true"></i>
 							Download
 							<img class="display-none" src="${e.img_src}" alt="W3Schools" width="104" height="142">
 						</a>
