@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap'); */
 *{
 	margin: 0;
 	padding: 0;
@@ -168,7 +168,7 @@ html{
 	padding: 100px 0 50px;
 }
 
-.container{
+#first-section{
     height: 100vh;
     width: 100%;
     /* background: blue; */
@@ -881,7 +881,7 @@ input[type=text]:focus, textarea:focus {
 	.shortcuts{
 		width: 80% !important;
 	}
-	.container{
+	#first-section{
     	/* background: url('photos/7.webp'); */
     	background: linear-gradient(180deg, #0000007a, #00000075),url(photos/7.webp);
     	background-size: cover;

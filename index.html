@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="prism/prism.css">
       <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
       <style>
 		@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
       	*{
@@ -54,6 +54,8 @@
 
     <div class="main-body" id="mainBody">
 
+    <section id="first-section" class="flex-column">
+
       <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
       <h1 class="heading"><span id="heading">&lt;Cheat Sheets/&gt;</span></h1>
 
@@ -72,6 +74,8 @@
             </div>
          </div>
       </div>
+
+  </section>
 
 
       <section id="second-section" class="flex-column">
@@ -305,7 +309,7 @@
               }, delta);
           };
          
-          startAnimation();
+          window.onload=startAnimation();
          
           function startAnimation() {
               var elements = document.getElementsByClassName('typewrite');
@@ -325,7 +329,7 @@
          // Resources1× 0.5× 0.25×Rerun
       </script>
 
-       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
     <script>
       AOS.init({
         offset: 100,
