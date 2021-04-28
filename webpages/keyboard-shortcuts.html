@@ -200,11 +200,11 @@
 
 			<div class="list-item shortcuts">
 					<div class="details">${index+1}. ${e.title}</div>
-					<a href="${e.img_src}" data-lightbox="example-1" data-title="${e.title}"><img class="example-image cheat_sheet_photo" src="${e.img_src}" alt=""></a>
+					<a href="${e.img_src}" data-lightbox="example-1" data-title="${e.title}"><img class="example-image cheat_sheet_photo" src="${e.img_src}" alt="${e.title}"></a>
 					<div class="buttons flex-row-space-between">
 						<a class="photo-download-btn" href="${e.img_src}" download><i class="fa fa-download"aria-hidden="true"></i>
 							Download
-							<img class="display-none" src="${e.img_src}" alt="W3Schools" width="104" height="142">
+							<img class="display-none" src="${e.img_src}" alt="${e.title}" width="104" height="142">
 						</a>
 					</div>
 				</div>
