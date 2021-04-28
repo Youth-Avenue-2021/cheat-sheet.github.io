@@ -858,7 +858,7 @@ input[type=text]:focus, textarea:focus {
 	.shortcuts{
 		width: 80% !important;
 	}
-	.main-content{
+	.container{
     	/* background: url('photos/7.webp'); */
     	background: linear-gradient(180deg, #0000007a, #00000075),url(photos/7.webp);
     	background-size: cover;
