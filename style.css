@@ -126,6 +126,10 @@ html{
 	position: relative;
 	z-index: 1;
 	background: #e9fbff;
+	/* transition: .3s cubic-bezier(0.15, 0.02, 0, 1.1); */
+	/* transition: .2s ease-in-out; */
+	transition: .3s cubic-bezier(0.15, 0.03, 0.25, 0.96);
+
 }
 .heading{
 	position: fixed;
@@ -754,9 +758,16 @@ input[type=text]:focus, textarea:focus {
 	}
 }
 @media (max-width: 540px){
+	.sidebar ul .webpage{
+		margin: 3px 0;
+		padding: 12px 15px;
+	}
 	#container{
 		position: relative;
 		top: -20px;
+	}
+	#second-section h2{
+		margin: -0px auto 30px;
 	}
 	#third-team .all-persons .person .name{
 		padding: 5px 0;
@@ -771,6 +782,9 @@ input[type=text]:focus, textarea:focus {
 	}
 	.saparate-cheat-sheet img{
 		width: 50%;
+	}
+	.saparate-cheat-sheet a{
+		font-weight: 600;
 	}
 	#third-team .all-persons .person{
 		width: 65%;
