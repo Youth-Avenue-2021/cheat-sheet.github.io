@@ -161,7 +161,7 @@ html{
 	padding: 100px 0 50px;
 }
 
-.main-content{
+.container{
     height: 100vh;
     width: 100%;
     /* background: blue; */
@@ -185,6 +185,7 @@ html{
     transform: translate(-50%,-50%); */
     color: whitesmoke;
     text-align: center;
+    transform: translateY(20px);
 }
 .main-content h1{
     font-size: 3.4rem;
@@ -228,6 +229,30 @@ html{
 #btn1:hover{
     background: whitesmoke;
     color: var(--color-green);	
+}
+.main-content .arrows{
+	margin: 15px auto 0;
+	animation: sliding 1s ease-in-out infinite alternate;
+}
+@keyframes sliding {
+	from{
+		transform: translateY(-10px);
+	}
+	to{
+		transform: translateY(10px);
+	}
+}
+.main-content .arrows p{
+	transform: rotate(180deg);
+	margin-bottom: -65px;
+	font-weight: bold;
+	font-size: 1.9em;
+}
+.main-content .arrows p:nth-child(1){
+	opacity: .8;
+}
+.main-content .arrows p:nth-child(2){
+	opacity: .5;
 }
 
 /* sidebar */
@@ -723,6 +748,10 @@ input[type=text]:focus, textarea:focus {
 	}
 }
 @media (max-width: 540px){
+	#container{
+		position: relative;
+		top: -20px;
+	}
 	#third-team .all-persons .person .name{
 		padding: 5px 0;
 		font-size: 1.5em;
@@ -810,7 +839,7 @@ input[type=text]:focus, textarea:focus {
 	}
 	.sidebar ul .webpage{
 		transition: 0.1s ease;
-		padding: 5px 0 5px 20px;
+		/* padding: 5px 0 5px 20px; */
 		font-size: 1em;
 	}
 	.heading{
