@@ -9,6 +9,9 @@
 	transition: 0.4s ease;
 	letter-spacing: 1px;
 	text-decoration: none;
+
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 h1{
 	letter-spacing: 2px;
@@ -196,12 +199,15 @@ html{
     text-align: center;
     margin: 30px auto -5px;
     width: 370px;
-    font-weight: 600;
+    /* font-weight: 600; */
     font-family: var(--font);
     /* font-family: 'Courgette', cursive; */
 }
 .main-content .buttons a{
 	margin-top: 25px;
+	letter-spacing: 1.5px;
+	color: black !important;
+	font-weight: bold !important;
 }
 .buttons{
     margin: 10px auto;
@@ -244,7 +250,7 @@ html{
 }
 .main-content .arrows p{
 	transform: rotate(180deg);
-	margin-bottom: -65px;
+	margin-bottom: -70px;
 	font-weight: bold;
 	font-size: 1.9em;
 }
@@ -481,7 +487,7 @@ html{
 	text-align: center;
 	width: 100%;
 	padding: 20px;
-	color: whitesmoke;
+	color: var(--color-blue);
 	background: var(--color-green);
 }
 .saparate-cheat-sheet a:hover{
@@ -801,6 +807,9 @@ input[type=text]:focus, textarea:focus {
 	#third-team .all-persons .person .visit-site {
 	    padding: 10px 0 !important;
 	    font-size: 0.9em;
+	}
+	.main-content .arrows p{
+		margin-bottom: -55px;
 	}
 }
 @media (max-width: 850px){
