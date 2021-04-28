@@ -132,7 +132,7 @@ html{
 
 }
 .heading{
-	position: fixed;
+	position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
@@ -141,11 +141,11 @@ html{
     text-align: center;
     width: 100%;
     font-size: 1.8em;
-    background: var(--color6);
+    background: var(--color-blue);
     /* background: #080b2e00; */
-    color: var(--color-blue);
+    color: whitesmoke;
     font-family: var(--font);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     box-shadow: 0px 8px 20px 1px #080b2e17;
 }
 .heading .fa{
@@ -202,7 +202,7 @@ html{
     font-size: 1.3rem;
     text-align: center;
     margin: 30px auto -5px;
-    width: 370px;
+    width: 430px;
     /* font-weight: 600; */
     font-family: var(--font);
     /* font-family: 'Courgette', cursive; */
@@ -336,10 +336,10 @@ html{
 
 #showmenu{
 	font-size: 1.5em;
-	position: fixed;
+	position: absolute;
 	top: 17px;
 	left: 20px;
-	color: var(--color-blue);
+	color: whitesmoke;
 	cursor: pointer;
 	z-index: 101;
 }
@@ -625,20 +625,21 @@ html{
 	width: 100%;
 }
 .python .rows:nth-child(even) {
-	background: #00d3ff38;
+	background: whitesmoke;
 }
 .python .rows:nth-child(odd) {
-	background: #b1f1ff59;
+	background: #e6e6e6;
 }
 .python th{
 	color: whitesmoke;
-	background-color: #202123;
+	background-color: #00d2ff;
 }
 .python .python-heading{
 	text-align: center;
 	padding: 15px 0;
 	width: 100%;
-	background: #00d3ff;
+	color: whitesmoke;
+	background: var(--color-blue);
 }
 #table1,
 #table2,
@@ -650,11 +651,11 @@ html{
 	border: 4px solid black;
 }
 .python .rows .download-links a{
-	background: var(--color-green);
+	background: #00d2ff;
 	margin: 3px 5px;
     padding: 2px 7px;
     border-radius: 5px;
-    color: var(--color-blue);
+    color: black;
     transition: 0.2s ease;
 }
 .python .rows .download-links a:hover{
