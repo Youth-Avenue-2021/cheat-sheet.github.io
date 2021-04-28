@@ -204,7 +204,7 @@ html{
     height: 100vh;
     /* background: #ffffff7a; */
     /* background: #ffffffe0; */
-    background: #f1fcffe0;
+    background: var(--color-blue);
     color: whitesmoke;
     z-index: 0;
     backdrop-filter: blur(3px);
@@ -225,14 +225,14 @@ html{
 	padding: 10px 5px;
 	font-size: .9em;
 	text-decoration: none;
-	color: #080b2e;
+	color: whitesmoke;
 	font-weight: bold;
 	overflow: hidden;
 	transition: 0s ease;
 	font-family: var(--font);
 }
 .sidebar ul .webpage:hover{
-	color: whitesmoke;
+	color: var(--color-blue);
 	background: var(--color-green);
 }
 .sidebar ul a .sidebar-icons{
