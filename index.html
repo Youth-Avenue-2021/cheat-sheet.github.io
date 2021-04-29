@@ -198,6 +198,7 @@
     </div>
       <!-- <script src="prism/prism.js"></script> -->
       <script>
+
 	    let sidebar=document.getElementById('sidebar');
 	    let showmenu=document.getElementById('showmenu');
 	    let container=document.getElementById('container');
@@ -231,7 +232,26 @@
 	      document.getElementById('Rupen').setAttribute("data-aos", "zoom-out");
 	      document.getElementById('Abhi').setAttribute("data-aos", "zoom-out");
 	      document.getElementById('Vanshika').setAttribute("data-aos", "zoom-out");
+
+        let img_phone=document.createElement('img');
+        img_phone.src='photos/7.webp';
+        img_phone.onload=function(){
+          console.log('Bg Replaced');
+          document.getElementById('first-section').style.background = `linear-gradient(180deg, #0000007a, #00000075),url(photos/7.webp) center center / cover`;
+          // document.getElementById('first-section').style.backgroundAttachment = 'fixed';
+        }
 	    }
+      
+      else{
+
+        let img=document.createElement('img');
+        img.src='photos/4.webp';
+        img.onload=function(){
+          console.log('Bg Replaced');
+          document.getElementById('first-section').style.background = `linear-gradient(180deg, #00000080, #000000b5),url('photos/4.webp') center center / cover`;
+          document.getElementById('first-section').style.backgroundAttachment = 'fixed';
+        }
+      }
 
 
 	    document.addEventListener('touchstart', handleTouchStart, false);        
@@ -338,6 +358,8 @@
               css.type = "text/css";
               css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
               document.body.appendChild(css);
+
+              console.log('website loaded');
           };
          // Resources1× 0.5× 0.25×Rerun
       </script>

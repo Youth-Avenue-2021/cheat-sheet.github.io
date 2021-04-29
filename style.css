@@ -185,7 +185,7 @@ html{
     /* background: linear-gradient(rgb(99, 230, 208),rgba(99, 230, 208, 0.514)),url(1.webp); */
     /* background: linear-gradient(rgb(0,0,0,0.5),var(--color-blue-light)),url(photos/1.webp); */
     /* background: linear-gradient(180deg, #00000061, #1bcaa987),url(photos/2.webp); */
-    background: linear-gradient(180deg, #00000080, #000000b5),url(photos/4.webp);
+    background: linear-gradient(180deg, #00000080, #000000b5),url('photos/4_lower.webp');
     /* Best Wallpapers  :  4 , 8, 11 */
     background-attachment: fixed;
     background-size: cover;
@@ -894,7 +894,7 @@ input[type=text]:focus, textarea:focus {
 	}
 	#first-section{
     	/* background: url('photos/7.webp'); */
-    	background: linear-gradient(180deg, #0000007a, #00000075),url(photos/7.webp);
+    	background: linear-gradient(180deg, #0000007a, #00000075),url('photos/7_lower.webp');
     	background-size: cover;
     	background-position: center;
 	}
