@@ -2,85 +2,6 @@
 < : &lt;
 > : &gt;
 -->
-<!--
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-	&lt;meta charset="UTF-8"&gt;
-	&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-	&lt;title&gt;&lt;/title&gt;
-	&lt;link rel="stylesheet" href="style.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;script src="script.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
--->
-
-<!-- &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"&gt;
-
-&lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"&gt;&lt;/script&gt;
-&lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"&gt;&lt;/script&gt;
-&lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"&gt;</script&gt; -->
-
-<!-- font-awesome cdn and its some tag fa wala... -->
-<!-- 
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"&gt; -->
-
-<!-- google fonts inter fonts
-and other more best fonts links... -->
-
-<!-- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-font-family: 'Inter', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
-font-family: 'Manrope', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-font-family: 'Roboto', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-font-family: 'Oxygen', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-font-family: 'Raleway', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-font-family: 'PT Sans', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-font-family: 'Poppins', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
-font-family: 'PT Sans', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-font-family: 'Quicksand', sans-serif;
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-font-family: 'Source Code Pro', monospace;
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
-font-family: 'IBM Plex Sans', sans-serif; -->
-
-<!-- 
-&lt;link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" /&gt;
-
-&lt;script src="https://myCDN.com/prism@v1.x/components/prism-core.min.js"&gt;&lt;/script&gt;
-&lt;script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"&gt;&lt;/script&gt; -->
-
-<!-- C programming main() template
-boiler plate...
-
-#include <stdio.h>
-
-int main(){
-	// printf('Enter your code...')
-	return 0;
-} -->
 
 btw ()=>{} this is arrow functions in javascript... aaiya emojis nahi mukai m baki maja aave...
 
@@ -93,7 +14,7 @@ most Important tasks()={
 
 @abhi =>(){
 
-	change all colours and fonts in all other webpages without front page...
+	remove all unusing files and other photos and simple pip txt files and other all...
 
 	set all font color blue or font weight bold... of all background green color buttons...
 

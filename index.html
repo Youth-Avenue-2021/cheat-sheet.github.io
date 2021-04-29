@@ -76,8 +76,8 @@
 
       <div class="container flex-column front-page" id="container">
          <div class="main-content">
-            <h1 id="main-heading" >Awesome <br> Cheat Sheets</h1>
-            <p id="letter-typing"  href="" class="typewrite" data-period="2000" data-type='[ "All programming cheat-sheets are available here...", "HTML", "CSS", "PYTHON","And many more..." ]'>
+            <h1 >Awesome <br> Cheat Sheets</h1>
+            <p href="" class="typewrite" data-period="2000" data-type='[ "All programming cheat-sheets are available here...", "HTML", "CSS", "PYTHON","And many more..." ]'>
                <span class="wrap"></span>
             </p>
             <div class="buttons" >
@@ -96,32 +96,32 @@
       <section id="second-section" class="flex-column">
          <h2 >&lt;Cheat Sheets/&gt;</h2>
          <div class="all-cheat-sheets flex-row-warp-2">
-            <div  class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
+            <div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png" alt="Html Cheat sheet">
                <p class="language-name">Html</p>
                <a href="webpages/html.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div  class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_2">
+            <div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_2">
                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="Python Cheat sheet">
                <p class="language-name">Python</p>
                <a href="webpages/python.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div  class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_3">
+            <div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_3">
                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt="CSS Cheat Sheet">
                <p class="language-name">Css</p>
                <a href="webpages/css.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div  class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_4">
+            <div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_4">
                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5WWbSL5a8MVo0U43JcgD9xljuXD4QHnp8SA&usqp=CAU" alt="Keyboard Shortcuts">
                <p class="language-name">Keyboard Shortcuts</p>
                <a href="webpages/keyboard-shortcuts.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div  class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_5">
+            <div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_5">
                <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="C Cheat Sheet">
                <p class="language-name">C language</p>
                <a href="webpages/c.html">Learn More <i class="fa fa-external-link"></i></a>
             </div>
-            <div  class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_6">
+            <div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_6">
                <img src="https://qph.fs.quoracdn.net/main-qimg-011de5342604fe4790a86357beec5ee5.webp" alt="Awesome Cheat Sheets">
                <p class="language-name">Download all <br> cheat sheets</p>
                <a href="webpages/programming-languages.html">Learn More <i class="fa fa-external-link"></i></a>
@@ -185,7 +185,7 @@
 
       <section id="forth-disclaimer" class="flex-column">
          <h2 >&lt;Disclaimer/&gt;</h2>
-         <div  class="disclaimer flex-row"> 
+         <div class="disclaimer flex-row"> 
             <p>If you want to add more cheat sheets that use programmers then you may pull request from here...</p>
          </div>
         <a  href="https://github.com/Youth-Avenue-2021/cheat-sheet.github.io/pulls" target="_blank"><i class="fa fa-github"></i>Github Pull Request</a>
@@ -334,8 +334,10 @@
               that.tick();
               }, delta);
           };
+
+          letterTyping();
          
-          window.onload=function() {
+          function letterTyping() {
               var elements = document.getElementsByClassName('typewrite');
               for (var i=0; i<elements.length; i++) {
                   var toRotate = elements[i].getAttribute('data-type');
