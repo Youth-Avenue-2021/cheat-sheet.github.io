@@ -2,9 +2,9 @@ let randomColor = document.getElementById('randomColor');
 let addColors=document.getElementById('addColors');
 let arr=[];
 
-var firstNumber=0;
-var secondNumber=208;
-var thirdNumber=255;
+var firstNumber=221;
+var secondNumber=248;
+var thirdNumber=227;
 
 function changeColor() {
     let body = document.querySelector('html');

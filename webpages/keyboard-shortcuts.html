@@ -7,8 +7,6 @@
 		<link rel="stylesheet" href="../style.css">
 		<link rel="stylesheet" href="../prism/prism.css">
     	<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
-		<link href="lightbox2-2.11.3/dist/css/lightbox.min.css" rel="stylesheet" />
-		<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			*{
@@ -200,7 +198,7 @@
 
 			<div class="list-item shortcuts">
 					<div class="details">${index+1}. ${e.title}</div>
-					<a href="${e.img_src}" data-lightbox="example-1" data-title="${e.title}"><img class="example-image cheat_sheet_photo" src="${e.img_src}" alt="${e.title}"></a>
+					<a href="${e.img_src}"><img class="example-image cheat_sheet_photo" src="${e.img_src}" alt="${e.title}"></a>
 					<div class="buttons flex-row-space-between">
 						<a class="photo-download-btn" href="${e.img_src}" download><i class="fa fa-download"aria-hidden="true"></i>
 							Download

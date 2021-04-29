@@ -7,6 +7,9 @@
     outline: none;
     letter-spacing: .5px !important;
 }
+::selection {
+  background: transparent !important;
+}
 :root{
     --font: 'Inter', sans-serif;
 }
