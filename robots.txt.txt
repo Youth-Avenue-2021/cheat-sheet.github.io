@@ -1,8 +1,10 @@
 User-agent: *
+Disallow: 
 Disallow: /photos/
 Disallow: /pdf/
-Disallow: README.md
-Disallow: style.css
-Disallow: Hack-Regular.woff
 Disallow: /prism/
-Allow: /photos/team/
+Disallow: /style/
+Disallow: /style/
+Disallow: /style.css
+Disallow: /fonts/
+Sitemap: http://www.awesome-cheat-sheets.ml/sitemap.xml
