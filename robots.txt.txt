@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /photos/
+Disallow: /pdf/
+Disallow: README.md
+Disallow: style.css
+Disallow: Hack-Regular.woff
+Disallow: /prism/
+Allow: /photos/team/
