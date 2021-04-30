@@ -582,15 +582,16 @@ html{
 	width: 100%;
 	text-align: center;
 	font-size: 1em;
-	color: var(--color-green);
+	color: var(--indigo);
 	/* font-weight: bold; */
 }
 #third-team .all-persons .person .visit-site{
+	/* font-weight: bold; */
 	text-align: center;
 	width: 100%;
 	padding: 10px 0;
 	color: whitesmoke;
-	background: var(--color-green);
+	background: var(--indigo);
 }
 #third-team .all-persons .person .visit-site:hover{
 	box-shadow: inset 0px 0px 20px 8px #00000025;
