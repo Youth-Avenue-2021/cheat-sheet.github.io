@@ -14,7 +14,7 @@
 	-webkit-tap-highlight-color: transparent;
 }
 ::selection {
-  background: var(--color7);
+  background: #cbeafb;
 }
 h1{
 	letter-spacing: 2px;
@@ -24,8 +24,8 @@ h2{
 	letter-spacing: 1.5px;
 }
 @font-face {
-	font-family: hack;
-	src: url(Hack-Regular.woff);
+	font-family: font1;
+	src: url('codefont.woff');
 }
 /* font-family: 'Manrope', sans-serif; */
 :root{
@@ -376,7 +376,7 @@ html{
     /* box-shadow: 0px 0px 15px 2px #080b2e29; */
 }
 .font-change{
-	font-family: hack !important;
+	font-family: font1 !important;
 }
 .details{
 	font-size: 1.1em;
@@ -466,6 +466,9 @@ html{
 	font-size: 2.4em;
 	color: var(--color-blue);
 	font-family: var(--font);
+}
+.all-cheat-sheets{
+	max-width: 1200px;
 }
 .saparate-cheat-sheet:hover{
 	--scale: scale(1.2);
