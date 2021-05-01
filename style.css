@@ -327,7 +327,7 @@ html{
 	transition: 0s ease !important;
 }
 .sidebar ul .social a:hover{
-	color: var(--color-green);
+	color: var(--indigo);
 }
 .home-page{
 	margin-bottom: 20px;
