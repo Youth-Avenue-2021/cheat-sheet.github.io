@@ -293,10 +293,6 @@ html{
     overflow-x: hidden;
     overflow-y: auto;
 }
-
-.sidebar ul{
-	/* text-align: left; */
-}
 .sidebar ul .social a,
 .sidebar ul .webpage{
 	position: relative;
@@ -318,16 +314,6 @@ html{
 .sidebar ul a .sidebar-icons{
 	margin-right: 5px;
 	transition: 0s ease;
-}
-.sidebar ul .social{
-	margin: 10px 0 0;
-}
-.sidebar ul .social a{
-	font-size: 1.5em;
-	transition: 0s ease !important;
-}
-.sidebar ul .social a:hover{
-	color: var(--indigo);
 }
 .home-page{
 	margin-bottom: 20px;
@@ -566,7 +552,7 @@ html{
 	padding: 0px 2px !important;
 }
 #third-team .all-persons .person .social a:hover{
-	color: var(--color-green);
+	color: var(--indigo);
 }
 #third-team .all-persons .person .name{
 	background: whitesmoke;
@@ -845,7 +831,6 @@ input[type=text]:focus, textarea:focus {
 		letter-spacing: .6px;
 	}
 	.list-item{
-		margin: ;
 		width: 90%;
 	}
 	.container{
