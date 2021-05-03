@@ -80,7 +80,7 @@
       <h2 class="heading"><span id="heading">&lt;Cheat-Sheets/&gt;</span></h2>
 
       <div class="container flex-column front-page" id="container">
-         <div class="main-content">
+         <div id="main-content" class="main-content full-width-full-height">
             <h1 >Awesome <br> Cheat Sheets</h1>
             <p href="" class="typewrite" data-period="2000" data-type='[ "All programming cheat-sheets are available here...", "HTML", "CSS", "PYTHON","And many more..." ]'>
                <span class="wrap"></span>
@@ -153,6 +153,7 @@
                      aria-hidden="true"></i></a>
                </div>
                <p class="name">Rupen B.</p>
+               <p class="role">content creator</p>
                <p class="work">Web Designer</p>
                <!-- <a href="" class="visit-site">Website <i class="fa fa-external-link"></i></a> -->
             </div>
@@ -170,6 +171,7 @@
                      aria-hidden="true"></i></a>
                </div>
                <p class="name">D. Abhi</p>
+               <p class="role">founder & developer of website</p>
                <p class="work">Front-end Developer</p>
                <a href="https://www.web-developer-abhi.tk" class="visit-site">Website <i class="fa fa-external-link"></i></a>
             </div>
@@ -185,6 +187,7 @@
                      aria-hidden="true"></i></a>
                </div>
                <p class="name">Vanshika</p>
+               <p class="role">content creator</p>
 			   <p class="work">Python And Database Management</p>
             </div>
          </div>
@@ -234,19 +237,21 @@
         img_phone.src='photos/7.webp';
         img_phone.onload=function(){
           console.log('Bg Replaced');
+          document.getElementById('main-content').style.backdropFilter='blur(0px)';
           document.getElementById('first-section').style.background = `linear-gradient(180deg, #0000007a, #00000075),url(photos/7.webp) center center / cover`;
           // document.getElementById('first-section').style.backgroundAttachment = 'fixed';
-        }
-	    }
+         }
+      }
       
       else{
-
-        let img=document.createElement('img');
-        img.src='photos/4.webp';
-        img.onload=function(){
-          console.log('Bg Replaced');
-          document.getElementById('first-section').style.background = `linear-gradient(180deg, #00000080, #000000b5),url('photos/4.webp') center center / cover`;
-          document.getElementById('first-section').style.backgroundAttachment = 'fixed';
+         
+         let img=document.createElement('img');
+         img.src='photos/4.webp';
+         img.onload=function(){
+            console.log('Bg Replaced');
+            document.getElementById('main-content').style.backdropFilter='blur(0px)';
+            document.getElementById('first-section').style.background = `linear-gradient(180deg, #00000080, #000000b5),url('photos/4.webp') center center / cover`;
+            document.getElementById('first-section').style.backgroundAttachment = 'fixed';
         }
       }
 
