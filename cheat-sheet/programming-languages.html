@@ -67,6 +67,11 @@
                <a href="cheat-sheet/html">Download</a>
             </div> -->
          </div>
+
+		 <div class="downloadSection flex-column" id="downloadSection">
+			 <span class="waiting" id="waiting"></span>
+			 <span class="timer" id="timer"></span>
+		</div>
 		
 
 		<!-- <div class="footer">
@@ -126,7 +131,7 @@
 			},
 			{
 				'languageName': 'C++',
-				'imgLink': 'c++.png'
+				'imgLink': 'cpp.png'
 			},
 			{
 				'languageName': 'Python',
@@ -160,14 +165,11 @@
 				<div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
 					<img src="logos/${(e.imgLink)}" alt="${e.languageName} Cheat sheet">
 					<p class="language-name">${e.languageName}</p>
-					<a href="">Download</a>
-					</div>
-					`
-				});
-				
-
-
-
+					<a onclick="redirect('${(e.imgLink).slice(0,-4)}'); downloadRedirecting();">Download</a>
+				</div>
+			`
+		});
+		
 
 	    document.addEventListener('touchstart', handleTouchStart, false);        
 		document.addEventListener('touchmove', handleTouchMove, false);
@@ -216,6 +218,104 @@
 		    xDown = null;
 		    yDown = null;                                             
 		};
+		</script>
+
+		<script>
+
+			let pdfJsonData=[
+				{
+					'name': 'all-programming',
+					'pdfFile': 'all-programming.pdf',
+					'numberOfPdfs': 1
+				},
+				{
+					'name': 'html',
+					'pdfFile': 'html.pdf',
+					'numberOfPdfs': 1
+				},
+				{
+					'name': 'css',
+					'pdfFile': 'css.pdf',
+					'numberOfPdfs': 3
+				},
+			]
+
+			// script for remove all cheat sheets list and download redirecting...
+			let waiting = document.getElementById('waiting');
+			let timer = document.getElementById('timer');
+			let downloadSection = document.getElementById('downloadSection');
+			let seconds=5;
+
+			function redirect(languageName){
+				switch (languageName){
+					case 'all-programming':
+						console.log('all-programming');
+						// displayDownloadButtons(number_of_pdfs, languageName)
+						break;
+					case 'html':
+						console.log('html');
+						break;
+					case 'css':
+						console.log('css');
+						break;
+					case 'javascript':
+						console.log('javascript');
+						break;
+					case 'bootstrap':
+						console.log('bootstrap');
+						break;
+					case 'c':
+						console.log('c');
+						break;
+					case 'cpp':
+						console.log('cpp');
+						break;
+					case 'python':
+						console.log('python');
+						break;
+					case 'java':
+						console.log('java');
+						break;
+					case 'git':
+						console.log('git');
+						break;
+					case 'sql':
+						console.log('sql');
+						break;
+					case 'mongodb':
+						console.log('mongodb');
+						break;
+					case 'sql-mongodb':
+						console.log('sql-mongodb');
+						break;
+				}
+				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
+
+				let timerOfInterval = setInterval(() => {
+					timer.innerText=`downloading in ${seconds} seconds.`;
+					seconds--;
+					if(seconds==-2){
+						timer.style.display='none';
+						clearInterval(timerOfInterval);
+					}
+				}, 1000);
+				setTimeout(() => {
+					console.log('show downloading buttons');
+				}, `${(seconds*1000)+2000}`);
+				// console.log(`cheat sheet download for ${languageName}`);
+				}
+			function downloadRedirecting(){
+				downloadCheatSheets.style.display='none';
+				downloadSection.style.display='block';
+			}
+
+			function displayDownloadButtons(number_of_pdfs, language_name){
+				for(let i=0; i<number_of_pdfs; i++){
+					let downloadBtn=document.createElement('a');
+					downloadBtn.setAttribute('class','downloadButton');
+				}
+			}
+
 		</script>
 
 		<!-- bootstrap scripts -->

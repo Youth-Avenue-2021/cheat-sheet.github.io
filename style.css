@@ -495,6 +495,7 @@ html{
 	padding: 20px;
 	color: var(--color-blue);
 	background: var(--color-green);
+	cursor: pointer;
 }
 .saparate-cheat-sheet a:hover{
 	/* --scal: ; */
@@ -749,7 +750,22 @@ input[type=text]:focus, textarea:focus {
 .download-cheat-sheets .saparate-cheat-sheet a{
 	padding: 15px;
 }
-
+#downloadSection{
+	/* display: none; */
+}
+.downloadSection{
+	margin: 140px auto 0;
+}
+.downloadSection .waiting{
+	font-size: 1.6em;
+    background: var(--color7);
+	border-radius: 6px;
+    padding: 10px 40px;
+}
+.downloadSection .timer{
+	font-size: 1.5em;
+	margin: 20px auto 0;
+}
 
 @media (max-width: 360px){
 	#heading{
