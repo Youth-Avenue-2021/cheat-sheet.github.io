@@ -71,6 +71,7 @@
 		 <div class="downloadSection flex-column" id="downloadSection">
 			 <span class="waiting" id="waiting"></span>
 			 <span class="timer" id="timer"></span>
+			 <div class="downloadButtons"></div>
 		</div>
 		
 
@@ -250,43 +251,55 @@
 				switch (languageName){
 					case 'all-programming':
 						console.log('all-programming');
-						// displayDownloadButtons(number_of_pdfs, languageName)
+						displayDownloadButtons(1, 'all-programming');
 						break;
 					case 'html':
 						console.log('html');
+						displayDownloadButtons(1, 'html');
 						break;
 					case 'css':
 						console.log('css');
+						displayDownloadButtons(3, 'css');
 						break;
 					case 'javascript':
 						console.log('javascript');
+						displayDownloadButtons(2, 'javascript');
 						break;
 					case 'bootstrap':
 						console.log('bootstrap');
+						displayDownloadButtons(1, 'bootstrap');
 						break;
 					case 'c':
 						console.log('c');
+						displayDownloadButtons(2, 'c');
 						break;
 					case 'cpp':
 						console.log('cpp');
+						displayDownloadButtons(1, 'cpp');
 						break;
 					case 'python':
 						console.log('python');
+						displayDownloadButtons(5, 'python');
 						break;
 					case 'java':
 						console.log('java');
+						displayDownloadButtons(1, 'java');
 						break;
 					case 'git':
 						console.log('git');
+						displayDownloadButtons(3, 'git');
 						break;
 					case 'sql':
 						console.log('sql');
+						displayDownloadButtons(1, 'sql');
 						break;
 					case 'mongodb':
 						console.log('mongodb');
+						displayDownloadButtons(2, 'mongodb');
 						break;
 					case 'sql-mongodb':
 						console.log('sql-mongodb');
+						displayDownloadButtons(1, 'sql-mongodb');
 						break;
 				}
 				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
@@ -299,21 +312,29 @@
 						clearInterval(timerOfInterval);
 					}
 				}, 1000);
-				setTimeout(() => {
-					console.log('show downloading buttons');
-				}, `${(seconds*1000)+2000}`);
 				// console.log(`cheat sheet download for ${languageName}`);
 				}
 			function downloadRedirecting(){
-				downloadCheatSheets.style.display='none';
 				downloadSection.style.display='block';
+				downloadCheatSheets.style.display='none';
 			}
 
 			function displayDownloadButtons(number_of_pdfs, language_name){
-				for(let i=0; i<number_of_pdfs; i++){
-					let downloadBtn=document.createElement('a');
-					downloadBtn.setAttribute('class','downloadButton');
-				}
+				setTimeout(() => {
+					console.log('show downloading buttons');
+					for(let i=0; i<number_of_pdfs; i++){
+						let downloadBtn=document.createElement('a');
+						downloadBtn.setAttribute('class','downloadButton');
+						downloadBtn.innerText=`Cheat-Sheet ${i+1}`;
+						if(number_of_pdfs==1){
+							downloadBtn.setAttribute('href',`../pdf/${language_name}.pdf`);
+						}
+						else{
+							downloadBtn.setAttribute('href',`../pdf/${language_name}${i+1}.pdf`);
+						}
+						document.querySelector('.downloadButtons').appendChild(downloadBtn);
+					}
+				}, `${(seconds*1000)+2000}`);
 			}
 
 		</script>
