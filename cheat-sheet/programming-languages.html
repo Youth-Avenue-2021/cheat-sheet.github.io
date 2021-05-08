@@ -101,55 +101,55 @@
 		let jsonData=[
 
 			{
-				'languageName': 'all-Programming ',
+				'languageName': 'Programming Career',
 				'imgLink': 'all-programming.png'
 			},
 			{
-				'languageName': 'html',
+				'languageName': 'Html',
 				'imgLink': 'html.png'
 			},
 			{
-				'languageName': 'css',
+				'languageName': 'Css',
 				'imgLink': 'css.png'
 			},
 			{
-				'languageName': 'javascript',
+				'languageName': 'Javascript',
 				'imgLink': 'javascript.jpg'
 			},
 			{
-				'languageName': 'bootstrap',
+				'languageName': 'Bootstrap',
 				'imgLink': 'bootstrap.png'
 			},
 			{
-				'languageName': 'c-programming',
+				'languageName': 'C-programming',
 				'imgLink': 'c.png'
 			},
 			{
-				'languageName': 'c++',
+				'languageName': 'C++',
 				'imgLink': 'c++.png'
 			},
 			{
-				'languageName': 'python',
+				'languageName': 'Python',
 				'imgLink': 'python.jpg'
 			},
 			{
-				'languageName': 'java',
+				'languageName': 'Java',
 				'imgLink': 'java.png'
 			},
 			{
-				'languageName': 'git',
+				'languageName': 'Git',
 				'imgLink': 'git.png'
 			},
 			{
-				'languageName': 'sql',
+				'languageName': 'SQL',
 				'imgLink': 'sql.png'
 			},
 			{
-				'languageName': 'mongodb',
+				'languageName': 'MongoDB',
 				'imgLink': 'mongodb.png'
 			},
 			{
-				'languageName': 'sql-&-mongodb-difference',
+				'languageName': 'SQL & MongoDB Difference',
 				'imgLink': 'sql-mongodb.png'
 			}
 
@@ -158,13 +158,13 @@
 		Array.from(jsonData).forEach(function(e,index){
 			downloadCheatSheets.innerHTML+=`
 				<div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
-					<img src="${e.imgLink}" alt="${e.languageName} Cheat sheet">
+					<img src="logos/${(e.imgLink)}" alt="${e.languageName} Cheat sheet">
+					<p class="language-name">${e.languageName}</p>
 					<a href="">Download</a>
 					</div>
 					`
 				});
 				
-				// <p class="language-name">${e.languageName}</p>
 
 
 

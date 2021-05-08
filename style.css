@@ -730,6 +730,8 @@ input[type=text]:focus, textarea:focus {
 
 /* cheat sheets download */
 .download-cheat-sheets{
+	margin: 0 auto;
+	max-width: 1200px;
 	padding: 120px 0;
 }
 .download-cheat-sheets .saparate-cheat-sheet{
@@ -803,6 +805,10 @@ input[type=text]:focus, textarea:focus {
 		padding: 10px 10px 13px;
 		font-size: .96em;
 	}
+	.download-cheat-sheets{
+		padding: 80px 0 50px;
+	}
+	.download-cheat-sheets .saparate-cheat-sheet,
 	.saparate-cheat-sheet{
 		width: 40%;
 	}
@@ -811,6 +817,12 @@ input[type=text]:focus, textarea:focus {
 	}
 	.saparate-cheat-sheet a{
 		font-weight: 600;
+	}
+	.download-cheat-sheets .saparate-cheat-sheet img{
+		width: 60%;
+	}
+	.download-cheat-sheets .saparate-cheat-sheet a{
+		padding: 10px;
 	}
 	#third-team .all-persons .person{
 		width: 65%;
@@ -845,7 +857,7 @@ input[type=text]:focus, textarea:focus {
 		width: 80%;
 	}
 	#third-team .all-persons .person .visit-site {
-	    padding: 10px 0 !important;
+		padding: 10px 0 !important;
 	    font-size: 0.9em;
 	}
 	.main-content .arrows p{
@@ -870,7 +882,7 @@ input[type=text]:focus, textarea:focus {
 		font-weight: lighter !important;
 	}
 	.sidebar{
-	    width: 180px;
+		width: 180px;
 	}	
 	.sidebar-active{
 		transform: translate(180px, 0);
@@ -891,10 +903,10 @@ input[type=text]:focus, textarea:focus {
 		font-size: 1em;
 	}
 	.heading{
-	    box-shadow: 0px 8px 20px 1px #080b2e24;
+		box-shadow: 0px 8px 20px 1px #080b2e24;
 	}
     .footer {
-        font-size: 20px;
+		font-size: 20px;
     }
 	.flex-row-warp{
 		display: flex;
@@ -907,7 +919,7 @@ input[type=text]:focus, textarea:focus {
 		width: 80% !important;
 	}
 	#first-section{
-    	/* background: url('photos/7.webp'); */
+		/* background: url('photos/7.webp'); */
     	background: linear-gradient(180deg, #0000007a, #00000075),url('photos/7_lower.webp');
     	background-size: cover;
     	background-position: center;
@@ -928,8 +940,8 @@ input[type=text]:focus, textarea:focus {
 	    /* padding: 10px 20px; */
 	    /* margin: 0 0 0 55px; */
 	    text-align: center;
-	     display: flex;
-	     justify-content: center;
+		display: flex;
+		justify-content: center;
 	}
 	#btn1{
 		color: white;
@@ -945,8 +957,9 @@ input[type=text]:focus, textarea:focus {
 	.saparate-cheat-sheet img{
 		padding: 20px 0 10px;
 	}
+	/* .download-cheat-sheets .saparate-cheat-sheet p, */
 	.saparate-cheat-sheet p{
-		padding: 15px 10px;
+		padding: 15px 10px !important;
 		font-size: .86em;
 	}
 	.list-item .buttons a{
