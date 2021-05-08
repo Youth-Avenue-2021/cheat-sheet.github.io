@@ -69,9 +69,11 @@
          </div>
 
 		 <div class="downloadSection flex-column" id="downloadSection">
-			 <span class="waiting" id="waiting"></span>
-			 <span class="timer" id="timer"></span>
-			 <div class="downloadButtons"></div>
+			 <p class="waiting" id="waiting"></p>
+			 <p class="timer" id="timer"></p>
+			 <div class="downloadButtons flex-column">
+				<div class="language_name_box"></div>
+			</div>
 		</div>
 		
 
@@ -120,7 +122,7 @@
 			},
 			{
 				'languageName': 'Javascript',
-				'imgLink': 'javascript.jpg'
+				'imgLink': 'js.jpg'
 			},
 			{
 				'languageName': 'Bootstrap',
@@ -156,7 +158,7 @@
 			},
 			{
 				'languageName': 'SQL & MongoDB Difference',
-				'imgLink': 'sql-mongodb.png'
+				'imgLink': 'sql-to-mongo.png'
 			}
 
 		];
@@ -300,62 +302,49 @@
 			function redirect(languageName){
 				switch (languageName){
 					case 'all-programming':
-						console.log('all-programming');
 						displayDownloadButtons(1, 'all-programming');
 						break;
 					case 'html':
-						console.log('html');
 						displayDownloadButtons(1, 'html');
 						break;
 					case 'css':
-						console.log('css');
 						displayDownloadButtons(3, 'css');
 						break;
-					case 'javascript':
-						console.log('javascript');
+					case 'js':
 						displayDownloadButtons(2, 'javascript');
 						break;
 					case 'bootstrap':
-						console.log('bootstrap');
 						displayDownloadButtons(1, 'bootstrap');
 						break;
 					case 'c':
-						console.log('c');
 						displayDownloadButtons(2, 'c');
 						break;
 					case 'cpp':
-						console.log('cpp');
 						displayDownloadButtons(1, 'cpp');
 						break;
 					case 'python':
-						console.log('python');
 						displayDownloadButtons(5, 'python');
 						break;
 					case 'java':
-						console.log('java');
 						displayDownloadButtons(1, 'java');
 						break;
 					case 'git':
-						console.log('git');
 						displayDownloadButtons(3, 'git');
 						break;
 					case 'sql':
-						console.log('sql');
 						displayDownloadButtons(1, 'sql');
 						break;
 					case 'mongodb':
-						console.log('mongodb');
 						displayDownloadButtons(2, 'mongodb');
 						break;
-					case 'sql-mongodb':
-						console.log('sql-mongodb');
-						displayDownloadButtons(1, 'sql-mongodb');
+					case 'sql-to-mongo':
+						displayDownloadButtons(1, 'sql-to-mongo');
 						break;
 				}
 				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
 
 				let timerOfInterval = setInterval(() => {
-					timer.innerText=`downloading in ${seconds} seconds.`;
+					timer.innerText=`your cheat sheet is ready to download in ${seconds} seconds.`;
 					seconds--;
 					if(seconds==-2){
 						timer.style.display='none';
@@ -365,13 +354,16 @@
 				// console.log(`cheat sheet download for ${languageName}`);
 				}
 			function downloadRedirecting(){
+				document.getElementById('downloadSection').display='block';
 				downloadSection.style.display='block';
 				downloadCheatSheets.style.display='none';
 			}
 
 			function displayDownloadButtons(number_of_pdfs, language_name){
 				setTimeout(() => {
-					console.log('show downloading buttons');
+					waiting.style.display='none';
+					document.querySelector('.language_name_box').style.display='block';
+					document.querySelector('.language_name_box').innerText=`${language_name}`;
 					for(let i=0; i<number_of_pdfs; i++){
 						let downloadBtn=document.createElement('a');
 						downloadBtn.setAttribute('class','downloadButton');

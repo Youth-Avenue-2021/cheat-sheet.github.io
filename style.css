@@ -751,19 +751,49 @@ input[type=text]:focus, textarea:focus {
 	padding: 15px;
 }
 #downloadSection{
-	/* display: none; */
+	display: none;
+}
+.downloadSection .downloadButtons{
+	padding: 20px 0;
+}
+.downloadSection .downloadButtons .language_name_box{
+	margin-bottom: 20px;
+	display: none;
+	background: var(--color-blue);
+	padding: 20px 70px;
+	color: whitesmoke;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+.downloadSection .downloadButtons a{
+	padding: 15px 30px;
+    background: var(--color7);
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin: 5px auto;
+	color: var(--color-blue);
+}
+.downloadSection .downloadButtons a:hover{
+    color: var(--color7);
+	background: var(--color-blue);
 }
 .downloadSection{
-	margin: 140px auto 0;
+	margin: 110px auto 0;
 }
 .downloadSection .waiting{
+	max-width: 1200px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
 	font-size: 1.6em;
-    background: var(--color7);
+    background: #76e6ff;
 	border-radius: 6px;
     padding: 10px 40px;
 }
 .downloadSection .timer{
-	font-size: 1.5em;
+	text-align: center;
+	font-size: 1.2em;
 	margin: 20px auto 0;
 }
 
