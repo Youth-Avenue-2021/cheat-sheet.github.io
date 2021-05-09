@@ -163,12 +163,15 @@
 
 		];
 
+		let redirectionLinks=['https://www.web-developer-abhi.tk/','https://github.com/Youth-Avenue-2021/cheat-sheet.github.io#readme','https://github.com/Rupen109','https://github.com/vanshika0111','https://github.com/abhidadhaniya23'];
+		let randomNumber=parseInt(Math.random()*redirectionLinks.length);
+
 		Array.from(jsonData).forEach(function(e,index){
 			downloadCheatSheets.innerHTML+=`
 				<div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
 					<img src="logos/${(e.imgLink)}" alt="${e.languageName} Cheat sheet">
 					<p class="language-name">${e.languageName}</p>
-					<a onclick="redirect('${(e.imgLink).slice(0,-4)}'); downloadRedirecting();">Download</a>
+					<a target="_blank" href="${redirectionLinks[randomNumber]}" onclick="redirect('${(e.imgLink).slice(0,-4)}'); downloadRedirecting();">Download</a>
 				</div>
 			`
 		});
@@ -297,7 +300,7 @@
 			let waiting = document.getElementById('waiting');
 			let timer = document.getElementById('timer');
 			let downloadSection = document.getElementById('downloadSection');
-			let seconds=5;
+			let seconds=15;
 
 			function redirect(languageName){
 				switch (languageName){
@@ -344,7 +347,7 @@
 				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
 
 				let timerOfInterval = setInterval(() => {
-					timer.innerText=`your cheat sheet is ready to download in ${seconds} seconds.`;
+					timer.innerHTML=`your cheat sheet is ready to download in <br> ${seconds} seconds.`;
 					seconds--;
 					if(seconds==-2){
 						timer.style.display='none';
@@ -361,7 +364,7 @@
 
 			function displayDownloadButtons(number_of_pdfs, language_name){
 				setTimeout(() => {
-					waiting.style.display='none';
+					waiting.innerText=`Refresh this page to download more cheat sheets...`;
 					document.querySelector('.language_name_box').style.display='block';
 					document.querySelector('.language_name_box').innerText=`${language_name}`;
 					for(let i=0; i<number_of_pdfs; i++){

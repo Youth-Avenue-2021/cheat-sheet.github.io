@@ -754,10 +754,14 @@ input[type=text]:focus, textarea:focus {
 	display: none;
 }
 .downloadSection .downloadButtons{
-	padding: 20px 0;
+	/* padding: 20px 0; */
+	background: white;
+    width: fit-content;
+    margin: 0 auto;
 }
 .downloadSection .downloadButtons .language_name_box{
-	margin-bottom: 20px;
+	width: 100%;
+	/* margin-bottom: 20px; */
 	display: none;
 	background: var(--color-blue);
 	padding: 20px 70px;
@@ -768,11 +772,12 @@ input[type=text]:focus, textarea:focus {
 }
 .downloadSection .downloadButtons a{
 	padding: 15px 30px;
-    background: var(--color7);
+    /* background: var(--color7); */
     font-size: 1.3em;
     border-radius: 5px;
-    margin: 5px auto;
+    margin: 10px auto 0;
 	color: var(--color-blue);
+	transition: 0.18s all;
 }
 .downloadSection .downloadButtons a:hover{
     color: var(--color7);
@@ -785,7 +790,7 @@ input[type=text]:focus, textarea:focus {
 	max-width: 1200px;
 	text-align: center;
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto 1.4em;
 	font-size: 1.6em;
     background: #76e6ff;
 	border-radius: 6px;
@@ -908,6 +913,9 @@ input[type=text]:focus, textarea:focus {
 	}
 	.main-content .arrows p{
 		margin-bottom: -60px;
+	}
+	.downloadSection .timer{
+		width: 90%;
 	}
 }
 @media (max-width: 850px){
