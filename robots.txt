@@ -1,10 +1,6 @@
 User-agent: *
 Disallow: 
-Disallow: /photos/
 Disallow: /pdf/
 Disallow: /prism/
-Disallow: /style/
-Disallow: /style/
-Disallow: /style.css
 Disallow: /fonts/
-Sitemap: http://www.awesome-cheat-sheets.ml/sitemap.xml
+Sitemap: https://awesome-cheat-sheets.online/sitemap.xml
