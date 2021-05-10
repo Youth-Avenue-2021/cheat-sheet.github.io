@@ -49,7 +49,7 @@
 				<a class="webpage" href="python"><i class="fa fa-clone sidebar-icons"></i> Python</a>
 				<a class="webpage" href="c"><i class="fa fa-clone sidebar-icons"></i> C</a>
 				<a class="webpage" href="keyboard-shortcuts"><i class="fa fa-clone sidebar-icons"></i> Keyboard Shortcuts</a>
-				<a class="webpage" href="programming-languages"><i class="fa fa-clone sidebar-icons"></i> All Cheat Sheets</a>
+				<a class="webpage" href="download-cheatsheets"><i class="fa fa-clone sidebar-icons"></i> Download All Cheatsheets</a>
 				<a class="webpage" href="../#third-team"><i class="fa fa-users sidebar-icons"></i>Our Team</a>
 			</ul>
 		</div>
@@ -347,7 +347,7 @@
 				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
 
 				let timerOfInterval = setInterval(() => {
-					timer.innerHTML=`your cheat sheet is ready to download in <br> ${seconds} seconds.`;
+					timer.innerHTML=`your cheat sheet is ready to download in ${seconds} seconds.`;
 					seconds--;
 					if(seconds==-2){
 						timer.style.display='none';
