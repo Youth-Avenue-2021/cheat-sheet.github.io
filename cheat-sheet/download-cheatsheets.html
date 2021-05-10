@@ -59,7 +59,7 @@
 			filter: drop-shadow(0 0 5px #f63);
 		} */
 		.circle-html {
-			animation: anim_circle-html 15s ease-in-out forwards;
+			animation: anim_circle-html 10s ease-in-out forwards;
 		}
 		.progressbar__text {
 			position: absolute;
@@ -301,7 +301,7 @@
 			let pdfJsonData=[
 				{
 					'name': 'all-programming',
-					'pdfFile': 'all-programming.pdf',
+					'pdfFile': 'all-programming.jpg',
 					'numberOfPdfs': 1
 				},
 				{
@@ -372,7 +372,7 @@
 			let downloadSection = document.getElementById('downloadSection');
 			let progress_bar_timer=document.getElementById('progress_bar_timer');
 			let container__progressbars=document.querySelector('.container__progressbars');
-			let seconds=15;
+			let seconds=10;
 
 			function redirect(languageName){
 				switch (languageName){
@@ -445,11 +445,18 @@
 						let downloadBtn=document.createElement('a');
 						downloadBtn.setAttribute('class','downloadButton');
 						downloadBtn.innerText=`Cheat-Sheet ${i+1}`;
-						if(number_of_pdfs==1){
+						if(language_name=='all-programming'){
+							downloadBtn.setAttribute('href',`../pdf/${language_name}.jpg`);
+						}
+						else if(number_of_pdfs==1){
 							downloadBtn.setAttribute('href',`../pdf/${language_name}.pdf`);
 						}
 						else{
 							downloadBtn.setAttribute('href',`../pdf/${language_name}${i+1}.pdf`);
+							if(language_name=='python'&& i==4){
+								downloadBtn.removeAttribute('href');
+								downloadBtn.setAttribute('href',`../pdf/${language_name}${i+1}.png`);
+							}
 						}
 						document.querySelector('.downloadButtons').appendChild(downloadBtn);
 					}

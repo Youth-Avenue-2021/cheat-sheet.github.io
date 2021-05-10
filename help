@@ -7,8 +7,10 @@ btw ()=>{} this is arrow functions in javascript... aaiya emojis nahi mukai m ba
 
 most Important tasks()={
 	
-	don't forget to add google analytics script
-	also add meta tags for seo
+	don't forget to uncomment google analytics script
+	also add meta tags in all pages for seo
+
+	increase timing for waiting for download any cheat-sheet...
 
 }
 
@@ -16,16 +18,7 @@ most Important tasks()={
 
 	remove all unusing wallpaper backgrounds...
 
-	set all font color blue or font weight bold... of all background green color buttons...
-
-	add disable zoom-in, zoom-out in website code from my main page...
-
-	in all page's sidebar set download cheat-sheets insted of 'All cheat sheets'...
-	==>  also change in sitemap...
-
-	convert 2 photos in to pdf...
-
-	add progressbar using <progress> html tag for waiting download seconds... 
+	add metatags in all html pages for best seo...
 
 }
 
