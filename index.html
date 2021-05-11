@@ -42,16 +42,69 @@
          /* .overflow-hide{
 			box-shadow: 0px 0px 20px 8px #00000025;
          } */
+
+         .loading-animation{
+            position: relative;
+            top: 0;
+            z-index: 102;
+         }
+         
+         .loading-animation .main-container-bg-div{
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            top: 0;
+            background: rgb(186, 237, 255);
+            overflow-x: hidden;
+        }
+         .loading-animation .sliding-div{
+            position: relative;
+            /* width: 0%; */
+            background: rgb(0, 166, 226);
+            height: 6px;
+            transform: translateX(-50px);
+            animation-name: animate-loading-bar;
+            animation-duration: 2.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes animate-loading-bar {
+            0%{
+                width: 5%;
+                /* transform: translateX(0px); */
+            }
+            20%{
+                /* width: 30%; */
+                /* transform: translateX(200px); */
+            }
+            40%{
+                /* width: 20%; */
+                /* transform: translateX(400px); */
+            }
+            50%{
+                width: 30%;
+                /* transform: translateX(600px); */
+            }
+            60%{
+                /* width: 20%; */
+                /* transform: translateX(800px); */
+            }
+            80%{
+                /* width: 30%; */
+                /* transform: translateX(1000px); */
+            }
+            90%{
+                width: 3%;
+            }
+            100%{
+                width: 2%;
+                transform: translateX(110vw);
+            }
+        }
       </style>
    </head>
    <body class="flex-column">
-      <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-         <script>
-        AOS.init({
-          offset: 100,
-          duration: 700,
-        });
-      </script> -->
     <!-- <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
     <h1 class="heading"><span id="heading"><i class="fa fa-clone"
     aria-hidden="true"></i>&lt;Cheat Sheets/&gt;</span></h1> -->
@@ -69,6 +122,13 @@
     </div>
 
     <div class="main-body" id="mainBody">
+
+       
+      <div class="loading-animation">
+         <div class="main-container-bg-div">
+            <div class="sliding-div"></div>
+         </div>
+      </div>
 
     <section id="first-section" class="flex-column">
 
@@ -204,6 +264,10 @@
       <!-- <script src="prism/prism.js"></script> -->
       <script>
 
+         window.onload=function(){
+            console.log('Website laoded');
+            // document.querySelector('.loading-animation').style.display='none';
+         }
 
 	    let sidebar=document.getElementById('sidebar');
 	    let showmenu=document.getElementById('showmenu');
@@ -244,7 +308,6 @@
          let img=document.createElement('img');
          img.src='photos/4.webp';
          img.onload=function(){
-            console.log('Bg Replaced');
             document.getElementById('main-content').style.backdropFilter='blur(0px)';
             document.getElementById('first-section').style.background = `linear-gradient(180deg, #00000080, #000000b5),url('photos/4.webp') center center / cover`;
             document.getElementById('first-section').style.backgroundAttachment = 'fixed';
@@ -358,8 +421,6 @@
               css.type = "text/css";
               css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
               document.body.appendChild(css);
-
-              console.log('website loaded');
           };
          // Resources1× 0.5× 0.25×Rerun
       </script>
