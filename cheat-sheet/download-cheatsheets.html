@@ -229,6 +229,10 @@
 			{
 				'languageName': 'SQL & MongoDB Difference',
 				'imgLink': 'sql-to-mongo.png'
+			},
+			{
+				'languageName': 'Command Panel',
+				'imgLink': 'cmd.png'
 			}
 
 		];
@@ -363,6 +367,11 @@
 					'name': 'cpp',
 					'pdfFile': 'cpp.pdf',
 					'numberofPdfs': 1
+				},,
+				{
+					'name': 'cmd',
+					'pdfFile': 'cmd.pdf',
+					'numberofPdfs': 2
 				},
 			]
 
@@ -414,6 +423,9 @@
 						break;
 					case 'sql-to-mongo':
 						displayDownloadButtons(1, 'sql-to-mongo');
+						break;
+					case 'cmd':
+						displayDownloadButtons(2, 'cmd');
 						break;
 				}
 				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
