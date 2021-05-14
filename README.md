@@ -20,8 +20,7 @@ Also, you can share it with your programmer friends to optimize their coding ski
 
 #### **VISUALS AND USAGE**
 ---
-
-#add various pictures of project
+![Download cheat sheets](https://github.com/Youth-Avenue-2021/cheat-sheet.github.io/blob/master/photos/section2.png?raw=true)
 
 #### **INSTALLATION**
 ---
