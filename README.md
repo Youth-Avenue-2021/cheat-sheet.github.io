@@ -1,6 +1,6 @@
 # <center>**AWESOME CHEAT SHEETS**</center>
 
-#FRONT PAGE OF PROJECT- gif
+![Alt Text](https://github.com/Youth-Avenue-2021/cheat-sheet.github.io/blob/master/photos/gif.GIF)
 ---
 
 #### **DESCRIPTION**
