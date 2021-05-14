@@ -8,6 +8,8 @@
 Cheat sheets are brief description of notes for a quick revision.
 This project deals with various cheat sheets of **`HTML`**, **`JAVASCRIPT`**, **`CSS`**, **`PYTHON`** and many more. 
 It not only covers programming languages but few keyboard shortcuts for various editors like **`VISUAL STUDIO CODE`**, **`SUBLIME`**, etc.
+The list of library functions of C & Python is also attached. 
+Few snippets of codes are also added in HTML & CSS which you can directly use to build up your own projects.
 Besides just viewing the sheets, viewer can also download the required cheat sheets. 
 
 Some more links of pinterest are also added wherever required from where you can access a lot more cheat sheets.
