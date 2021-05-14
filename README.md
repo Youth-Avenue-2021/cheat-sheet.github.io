@@ -28,7 +28,7 @@ As described earlier, the user can directly download it from the section MANY MO
 
 No any specific platform is required to view the respective project. 
 We've tried our best to make the website look in its very precise manner irrespective of the device the user uses.
-You can directly view our project by clicking <u>**[CheatSheet](https://youth-avenue-2021.github.io/cheat-sheet.github.io/ "CheatSheet")**</u>
+You can directly view our project by clicking <u>**[Awesome Cheat Sheets](https://awesome-cheat-sheets.online/)**</u>
 
 #### **SUPPORT**
 ---
