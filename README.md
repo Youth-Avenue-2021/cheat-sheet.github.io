@@ -26,7 +26,7 @@ Also, you can share it with your programmer friends to optimize their coding ski
 
 #### **INSTALLATION**
 ---
-As described earlier, the user can directly download it from the section MANY MORE CHEAT SHEETS.
+As described earlier, the user can directly download it from the section DOWNLOAD ALL CHEAT SHEETS.
 
 No any specific platform is required to view the respective project. 
 We've tried our best to make the website look in its very precise manner irrespective of the device the user uses.
@@ -49,7 +49,7 @@ Clone this repository by copying the following clone url (https://github.com/You
 #### **PROJECT BUILD-UP**
 ---
 This project is built using HTML, CSS & Javascript.
-All the information and data added in the project are either taken from google or pinterest or books of the respective languages. 
+All the information and data added in the project are either taken from google or pinterest or books of the respective topics. 
 
 
 ---
