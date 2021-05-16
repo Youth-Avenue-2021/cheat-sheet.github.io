@@ -66,6 +66,9 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
 }
+#randomColor:active{
+	transform: scale(0.7);    
+}
 button{
     font-family: var(--font);
     border: none;
@@ -82,6 +85,9 @@ button{
     user-select: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
+}
+button:active{
+	transform: scale(0.9);
 }
 .copyTextDiv p{
     font-family: var(--font);
