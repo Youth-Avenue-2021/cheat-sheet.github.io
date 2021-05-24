@@ -265,7 +265,6 @@
       <script>
 
          window.onload=function(){
-            console.log('Website laoded');
             document.querySelector('.loading-animation').style.display='none';
          }
 
@@ -296,7 +295,6 @@
         let img_phone=document.createElement('img');
         img_phone.src='photos/7.webp';
         img_phone.onload=function(){
-          console.log('Bg Replaced');
           document.getElementById('main-content').style.backdropFilter='blur(0px)';
           document.getElementById('first-section').style.background = `linear-gradient(180deg, #0000007a, #00000075),url(photos/7.webp) center center / cover`;
           // document.getElementById('first-section').style.backgroundAttachment = 'fixed';
