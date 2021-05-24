@@ -5,13 +5,16 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	outline: none !important;
-	transition: 0.4s ease;
+	/* transition: 0.4s ease; */
+}
+p,h1,h2,h3,h4,h5,h6,a{
 	letter-spacing: 1px;
+}
+a{
 	text-decoration: none;
-
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	-webkit-tap-highlight-color: transparent;
+}
+input,button{
+	outline: none !important;
 }
 h1{
 	letter-spacing: 2px;
@@ -247,6 +250,7 @@ html{
 	border: 3px solid var(--color-green);
     background: var(--color-green);
     color: whitesmoke;
+	transition: 0.4s ease;
 }
 #btn1:hover{
     background: whitesmoke;
@@ -405,6 +409,7 @@ html{
 	font-size: 0.8rem;
 	width: 100%;
     font-family: var(--font);
+	transition: 0.4s ease;
 }
 .list-item .buttons .fa{
 	transition: 0.001s ease !important;
@@ -465,6 +470,7 @@ html{
 	padding: 30px;
 	width: 200px;
 	transform: var(--scale);
+	transition: 0.4s ease;
 }
 .saparate-cheat-sheet{
     width: 290px;
@@ -473,20 +479,12 @@ html{
 	border-radius: 8px; 
 	background: white;
 	overflow: hidden;
-}
-.saparate-cheat-sheet p{
-	text-align: center;
-	width: 100%;
-	color: var(--color-blue);
-	padding: 25px 20px;
-	background: white;
-	font-weight: bold;
-	font-size: 1.3em;
-	font-family: var(--font);
+	transition: 0.4s ease;
 }
 .saparate-cheat-sheet a{
 	font-family: var(--font);
-	font-size: 1.08em;
+	font-size: 1.1em;
+	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
 	width: 100%;
@@ -494,6 +492,7 @@ html{
 	color: var(--color-blue);
 	background: var(--color-green);
 	cursor: pointer;
+	transition: 0.4s ease;
 }
 .saparate-cheat-sheet a:hover{
 	/* --scal: ; */
@@ -528,6 +527,7 @@ html{
 }
 #third-team .all-persons .person img{
 	width: 100%;
+	transition: 0.4s ease;
 }
 #third-team .all-persons .person:hover img{
 	transform: scale(1.2);
@@ -585,6 +585,7 @@ html{
 	padding: 10px 0;
 	color: whitesmoke;
 	background: var(--indigo);
+	transition: 0.4s ease;
 }
 #third-team .all-persons .person .visit-site:hover{
 	box-shadow: inset 0px 0px 20px 8px #00000025;
@@ -600,6 +601,11 @@ html{
     color: whitesmoke;
     background: var(--color-blue);
     font-family: var(--font);
+}
+.footer #youthAvenue{
+	color: whitesmoke;
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 
@@ -715,6 +721,7 @@ input[type=text]:focus, textarea:focus {
 	font-size: 1.2em;
 	/* background: var(--color-blue); */
 	background: rgb(0,224,113);
+	transition: 0.4s ease;
 }
 #forth-disclaimer a:hover{
 	background: var(--color7);
@@ -835,6 +842,10 @@ input[type=text]:focus, textarea:focus {
 	}
 }
 @media (max-width: 540px){
+	*{
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent;
+	}
 	.sidebar ul .webpage{
 		margin: 3px 0;
 		padding: 12px 15px;
@@ -1052,6 +1063,7 @@ input[type=text]:focus, textarea:focus {
 ::-webkit-scrollbar-thumb {
   background: #080b2e2e;
   border-radius: 500px;
+  transition: 0.4s ease;
 }
 
 /* Handle on hover */
