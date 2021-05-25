@@ -19,7 +19,7 @@
       <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <style>
-		@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+		/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap'); */
     	 *{
     	   font-family: 'Manrope', sans-serif;
     	 }
@@ -39,13 +39,18 @@
       </style>
    </head>
    <body class="flex-column">
+
+      <div class="sidebar-access-btn">
+         <button id="sidebar-access-btn">&lt;/&gt;</button>
+      </div>
+
     <div class="sidebar" id="sidebar">
-      <ul class="flex-column-flex-start">
+      <ul>
         <li class="home-page"><a href="">Cheat Sheets</a></li>
         <a class="webpage" href="cheat-sheet/html"><i class="fa fa-clone sidebar-icons"></i> HTML</a>
         <a class="webpage" href="cheat-sheet/css"><i class="fa fa-clone sidebar-icons"></i> CSS</a>
         <a class="webpage" href="cheat-sheet/python"><i class="fa fa-clone sidebar-icons"></i> Python</a>
-        <a class="webpage" href="cheat-sheet/c"><i class="fa fa-clone sidebar-icons"></i> C</a>
+        <a class="webpage" href="cheat-sheet/c"><i class="fa fa-clone sidebar-icons"></i> C Programming</a>
         <a class="webpage" href="cheat-sheet/keyboard-shortcuts"><i class="fa fa-clone sidebar-icons"></i> Keyboard Shortcuts</a>
         <a class="webpage" href="cheat-sheet/download-cheatsheets"><i class="fa fa-clone sidebar-icons"></i> Download All Cheatsheets</a>
         <a class="webpage" href="#third-team"><i class="fa fa-users sidebar-icons"></i>Our Team</a>
@@ -56,7 +61,7 @@
 
     <section id="first-section" class="flex-column">
 
-      <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i>
+      <!-- <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i> -->
       <h2 class="heading"><span id="heading">&lt;Cheat-Sheets/&gt;</span></h2>
 
       <div class="container flex-column front-page" id="container">
@@ -181,8 +186,9 @@
     </div>
 
     <script async src="script/index.js"></script>
-    <script async src="script/swipeScript.js"></script>
+    <!-- <script async src="script/swipeScript.js"></script> -->
     <script async src="script/typing.js"></script>
+    <script async src="script/sidebar.js"></script>
 
             <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ2W80HJX8"></script>

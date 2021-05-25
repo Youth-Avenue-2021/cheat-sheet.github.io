@@ -1,20 +1,20 @@
-let sidebar = document.getElementById('sidebar');
-let showmenu = document.getElementById('showmenu');
-let container = document.getElementById('container');
-let mainBody = document.getElementById('mainBody');
-container.addEventListener('click', hideSidebar);
-function hideSidebar() {
-    mainBody.classList.remove('sidebar-active');
-}
-showmenu.addEventListener('click', showSidebar);
-function showSidebar() {
-    // mainBody.style.transform = 'translate(200px, 0)';
-    mainBody.classList.toggle('sidebar-active');
-    // sidebar.style.zIndex = '1000000000000000';
-}
-window.onscroll = function () {
-    mainBody.classList.remove('sidebar-active');
-}
+// let sidebar = document.getElementById('sidebar');
+// let showmenu = document.getElementById('showmenu');
+// let container = document.getElementById('container');
+// let mainBody = document.getElementById('mainBody');
+// container.addEventListener('click', hideSidebar);
+// function hideSidebar() {
+//     mainBody.classList.remove('sidebar-active');
+// }
+// showmenu.addEventListener('click', showSidebar);
+// function showSidebar() {
+//     // mainBody.style.transform = 'translate(200px, 0)';
+//     mainBody.classList.toggle('sidebar-active');
+//     // sidebar.style.zIndex = '1000000000000000';
+// }
+// window.onscroll = function () {
+//     mainBody.classList.remove('sidebar-active');
+// }
 function indexPage() {
     location.href = 'index';
 }
