@@ -285,12 +285,13 @@ html{
 	position: fixed;
 	bottom: 7%;
 	right: 5%;
+	transition: 0.3s ease;
 }
 .sidebar-access-btn:active{
 	transform: scale(0.88);
 }
 .sidebar-access-btn button{
-	letter-spacing: -0.5px;
+	letter-spacing: -0.5px !important;
 	cursor: pointer;
 	border-radius: 50%;
 	font-size: 1.7em;
