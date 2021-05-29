@@ -8,7 +8,7 @@
     letter-spacing: .5px !important;
 }
 html{
-    background: rgb(221,248,227) !important;
+    background: rgb(221,248,227);
 }
 ::selection {
   background: transparent !important;
