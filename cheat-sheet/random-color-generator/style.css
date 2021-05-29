@@ -8,7 +8,7 @@
     letter-spacing: .5px !important;
 }
 html{
-    background: rgb(221,248,227);
+    background: white !important;
 }
 ::selection {
   background: transparent !important;
@@ -22,6 +22,7 @@ html{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: rgb(221,248,227);
 }
 .container-main-content{
     font-family: var(--font);
