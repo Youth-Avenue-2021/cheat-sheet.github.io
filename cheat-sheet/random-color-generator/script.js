@@ -15,6 +15,7 @@ function changeColor() {
     document.getElementById('first-section-color').style.background = background;
     document.getElementById('first-section-color').style.transition = 'background 0.6s ease';
     randomColor.value = background;
+	document.querySelector('html').background=`${background} !important`;
 }
 
 
@@ -35,7 +36,7 @@ function copyTextFunction() {
 function showCopy(){
 	// document.getElementById("copyTextDiv").style.animationName='show';
 	document.getElementById('copyTextDiv').style.opacity = '1';
-	document.getElementById('copyTextDiv').style.top = '5%';
+	document.getElementById('copyTextDiv').style.top = '10%';
 	// document.getElementById("randomColor").style.opacity = '1';
 	setTimeout(function hideShowCopy(){
 		document.getElementById('copyTextDiv').style.opacity = '0';

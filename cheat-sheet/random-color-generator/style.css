@@ -7,6 +7,9 @@
     outline: none;
     letter-spacing: .5px !important;
 }
+html{
+    background: rgb(221,248,227) !important;
+}
 ::selection {
   background: transparent !important;
 }
@@ -65,7 +68,7 @@
     user-select: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
-    transition: 0.1 ease all;
+    transition: 0.35s ease all;
 }
 #randomColor:active{
 	transform: scale(0.7);    
@@ -86,7 +89,7 @@ button{
     user-select: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
-    transition: 0.1 ease all;
+    transition: 0.35s ease all;
 }
 button:active{
 	transform: scale(0.9);
