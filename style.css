@@ -70,7 +70,8 @@ html{
 	/* background: #00c3ef40 !important; */
 	/* background: #00cfff2e !important; */
 	/* background: #e9fbff; */
-	background: var(--color6);
+	/* background: #e9fbff; */
+	background: var(--color-blue);
 	overflow-x: hidden;
 }
 .display-none{
@@ -285,7 +286,7 @@ html{
 	position: fixed;
 	bottom: 7%;
 	right: 5%;
-	transition: 0.3s ease;
+	transition: 0.1s ease;
 }
 .sidebar-access-btn:active{
 	transform: scale(0.88);
