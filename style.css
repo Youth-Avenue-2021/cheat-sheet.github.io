@@ -714,7 +714,7 @@ html{
 	width: 100%;
 }
 .list-item-search #searchBox{
-	margin: 30px auto 10px;
+	margin: 30px auto 30px;
 	width: 100%;
 	padding: 20px;
 	font-family: var(--font);
