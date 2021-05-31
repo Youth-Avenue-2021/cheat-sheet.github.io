@@ -131,7 +131,7 @@
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- long-width -->
 		<ins class="adsbygoogle"
-			style="display:block;width:100%;height:auto;"
+			style="display:block;width:100%;height:300px;"
 			data-ad-client="ca-pub-6036528993346308"
 			data-ad-slot="6037331449"
 			data-ad-format="auto"
@@ -139,35 +139,11 @@
 		<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
-		
+
          </div>
 
 		 <div class="downloadSection flex-column" id="downloadSection">
 			 <p class="waiting" id="waiting"></p>
-			
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- long-width -->
-				<ins class="adsbygoogle"
-					style="display:block;width:100%;height:auto;"
-					data-ad-client="ca-pub-6036528993346308"
-					data-ad-slot="6037331449"
-					data-ad-format="auto"
-					data-full-width-responsive="true"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- long-width -->
-				<ins class="adsbygoogle"
-					style="display:block;width:100%;height:auto;"
-					data-ad-client="ca-pub-6036528993346308"
-					data-ad-slot="6037331449"
-					data-ad-format="auto"
-					data-full-width-responsive="true"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
 			 
   <div class="container__progressbars">
 
@@ -277,11 +253,36 @@
 
 		Array.from(jsonData).forEach(function(e,index){
 			downloadCheatSheets.innerHTML+=`
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- long-width -->
+			<ins class="adsbygoogle"
+				style="display:block;width:100%;height:300px;"
+				data-ad-client="ca-pub-6036528993346308"
+				data-ad-slot="6037331449"
+				data-ad-format="auto"
+				data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+
 				<div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
 					<img src="logos/${(e.imgLink)}" alt="${e.languageName} Cheat sheet">
 					<p class="language-name">${e.languageName}</p>
 					<a target="_blank" href="${redirectionLinks[randomNumber]}" onclick="redirect('${(e.imgLink).slice(0,-4)}'); downloadRedirecting();">Download</a>
 				</div>
+
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- long-width -->
+			<ins class="adsbygoogle"
+				style="display:block;width:100%;height:300px;"
+				data-ad-client="ca-pub-6036528993346308"
+				data-ad-slot="6037331449"
+				data-ad-format="auto"
+				data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
 			`
 		});
 		</script>
