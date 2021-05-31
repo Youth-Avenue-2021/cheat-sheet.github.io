@@ -40,7 +40,6 @@ function addAds() {
 
     let createAd = document.createElement('div')
     createAd.setAttribute('class', 'ads-section')
-    createAd.setAttribute('class', 'flex-column')
     createAd.innerHTML = `
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- long-width -->
