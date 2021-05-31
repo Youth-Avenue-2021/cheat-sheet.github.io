@@ -39,7 +39,8 @@ let waitingSeconds = 10;
 function addAds() {
 
     let createAd = document.createElement('div')
-    createAd.setAttribute('class', 'ads-section')
+    // createAd.setAttribute('class', 'ads-section')
+    // createAd.setAttribute('align', 'center')
     createAd.innerHTML = `
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- long-width -->
