@@ -850,6 +850,50 @@ input[type=text]:focus, textarea:focus {
 	margin: 20px auto 0;
 }
 
+/* eg materials */
+.waiting-timer-div{
+	width: 100%;
+}
+.waiting-timer-div #eg-waiting-note{
+	margin: 10px auto;
+	width: 90%;
+	font-size: 1.6em;
+    background: #76e6ff;
+	text-align: center;
+	padding: 10px;
+	border-radius: 4px;
+}
+.saparate-eg-file{
+	margin: 40px auto;
+	text-align: center;
+	background: white;
+}
+.download-materials{
+	min-height: 100vh;
+	margin: 10px auto 40px;
+}
+.download-materials .saparate-eg-file .file-desc{
+	width: 100%;
+    background: var(--color-blue);
+    padding: 20px 30px;
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.download-materials .saparate-eg-file .eg-download-btn{
+	padding: 15px 30px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin: 10px auto 10px;
+    color: var(--color-blue);
+    transition: 0.18s all;
+}
+.download-materials .saparate-eg-file .eg-download-btn:hover{
+    color: var(--color7);
+	background: var(--color-blue);
+}
+
 @media (max-width: 360px){
 	#heading{
 		letter-spacing: 1.1px;
@@ -882,6 +926,11 @@ input[type=text]:focus, textarea:focus {
 		border-radius: 4px;
 		cursor: pointer;
 		font-size: 1em;
+	}
+}
+@media (max-width: 480px){
+	.saparate-eg-file{
+		width: 90%;
 	}
 }
 @media (max-width: 540px){
