@@ -84,7 +84,7 @@ let timerOfInterval = setInterval(() => {
     egWaitingNote.innerText = `Please wait ${waitingSeconds} seconds for download all EG-Materials...`
     if(waitingSeconds==-1){
         waitingTimerDiv.style.display='none';
-        document.getElementById('topAd').style.display='none';
+        // document.getElementById('topAd').style.display='none';
         clearInterval(timerOfInterval);
     }
     waitingSeconds--
