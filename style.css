@@ -293,6 +293,7 @@ html{
 }
 .sidebar-access-btn button{
 	letter-spacing: -0.5px !important;
+	font-family: var(--font) !important;
 	cursor: pointer;
 	border-radius: 50%;
 	font-size: 1.7em;
@@ -312,7 +313,7 @@ html{
     height: 100vh;
     /* background: #ffffff7a; */
     /* background: #ffffffe0; */
-    background: #e9fbff;
+    background: #f3f3f3;
     color: whitesmoke;
     z-index: -100;
 	transition: .4s ease;
@@ -782,6 +783,8 @@ input[type=text]:focus, textarea:focus {
 }
 .download-cheat-sheets .saparate-cheat-sheet .language-name{
 	padding: 10px 20px 20px;
+	text-align: center;
+	font-size: 1.1rem;
 }
 .download-cheat-sheets .saparate-cheat-sheet img{
 	padding: 20px 10px 10px 10px;
@@ -793,6 +796,7 @@ input[type=text]:focus, textarea:focus {
 	padding: 15px;
 }
 #downloadSection{
+	padding: 0 0 200px;
 	display: none;
 }
 .downloadSection .downloadButtons{
