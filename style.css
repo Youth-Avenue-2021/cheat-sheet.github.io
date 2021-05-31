@@ -869,6 +869,7 @@ input[type=text]:focus, textarea:focus {
 	background: white;
 }
 .download-materials{
+	width: 100%;
 	min-height: 100vh;
 	margin: 10px auto 40px;
 }
