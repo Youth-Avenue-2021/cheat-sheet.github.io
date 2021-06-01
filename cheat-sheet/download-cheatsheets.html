@@ -294,7 +294,7 @@
 			createAdDiv.append(ins)
 			createAdDiv.append(createScript2)
 			// downloadCheatSheets.append(createAdDiv)
-			waitingTimerAds.append(createAdDiv)
+			document.querySelector(waitingTimerAds).append(createAdDiv)
 		}
 		let index=0;
 		Array.from(jsonData).forEach(function(e,index){
