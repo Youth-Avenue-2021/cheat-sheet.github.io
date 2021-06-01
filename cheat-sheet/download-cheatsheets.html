@@ -134,8 +134,8 @@
 			<p class="waiting" id="waiting"></p>
 			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- long-width -->
-			<ins class="adsbygoogle"
-				style="display:block;width:100%;height:300px;"
+			<ins class="adsbygoogle" id="waitingAds"
+				style="display:none;width:100%;height:300px;"
 				data-ad-client="ca-pub-6036528993346308"
 				data-ad-slot="6037331449"
 				data-ad-format="auto"
@@ -379,6 +379,7 @@
 			let seconds=20;
 
 			function redirect(languageName){
+				document.getElementById('waitingAds').style.display='block';
 				switch (languageName){
 					case 'all-programming':
 						displayDownloadButtons(1, 'all-programming');
@@ -444,8 +445,8 @@
 
 			function displayDownloadButtons(number_of_pdfs, language_name){
 				setTimeout(() => {
-					addAds(document.querySelector('.addAdsForDownloadButtons'));
-					addAds(document.querySelector('.addAdsForDownloadButtons'));
+					// addAds(document.querySelector('.addAdsForDownloadButtons'));
+					// addAds(document.querySelector('.addAdsForDownloadButtons'));
 					container__progressbars.style.display='none';
 					waiting.innerText=`Refresh this page to download more cheat sheets...`;
 					document.querySelector('.language_name_box').style.display='block';
