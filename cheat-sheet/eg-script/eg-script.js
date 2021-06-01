@@ -37,7 +37,7 @@ const downloadMaterialsDiv = document.querySelector('.download-materials');
 let waitingSeconds = 10;
 
 function addAds() {
-
+    /*
     let createAd = document.createElement('div')
     // createAd.setAttribute('class', 'ads-section')
     // createAd.setAttribute('align', 'center')
@@ -52,6 +52,25 @@ function addAds() {
     </script>
     `
     downloadMaterialsDiv.append(createAd)
+    */
+    window.google_ad_client = "ca-pub-6036528993346308";
+    window.google_ad_slot = "6037331449";
+    window.google_ad_width = 200;
+    window.google_ad_height = 200;
+
+    // container is where you want the ad to be inserted
+    var container = document.getElementById('ad_container');
+    var w = document.write;
+    document.write = function (content) {
+        container.innerHTML = content;
+        document.write = w;
+    };
+
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.setAttribute('async', 'async');
+    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+    document.body.appendChild(script);
 }
 
 function getFileData(fileName, fileData) {
@@ -75,16 +94,16 @@ function getFileData(fileName, fileData) {
 }
 const progressBarTimer = document.getElementById('progress_bar_timer');
 const egWaitingNote = document.getElementById('eg-waiting-note');
-const waitingTimerDiv=document.querySelector('.waiting-timer-div');
+const waitingTimerDiv = document.querySelector('.waiting-timer-div');
 
 let i = 0;
 
 let timerOfInterval = setInterval(() => {
     progressBarTimer.innerText = waitingSeconds
     egWaitingNote.innerText = `Please wait ${waitingSeconds} seconds for download all EG-Materials...`
-    if(waitingSeconds==-1){
-        waitingTimerDiv.style.display='none';
-        document.getElementById('topAd').style.display='none';
+    if (waitingSeconds == -1) {
+        waitingTimerDiv.style.display = 'none';
+        document.getElementById('topAd').style.display = 'none';
         clearInterval(timerOfInterval);
     }
     waitingSeconds--
@@ -98,4 +117,4 @@ setTimeout(() => {
         }
         i++
     })
-}, (waitingSeconds+2) * 1000);
+}, (waitingSeconds + 2) * 1000);
