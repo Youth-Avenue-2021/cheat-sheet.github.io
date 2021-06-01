@@ -293,8 +293,7 @@
 			createAdDiv.append(createScript1)
 			createAdDiv.append(ins)
 			createAdDiv.append(createScript2)
-			// downloadCheatSheets.append(createAdDiv)
-			document.querySelector(waitingTimerAds).append(createAdDiv)
+			downloadCheatSheets.append(createAdDiv)
 		}
 		let index=0;
 		Array.from(jsonData).forEach(function(e,index){
@@ -442,7 +441,7 @@
 						break;
 				}
 				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
-				// addAds(document.querySelector('.addAdsForWaitingTimer'));
+				addAdsForTimer();
 				let timerOfInterval = setInterval(() => {
 					progress_bar_timer.innerText=`${seconds}`;
 					timer.innerHTML=`your cheat sheet is ready to download in ${seconds} seconds.`;
