@@ -37,24 +37,10 @@ const downloadMaterialsDiv = document.querySelector('.download-materials');
 let waitingSeconds = 10;
 
 function addAds() {
-    /*    
-    let createAd = document.createElement('div')
-    // createAd.setAttribute('class', 'ads-section')
-    // createAd.setAttribute('align', 'center')
-    createAd.innerHTML = `
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- long-width -->
-    <ins class="adsbygoogle" style="display:block;width:100%;height:300px;margin:20px auto;"
-    data-ad-client="ca-pub-6036528993346308" data-ad-slot="6037331449" data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    `
-    downloadMaterialsDiv.append(createAd)
-    */
 
     let createAdDiv=document.createElement('div')
+    createAdDiv.setAttribute('align','center')
+    createAdDiv.setAttribute('style','width: 100%;')
 
     let createScript1=document.createElement('script')
     createScript1.setAttribute('async','async')
