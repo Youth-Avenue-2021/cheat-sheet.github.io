@@ -132,17 +132,7 @@
 
 		 <div class="downloadSection flex-column" id="downloadSection">
 			<p class="waiting" id="waiting"></p>
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- long-width -->
-			<ins class="adsbygoogle" id="waitingAds"
-				style="display:none;width:100%;height:300px;"
-				data-ad-client="ca-pub-6036528993346308"
-				data-ad-slot="6037331449"
-				data-ad-format="auto"
-				data-full-width-responsive="true"></ins>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
+			<div class="waitingTimerAds"></div>
 			 
   <div class="container__progressbars">
 
@@ -277,6 +267,34 @@
 			createAdDiv.append(createScript2)
 			// downloadCheatSheets.append(createAdDiv)
 			addTo.append(createAdDiv)
+		}
+		
+		function addAdsForTimer() {
+			let createAdDiv=document.createElement('div')
+			createAdDiv.setAttribute('align','center')
+			createAdDiv.setAttribute('style','width: 100%;')
+
+			let createScript1=document.createElement('script')
+			createScript1.setAttribute('async','async')
+			createScript1.setAttribute('src','https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+
+			let ins=document.createElement('ins')
+			ins.setAttribute('class','adsbygoogle')
+			ins.setAttribute('id','adsStyling')
+			ins.setAttribute('style','display:block;width:80%;height:300px;margin:20px auto;')
+			ins.setAttribute('data-ad-client','ca-pub-6036528993346308')
+			ins.setAttribute('data-ad-slot','6037331449')
+			ins.setAttribute('data-ad-format','auto')
+			ins.setAttribute('data-full-width-responsive','true')
+
+			let createScript2=document.createElement('script')
+			createScript2.innerText='(adsbygoogle = window.adsbygoogle || []).push({});'
+
+			createAdDiv.append(createScript1)
+			createAdDiv.append(ins)
+			createAdDiv.append(createScript2)
+			// downloadCheatSheets.append(createAdDiv)
+			waitingTimerAds.append(createAdDiv)
 		}
 		let index=0;
 		Array.from(jsonData).forEach(function(e,index){
