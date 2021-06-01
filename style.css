@@ -934,14 +934,14 @@ input[type=text]:focus, textarea:focus {
 
 /* ads styling */
 #adsStyling{
-	width: 70vw !important;
-	height: 250px !important;
+	width: 100vw !important;
+	height: 300px !important;
 }
 
 @media (max-width: 480px){
 	#adsStyling{
 		width: 280px !important;
-		height: 250px !important;
+		height: 300px !important;
 	}
 	.saparate-eg-file{
 		width: 90%;
