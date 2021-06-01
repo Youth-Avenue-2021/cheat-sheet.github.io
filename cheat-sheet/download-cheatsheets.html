@@ -144,6 +144,7 @@
 
 		 <div class="downloadSection flex-column" id="downloadSection">
 			 <p class="waiting" id="waiting"></p>
+			 <div class="addAdsForWaitingTimer"></div>
 			 
   <div class="container__progressbars">
 
@@ -158,6 +159,7 @@
 			 	<progress id="progress" value="0" max="100"></progress>
 			 </div> -->
 			 <p class="timer" id="timer"></p>
+			 <div class="addAdsForDownloadButtons"></div>
 			 <div class="downloadButtons flex-column">
 				<div class="language_name_box"></div>
 			</div>
@@ -240,7 +242,7 @@
 		let redirectionLinks=['https://www.web-developer-abhi.tk/','https://github.com/Youth-Avenue-2021/cheat-sheet.github.io#readme','https://github.com/vanshika0111','https://github.com/abhidadhaniya23'];
 		let randomNumber=parseInt(Math.random()*redirectionLinks.length);
 		
-		function addAds() {
+		function addAds(addTo) {
 			let createAdDiv=document.createElement('div')
 			createAdDiv.setAttribute('align','center')
 			createAdDiv.setAttribute('style','width: 100%;')
@@ -263,7 +265,8 @@
 			createAdDiv.append(createScript1)
 			createAdDiv.append(ins)
 			createAdDiv.append(createScript2)
-			downloadCheatSheets.append(createAdDiv)
+			// downloadCheatSheets.append(createAdDiv)
+			addTo.append(createAdDiv)
 		}
 		let index=0;
 		Array.from(jsonData).forEach(function(e,index){
@@ -277,12 +280,12 @@
 			`
 			if(innerWidth<420){
 				if(index%4==0){
-					addAds();
+					addAds(downloadCheatSheets);
 				}
 			}
 			else{
 				if(index%3==0){
-					addAds();
+					addAds(downloadCheatSheets);
 				}
 			}
 			index++;
@@ -418,7 +421,8 @@
 						break;
 				}
 				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
-
+				addAds(document.querySelector('.addAdsForWaitingTimer'));
+				addAds(document.querySelector('.container__progressbars'));
 				let timerOfInterval = setInterval(() => {
 					progress_bar_timer.innerText=`${seconds}`;
 					timer.innerHTML=`your cheat sheet is ready to download in ${seconds} seconds.`;
@@ -438,6 +442,8 @@
 
 			function displayDownloadButtons(number_of_pdfs, language_name){
 				setTimeout(() => {
+					addAds(document.querySelector('.addAdsForDownloadButtons'));
+					addAds(document.querySelector('.addAdsForDownloadButtons'));
 					container__progressbars.style.display='none';
 					waiting.innerText=`Refresh this page to download more cheat sheets...`;
 					document.querySelector('.language_name_box').style.display='block';
