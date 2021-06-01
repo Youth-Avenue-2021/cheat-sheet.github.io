@@ -40,7 +40,7 @@ function addAds() {
 
     let createAdDiv=document.createElement('div')
     createAdDiv.setAttribute('align','center')
-    createAdDiv.setAttribute('style','width: 100%;')
+    createAdDiv.setAttribute('style','width: 80%;')
 
     let createScript1=document.createElement('script')
     createScript1.setAttribute('async','async')
