@@ -931,6 +931,13 @@ input[type=text]:focus, textarea:focus {
 		font-size: 1em;
 	}
 }
+
+/* ads styling */
+#adsStyling{
+	width: 250px !important;
+	height: 250px !important;
+}
+
 @media (max-width: 480px){
 	.saparate-eg-file{
 		width: 90%;

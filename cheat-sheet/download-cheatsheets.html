@@ -253,6 +253,7 @@
 
 			let ins=document.createElement('ins')
 			ins.setAttribute('class','adsbygoogle')
+			ins.setAttribute('id','adsStyling')
 			ins.setAttribute('style','display:block;width:100%;height:300px;margin:20px auto;')
 			ins.setAttribute('data-ad-client','ca-pub-6036528993346308')
 			ins.setAttribute('data-ad-slot','6037331449')
@@ -278,15 +279,8 @@
 					<a target="_blank" href="${redirectionLinks[randomNumber]}" onclick="redirect('${(e.imgLink).slice(0,-4)}'); downloadRedirecting();">Download</a>
 				</div>
 			`
-			if(innerWidth<420){
-				if(index%4==0){
-					addAds(downloadCheatSheets);
-				}
-			}
-			else{
-				if(index%6==0){
-					addAds(downloadCheatSheets);
-				}
+			if(index%6==0){
+				addAds(downloadCheatSheets);
 			}
 			index++;
 		});
