@@ -37,7 +37,7 @@ const downloadMaterialsDiv = document.querySelector('.download-materials');
 let waitingSeconds = 10;
 
 function addAds() {
-    /*
+    /*    
     let createAd = document.createElement('div')
     // createAd.setAttribute('class', 'ads-section')
     // createAd.setAttribute('align', 'center')
@@ -53,24 +53,29 @@ function addAds() {
     `
     downloadMaterialsDiv.append(createAd)
     */
-    window.google_ad_client = "ca-pub-6036528993346308";
-    window.google_ad_slot = "6037331449";
-    window.google_ad_width = 200;
-    window.google_ad_height = 200;
 
-    // container is where you want the ad to be inserted
-    var container = document.getElementById('ad_container');
-    var w = document.write;
-    document.write = function (content) {
-        container.innerHTML = content;
-        document.write = w;
-    };
+    let createAdDiv=document.createElement('div')
 
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.setAttribute('async', 'async');
-    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-    document.body.appendChild(script);
+    let createScript1=document.createElement('script')
+    createScript1.setAttribute('async','async')
+    createScript1.setAttribute('src','https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+
+    let ins=document.createElement('ins')
+    ins.setAttribute('class','adsbygoogle')
+    ins.setAttribute('style','display:block;width:100%;height:300px;margin:20px auto;')
+    ins.setAttribute('data-ad-client','ca-pub-6036528993346308')
+    ins.setAttribute('data-ad-slot','6037331449')
+    ins.setAttribute('data-ad-format','auto')
+    ins.setAttribute('data-full-width-responsive','true')
+    
+    let createScript2=document.createElement('script')
+    createScript2.innerText='(adsbygoogle = window.adsbygoogle || []).push({});'
+
+    createAdDiv.append(createScript1)
+    createAdDiv.append(ins)
+    createAdDiv.append(createScript2)
+    downloadMaterialsDiv.append(createAdDiv)
+
 }
 
 function getFileData(fileName, fileData) {
