@@ -934,11 +934,15 @@ input[type=text]:focus, textarea:focus {
 
 /* ads styling */
 #adsStyling{
-	width: 250px !important;
+	width: 70vw !important;
 	height: 250px !important;
 }
 
 @media (max-width: 480px){
+	#adsStyling{
+		width: 280px !important;
+		height: 250px !important;
+	}
 	.saparate-eg-file{
 		width: 90%;
 		min-width: 100px;
