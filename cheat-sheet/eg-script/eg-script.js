@@ -40,7 +40,7 @@ function addAds() {
 
     let createAdDiv=document.createElement('div')
     createAdDiv.setAttribute('align','center')
-    createAdDiv.setAttribute('style','width: 80%;')
+    createAdDiv.setAttribute('style','width: 100%;')
 
     let createScript1=document.createElement('script')
     createScript1.setAttribute('async','async')
@@ -49,7 +49,7 @@ function addAds() {
     let ins=document.createElement('ins')
     ins.setAttribute('class','adsbygoogle')
     ins.setAttribute('id','adsStyling')
-    ins.setAttribute('style','display:block;width:100%;height:300px;margin:20px auto;')
+    ins.setAttribute('style','display:block;width:80%;height:300px;margin:30px auto;@media (max-width: 500px){width:300px !important;}')
     ins.setAttribute('data-ad-client','ca-pub-6036528993346308')
     ins.setAttribute('data-ad-slot','6037331449')
     ins.setAttribute('data-ad-format','auto')
