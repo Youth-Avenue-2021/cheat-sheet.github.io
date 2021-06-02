@@ -49,7 +49,7 @@ function addAds() {
     let ins=document.createElement('ins')
     ins.setAttribute('class','adsbygoogle')
     ins.setAttribute('id','adsStyling')
-    ins.setAttribute('style','display:block;width:300%;height:300px;@media (max-width: 500px){max-width:300px !important;}')
+    ins.setAttribute('style','display:block;width:300px;height:300px;@media (max-width: 500px){max-width:300px !important;}')
     ins.setAttribute('data-ad-client','ca-pub-6036528993346308')
     ins.setAttribute('data-ad-slot','6037331449')
     ins.setAttribute('data-ad-format','auto')
