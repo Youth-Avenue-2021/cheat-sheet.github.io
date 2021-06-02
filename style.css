@@ -948,8 +948,8 @@ input[type=text]:focus, textarea:focus {
 
 @media (max-width: 480px){
 	.adsbygoogle{
-		width: 300px !important;
-		height: 300px !important;
+		width: 280px !important;
+		height: 280px !important;
 	}
 	#adsStyling{
 		width: 300px !important;
