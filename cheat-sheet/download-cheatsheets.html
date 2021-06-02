@@ -161,12 +161,14 @@
 				</div>
 
 			</div>
+
 			<!-- <div class="progressBar">
 			 	<progress id="progress" value="0" max="100"></progress>
 			 </div> -->
-			<p class="timer" id="timer"></p>
 
 			<div class="addAdsForDownloadButtons"></div>
+			<p class="timer" id="timer"></p>
+
 			<div class="downloadButtons flex-column">
 				<div class="language_name_box"></div>
 			</div>
@@ -276,36 +278,6 @@
 			// downloadCheatSheets.append(createAdDiv)
 			addTo.append(createAdDiv)
 		}
-		/*
-		function addAdsForTimer() {
-			let createAdDiv=document.createElement('div')
-			createAdDiv.setAttribute('align','center')
-			// createAdDiv.setAttribute('style','width: 100%;')
-
-			let createScript1=document.createElement('script')
-			createScript1.setAttribute('async','async')
-			createScript1.setAttribute('src','https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
-
-			let ins=document.createElement('ins')
-			ins.setAttribute('class','adsbygoogle')
-			ins.setAttribute('id','adsStyling')
-			ins.setAttribute('style','display:block;width:100%;height:300px;margin:20px auto;')
-			ins.setAttribute('data-ad-client','ca-pub-6036528993346308')
-			ins.setAttribute('data-ad-slot','6037331449')
-			ins.setAttribute('data-ad-format','auto')
-			ins.setAttribute('data-full-width-responsive','true')
-
-			let createScript2=document.createElement('script')
-			createScript2.innerText='(adsbygoogle = window.adsbygoogle || []).push({});'
-
-			createAdDiv.append(createScript1)
-			createAdDiv.append(ins)
-			createAdDiv.append(createScript2)
-			// downloadCheatSheets.append(createAdDiv)
-			document.querySelector('.waitingTimerAds').replaceWith(createAdDiv);
-			// document.querySelector('.waitingTimerAds').append(createAdDiv)
-		}
-		*/
 		let index = 0;
 		Array.from(jsonData).forEach(function (e, index) {
 			if (index % 6 == 0) {
@@ -499,7 +471,6 @@
 					}
 					document.querySelector('.downloadButtons').appendChild(downloadBtn);
 				}
-				addAdsForDownloadButtons.style.display='none';
 			}, `${(seconds * 1000) + 2000}`);
 		}
 

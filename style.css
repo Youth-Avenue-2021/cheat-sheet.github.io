@@ -946,10 +946,10 @@ input[type=text]:focus, textarea:focus {
 	height: 270px; */
 }
 
-@media (max-width: 480px){
+@media (max-width: 500px){
 	.adsbygoogle{
-		width: 280px !important;
-		height: 280px !important;
+		width: 300px !important;
+		height: 300px !important;
 	}
 	#adsStyling{
 		width: 300px !important;
