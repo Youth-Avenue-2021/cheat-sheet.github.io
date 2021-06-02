@@ -34,7 +34,7 @@ let filesData = [
 ]
 
 const downloadMaterialsDiv = document.querySelector('.download-materials');
-let waitingSeconds = 10;
+let waitingSeconds = 20;
 
 function addAds() {
 
@@ -92,7 +92,7 @@ let i = 0;
 
 let timerOfInterval = setInterval(() => {
     progressBarTimer.innerText = waitingSeconds
-    egWaitingNote.innerText = `Please wait ${waitingSeconds} seconds for download all EG-Materials...`
+    egWaitingNote.innerText = `Please wait for ${waitingSeconds} seconds while the data is fetched from the server to download EG-Materials...`
     if (waitingSeconds == -1) {
         waitingTimerDiv.style.display = 'none';
         document.getElementById('topAd').style.display = 'none';

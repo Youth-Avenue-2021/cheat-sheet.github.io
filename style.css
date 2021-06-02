@@ -938,6 +938,27 @@ input[type=text]:focus, textarea:focus {
 	}
 }
 
+.download-eg-files{
+	margin: 20px auto 40px;
+}
+.download-eg-files a{
+	font-family: var(--font);
+	font-size: 1.1em;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	padding: 20px;
+	border-radius: 7px;
+	color: var(--color-blue);
+	background: var(--color-green);
+	cursor: pointer;
+	transition: 0.4s ease;
+}
+.download-eg-files a:hover{
+	box-shadow:	inset 0px 0px 20px 8px #00000025;
+}
+
+
 @media (max-width: 500px){
 	.saparate-eg-file{
 		width: 90%;
