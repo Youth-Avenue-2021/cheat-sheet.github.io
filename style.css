@@ -896,6 +896,11 @@ input[type=text]:focus, textarea:focus {
     color: var(--color7);
 	background: var(--color-blue);
 }
+.addAdsForWaitingTimer,
+.addAdsForDownloadButtons{
+	position: relative;
+	width: 100%;
+}
 
 @media (max-width: 360px){
 	#heading{
