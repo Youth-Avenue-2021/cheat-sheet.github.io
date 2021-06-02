@@ -939,7 +939,7 @@ input[type=text]:focus, textarea:focus {
 
 /* ads styling */
 #adsStyling{
-	/* margin: 30px auto; */
+	margin: 30px auto;
 	/* width: 100% !important;
 	height: 270px !important; */
 	/* width: 100%;
@@ -947,6 +947,10 @@ input[type=text]:focus, textarea:focus {
 }
 
 @media (max-width: 480px){
+	.adsbygoogle{
+		width: 300px !important;
+		height: 300px !important;
+	}
 	#adsStyling{
 		width: 300px !important;
 		height: 300px !important;
