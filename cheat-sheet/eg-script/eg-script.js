@@ -77,7 +77,7 @@ function getFileData(fileName, fileData) {
 
     let createfileDownload = document.createElement('a')
     createfileDownload.setAttribute('class', 'eg-download-btn')
-    createfileDownload.setAttribute('href', `../pdf/EG-Materials/${fileData}`)
+    createfileDownload.setAttribute('href', `../pdf/EG-Material/${fileData}`)
     createfileDownload.innerText = 'Download'
     createFileData.append(createfileDownload)
 
