@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" id="html">
-	<head>
-      <script data-ad-client="ca-pub-6036528993346308" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<meta charset="UTF-8">
-      	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
-		<title>Cheat Sheet : All Programming Languages</title>
-		<link rel="stylesheet" href="../style.css">
-		<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-		
-		<style>
+
+<head>
+	<script data-ad-client="ca-pub-6036528993346308" async
+		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<title>Cheat Sheet : All Programming Languages</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="shortcut icon" href="../fav-icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
-		*{
+
+		* {
 			font-family: 'Manrope', sans-serif;
 		}
-		.flex-row-warp-flex-start{
+
+		.flex-row-warp-flex-start {
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-start;
@@ -33,6 +37,7 @@
 			width: 100%;
 			min-height: 100%;
 		}
+
 		.progressbar {
 			position: relative;
 			width: 170px;
@@ -40,11 +45,13 @@
 			margin: 1em;
 			transform: rotate(-90deg);
 		}
+
 		.progressbar__svg {
 			position: relative;
 			width: 100%;
 			height: 100%;
 		}
+
 		.progressbar__svg-circle {
 			width: 100%;
 			height: 100%;
@@ -56,12 +63,14 @@
 			stroke-linecap: round;
 			transform: translate(5px, 5px);
 		}
+
 		/* .shadow-html {
 			filter: drop-shadow(0 0 5px #f63);
 		} */
 		.circle-html {
 			animation: anim_circle-html 20s ease-in-out forwards;
 		}
+
 		.progressbar__text {
 			position: absolute;
 			top: 50%;
@@ -74,19 +83,22 @@
 			border-radius: 0.25em;
 			transform: translate(-50%, -50%) rotate(90deg);
 		}
+
 		@keyframes anim_circle-html {
 			to {
 				stroke-dashoffset: 22;
 			}
 		}
-		@media (max-width: 360px){
-			#heading{
+
+		@media (max-width: 360px) {
+			#heading {
 				display: block !important;
 				font-size: .8em !important;
 			}
 		}
-		@media (max-width: 540px){
-			.flex-row-warp-flex-start{
+
+		@media (max-width: 540px) {
+			.flex-row-warp-flex-start {
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
@@ -94,101 +106,105 @@
 				flex-wrap: wrap;
 			}
 		}
-		</style>
-	</head>
-	<body class="flex-column">
+	</style>
+</head>
 
-		<div class="sidebar-access-btn">
-		   <button id="sidebar-access-btn">&lt;/&gt;</button>
-		</div>		
-		
-		<div class="sidebar" id="sidebar">
-			<ul class="flex-column-flex-start">
-				<li class="home-page"><a href="../">Cheat Sheets</a></li>
-				<a class="webpage" href="html"><i class="fa fa-clone sidebar-icons"></i> HTML</a>
-				<a class="webpage" href="css"><i class="fa fa-clone sidebar-icons"></i> CSS</a>
-				<a class="webpage" href="python"><i class="fa fa-clone sidebar-icons"></i> Python</a>
-				<a class="webpage" href="c"><i class="fa fa-clone sidebar-icons"></i> C Programming</a>
-				<a class="webpage" href="keyboard-shortcuts"><i class="fa fa-clone sidebar-icons"></i> Keyboard Shortcuts</a>
-				<a class="webpage" href="download-cheatsheets"><i class="fa fa-clone sidebar-icons"></i> Download All Cheatsheets</a>
-				<a class="webpage" href="../#third-team"><i class="fa fa-users sidebar-icons"></i>Our Team</a>
-			</ul>
-		</div>
+<body class="flex-column">
+
+	<div class="sidebar-access-btn">
+		<button id="sidebar-access-btn">&lt;/&gt;</button>
+	</div>
+
+	<div class="sidebar" id="sidebar">
+		<ul class="flex-column-flex-start">
+			<li class="home-page"><a href="../">Cheat Sheets</a></li>
+			<a class="webpage" href="html"><i class="fa fa-clone sidebar-icons"></i> HTML</a>
+			<a class="webpage" href="css"><i class="fa fa-clone sidebar-icons"></i> CSS</a>
+			<a class="webpage" href="python"><i class="fa fa-clone sidebar-icons"></i> Python</a>
+			<a class="webpage" href="c"><i class="fa fa-clone sidebar-icons"></i> C Programming</a>
+			<a class="webpage" href="keyboard-shortcuts"><i class="fa fa-clone sidebar-icons"></i> Keyboard
+				Shortcuts</a>
+			<a class="webpage" href="download-cheatsheets"><i class="fa fa-clone sidebar-icons"></i> Download All
+				Cheatsheets</a>
+			<a class="webpage" href="../#third-team"><i class="fa fa-users sidebar-icons"></i>Our Team</a>
+		</ul>
+	</div>
 
 
-		<div class="main-body" id="mainBody">
+	<div class="main-body" id="mainBody">
 
 		<!-- <i id="showmenu" class="fa fa-bars menu" aria-hidden="true"></i> -->
 		<h1 class="heading"><span id="heading">Cheat Sheets</span></h1>
 
 		<div id="download-cheat-sheets" class="download-cheat-sheets flex-row-warp-2">
-            <!-- <div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
+			<!-- <div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
                <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png" alt="Html Cheat sheet">
                <p class="language-name">Html</p>
                <a href="cheat-sheet/html">Download</a>
             </div> -->
 
-         </div>
+		</div>
 
-		 <div class="downloadSection flex-column" id="downloadSection">
+		<div class="downloadSection flex-column" id="downloadSection">
 			<p class="waiting" id="waiting"></p>
 			<!-- <div class="waitingTimerAds" style="width:100%;height:auto;"></div> -->
-			 <div class="addAdsForWaitingTimer"></div>
-			 
-  <div class="container__progressbars">
+			<div class="addAdsForWaitingTimer"></div>
 
-    <div class="progressbar">
-      <svg class="progressbar__svg">
-        <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
-      </svg>
-      <span class="progressbar__text shadow-html" id="progress_bar_timer"></span>
-    </div>
-  </div>
-			 <!-- <div class="progressBar">
+			<div class="container__progressbars">
+
+				<div class="progressbar">
+					<svg class="progressbar__svg">
+						<circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html">
+						</circle>
+					</svg>
+					<span class="progressbar__text shadow-html" id="progress_bar_timer"></span>
+				</div>
+			</div>
+			<!-- <div class="progressBar">
 			 	<progress id="progress" value="0" max="100"></progress>
 			 </div> -->
-			 <p class="timer" id="timer"></p>
-        <div align="center" id="uniqueAdsTimer1" style="display:none;width: 100%;margin: 100px auto 20px">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- long-width -->
-            <ins class="adsbygoogle" style="display:block;width:100%;height:300px;"
-                data-ad-client="ca-pub-6036528993346308" data-ad-slot="6037331449" data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+			<p class="timer" id="timer"></p>
+			<div align="center" id="uniqueAdsTimer1" style="display:none;width: 100%;margin: 100px auto 20px">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- long-width -->
+				<ins class="adsbygoogle" style="display:block;width:100%;height:300px;"
+					data-ad-client="ca-pub-6036528993346308" data-ad-slot="6037331449" data-ad-format="auto"
+					data-full-width-responsive="true"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
 
-        <div align="center" id="uniqueAdsTimer2" style="display:none;width: 100%;margin: 100px auto 20px">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- long-width -->
-            <ins class="adsbygoogle" style="display:block;width:100%;height:300px;"
-                data-ad-client="ca-pub-6036528993346308" data-ad-slot="6037331449" data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-			 <!-- <div class="addAdsForDownloadButtons"></div> -->
-			 <div class="downloadButtons flex-column">
+			<div align="center" id="uniqueAdsTimer2" style="display:none;width: 100%;margin: 100px auto 20px">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- long-width -->
+				<ins class="adsbygoogle" style="display:block;width:100%;height:300px;"
+					data-ad-client="ca-pub-6036528993346308" data-ad-slot="6037331449" data-ad-format="auto"
+					data-full-width-responsive="true"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+			<!-- <div class="addAdsForDownloadButtons"></div> -->
+			<div class="downloadButtons flex-column">
 				<div class="language_name_box"></div>
 			</div>
 		</div>
-		
+
 
 		<!-- <div class="footer">
 			Copyright &#169; 2021 || All Rights Reserved.
 		</div> -->
 
-		</div>
-	
-		<!-- <script src="../prism/prism.js"></script> -->
-		<script async src="../script/sidebar.js"></script>
-		<script>
-			
-		let downloadCheatSheets=document.getElementById('download-cheat-sheets');
+	</div>
 
-		let jsonData=[
+	<!-- <script src="../prism/prism.js"></script> -->
+	<script async src="../script/sidebar.js"></script>
+	<script>
+
+		let downloadCheatSheets = document.getElementById('download-cheat-sheets');
+
+		let jsonData = [
 
 			{
 				'languageName': 'Programming Career',
@@ -249,29 +265,29 @@
 
 		];
 
-		let redirectionLinks=['https://www.web-developer-abhi.tk/','https://github.com/Youth-Avenue-2021/cheat-sheet.github.io#readme','https://github.com/vanshika0111','https://github.com/abhidadhaniya23'];
-		let randomNumber=parseInt(Math.random()*redirectionLinks.length);
-		
+		let redirectionLinks = ['https://www.web-developer-abhi.tk/', 'https://github.com/Youth-Avenue-2021/cheat-sheet.github.io#readme', 'https://github.com/vanshika0111', 'https://github.com/abhidadhaniya23'];
+		let randomNumber = parseInt(Math.random() * redirectionLinks.length);
+
 		function addAds(addTo) {
-			let createAdDiv=document.createElement('div')
-			createAdDiv.setAttribute('align','center')
-			createAdDiv.setAttribute('style','width: 100%;')
+			let createAdDiv = document.createElement('div')
+			createAdDiv.setAttribute('align', 'center')
+			createAdDiv.setAttribute('style', 'width: 100%;')
 
-			let createScript1=document.createElement('script')
-			createScript1.setAttribute('async','async')
-			createScript1.setAttribute('src','https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+			let createScript1 = document.createElement('script')
+			createScript1.setAttribute('async', 'async')
+			createScript1.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
 
-			let ins=document.createElement('ins')
-			ins.setAttribute('class','adsbygoogle')
-			ins.setAttribute('id','adsStyling')
-			ins.setAttribute('style','display:block;width:80%;height:300px;margin:20px auto;')
-			ins.setAttribute('data-ad-client','ca-pub-6036528993346308')
-			ins.setAttribute('data-ad-slot','6037331449')
-			ins.setAttribute('data-ad-format','auto')
-			ins.setAttribute('data-full-width-responsive','true')
+			let ins = document.createElement('ins')
+			ins.setAttribute('class', 'adsbygoogle')
+			ins.setAttribute('id', 'adsStyling')
+			ins.setAttribute('style', 'display:block;width:80%;height:300px;margin:20px auto;')
+			ins.setAttribute('data-ad-client', 'ca-pub-6036528993346308')
+			ins.setAttribute('data-ad-slot', '6037331449')
+			ins.setAttribute('data-ad-format', 'auto')
+			ins.setAttribute('data-full-width-responsive', 'true')
 
-			let createScript2=document.createElement('script')
-			createScript2.innerText='(adsbygoogle = window.adsbygoogle || []).push({});'
+			let createScript2 = document.createElement('script')
+			createScript2.innerText = '(adsbygoogle = window.adsbygoogle || []).push({});'
 
 			createAdDiv.append(createScript1)
 			createAdDiv.append(ins)
@@ -309,235 +325,236 @@
 			// document.querySelector('.waitingTimerAds').append(createAdDiv)
 		}
 		*/
-		let index=0;
-		Array.from(jsonData).forEach(function(e,index){
-			if(index%6==0){
+		let index = 0;
+		Array.from(jsonData).forEach(function (e, index) {
+			if (index % 6 == 0) {
 				addAds(downloadCheatSheets);
 			}
-			downloadCheatSheets.innerHTML+=`
+			downloadCheatSheets.innerHTML += `
 
 				<div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
 					<img src="logos/${(e.imgLink)}" alt="${e.languageName} Cheat sheet">
 					<p class="language-name">${e.languageName}</p>
-					<a target="_blank" href="${redirectionLinks[randomNumber]}" onclick="redirect('${(e.imgLink).slice(0,-4)}'); downloadRedirecting();">Download</a>
+					<a target="_blank" href="${redirectionLinks[randomNumber]}" onclick="redirect('${(e.imgLink).slice(0, -4)}'); downloadRedirecting();">Download</a>
 				</div>
 			`
 			index++;
 		});
-		</script>
+	</script>
 
-		<script>
+	<script>
 
-			let pdfJsonData=[
-				{
-					'name': 'all-programming',
-					'pdfFile': 'all-programming.jpg',
-					'numberOfPdfs': 1
-				},
-				{
-					'name': 'html',
-					'pdfFile': 'html.pdf',
-					'numberOfPdfs': 1
-				},
-				{
-					'name': 'css',
-					'pdfFile': 'css.pdf',
-					'numberOfPdfs': 3
-				},
-				{
-                    'name': 'git',
-					'pdfFile': 'git.pdf',
-					'numberofPdfs': 3
-				},
-				{
-                    'name': 'java',
-					'pdfFile': 'java.pdf',
-					'numerofPdfs': 1
-				},
-				{
-					'name': 'js',
-					'pdfFile': 'js.pdf',
-					'numberofPdfs': 2
-				},
-				{
-					'name': 'mongodb',
-					'pdfFile': 'mongodb.pdf',
-					'numberofPdfs': 2
-				},
-				{
-					'name': 'python',
-					'pdfFile': 'python.pdf',
-					'numberofPdfs': 5
-				},
-				{
-					'name': 'sql',
-					'pdfFile': 'sql.pdf',
-					'numberofPdfs': 1
-				},
-				{
-                    'name': 'sql-to-mongo',
-					'pdfFile': 'sql-to-mongo.pdf',
-					'numberofPdfs': 1
-				},
-				{
-                    'name': 'bootstrap',
-					'pdfFile': 'bootstrap.pdf',
-					'numberofPdfs': 1
-				},
-				{
-                    'name': 'c',
-					'pdfFile': 'c.pdf',
-					'numberofPdfs': 2 
-				},
-				{
-					'name': 'cpp',
-					'pdfFile': 'cpp.pdf',
-					'numberofPdfs': 1
-				},,
-				{
-					'name': 'cmd',
-					'pdfFile': 'cmd.pdf',
-					'numberofPdfs': 2
-				},
-			]
+		let pdfJsonData = [
+			{
+				'name': 'all-programming',
+				'pdfFile': 'all-programming.jpg',
+				'numberOfPdfs': 1
+			},
+			{
+				'name': 'html',
+				'pdfFile': 'html.pdf',
+				'numberOfPdfs': 1
+			},
+			{
+				'name': 'css',
+				'pdfFile': 'css.pdf',
+				'numberOfPdfs': 3
+			},
+			{
+				'name': 'git',
+				'pdfFile': 'git.pdf',
+				'numberofPdfs': 3
+			},
+			{
+				'name': 'java',
+				'pdfFile': 'java.pdf',
+				'numerofPdfs': 1
+			},
+			{
+				'name': 'js',
+				'pdfFile': 'js.pdf',
+				'numberofPdfs': 2
+			},
+			{
+				'name': 'mongodb',
+				'pdfFile': 'mongodb.pdf',
+				'numberofPdfs': 2
+			},
+			{
+				'name': 'python',
+				'pdfFile': 'python.pdf',
+				'numberofPdfs': 5
+			},
+			{
+				'name': 'sql',
+				'pdfFile': 'sql.pdf',
+				'numberofPdfs': 1
+			},
+			{
+				'name': 'sql-to-mongo',
+				'pdfFile': 'sql-to-mongo.pdf',
+				'numberofPdfs': 1
+			},
+			{
+				'name': 'bootstrap',
+				'pdfFile': 'bootstrap.pdf',
+				'numberofPdfs': 1
+			},
+			{
+				'name': 'c',
+				'pdfFile': 'c.pdf',
+				'numberofPdfs': 2
+			},
+			{
+				'name': 'cpp',
+				'pdfFile': 'cpp.pdf',
+				'numberofPdfs': 1
+			}, ,
+			{
+				'name': 'cmd',
+				'pdfFile': 'cmd.pdf',
+				'numberofPdfs': 2
+			},
+		]
 
-			// script for remove all cheat sheets list and download redirecting...
-			let waiting = document.getElementById('waiting');
-			let timer = document.getElementById('timer');
-			let downloadSection = document.getElementById('downloadSection');
-			let progress_bar_timer=document.getElementById('progress_bar_timer');
-			let container__progressbars=document.querySelector('.container__progressbars');
-			let seconds=20;
+		// script for remove all cheat sheets list and download redirecting...
+		let waiting = document.getElementById('waiting');
+		let timer = document.getElementById('timer');
+		let downloadSection = document.getElementById('downloadSection');
+		let progress_bar_timer = document.getElementById('progress_bar_timer');
+		let container__progressbars = document.querySelector('.container__progressbars');
+		let seconds = 20;
 
-			function redirect(languageName){
-				document.getElementById('uniqueAdsTimer1').style.display = 'block';
-				switch (languageName){
-					case 'all-programming':
-						displayDownloadButtons(1, 'all-programming');
-						break;
-					case 'html':
-						displayDownloadButtons(1, 'html');
-						break;
-					case 'css':
-						displayDownloadButtons(3, 'css');
-						break;
-					case 'js':
-						displayDownloadButtons(2, 'js');
-						break;
-					case 'bootstrap':
-						displayDownloadButtons(1, 'bootstrap');
-						break;
-					case 'c':
-						displayDownloadButtons(2, 'c');
-						break;
-					case 'cpp':
-						displayDownloadButtons(1, 'cpp');
-						break;
-					case 'python':
-						displayDownloadButtons(5, 'python');
-						break;
-					case 'java':
-						displayDownloadButtons(1, 'java');
-						break;
-					case 'git':
-						displayDownloadButtons(3, 'git');
-						break;
-					case 'sql':
-						displayDownloadButtons(1, 'sql');
-						break;
-					case 'mongodb':
-						displayDownloadButtons(2, 'mongodb');
-						break;
-					case 'sql-to-mongo':
-						displayDownloadButtons(1, 'sql-to-mongo');
-						break;
-					case 'cmd':
-						displayDownloadButtons(2, 'cmd');
-						break;
-				}
-				waiting.innerHTML=`please wait for download ${languageName} cheat sheet...`;
-				// addAdsForTimer();
-				let addAdsForWaitingTimer=document.querySelector('.addAdsForWaitingTimer');
-				let container__progressbars=document.querySelector('.container__progressbars');
-				// addAds(addAdsForWaitingTimer);
-				// addAds(container__progressbars);
-				let timerOfInterval = setInterval(() => {
-					progress_bar_timer.innerText=`${seconds}`;
-					timer.innerHTML=`your cheat sheet is ready to download in ${seconds} seconds.`;
-					seconds--;
-					if(seconds==-2){
-						timer.style.display='none';
-						clearInterval(timerOfInterval);
-					}
-				}, 1000);
-				// console.log(`cheat sheet download for ${languageName}`);
-				}
-			function downloadRedirecting(){
-				document.getElementById('downloadSection').display='block';
-				downloadSection.style.display='block';
-				downloadCheatSheets.style.display='none';
+		function redirect(languageName) {
+			document.getElementById('uniqueAdsTimer1').style.display = 'block';
+			switch (languageName) {
+				case 'all-programming':
+					displayDownloadButtons(1, 'all-programming');
+					break;
+				case 'html':
+					displayDownloadButtons(1, 'html');
+					break;
+				case 'css':
+					displayDownloadButtons(3, 'css');
+					break;
+				case 'js':
+					displayDownloadButtons(2, 'js');
+					break;
+				case 'bootstrap':
+					displayDownloadButtons(1, 'bootstrap');
+					break;
+				case 'c':
+					displayDownloadButtons(2, 'c');
+					break;
+				case 'cpp':
+					displayDownloadButtons(1, 'cpp');
+					break;
+				case 'python':
+					displayDownloadButtons(5, 'python');
+					break;
+				case 'java':
+					displayDownloadButtons(1, 'java');
+					break;
+				case 'git':
+					displayDownloadButtons(3, 'git');
+					break;
+				case 'sql':
+					displayDownloadButtons(1, 'sql');
+					break;
+				case 'mongodb':
+					displayDownloadButtons(2, 'mongodb');
+					break;
+				case 'sql-to-mongo':
+					displayDownloadButtons(1, 'sql-to-mongo');
+					break;
+				case 'cmd':
+					displayDownloadButtons(2, 'cmd');
+					break;
 			}
+			waiting.innerHTML = `please wait for download ${languageName} cheat sheet...`;
+			// addAdsForTimer();
+			let addAdsForWaitingTimer = document.querySelector('.addAdsForWaitingTimer');
+			let container__progressbars = document.querySelector('.container__progressbars');
+			// addAds(addAdsForWaitingTimer);
+			// addAds(container__progressbars);
+			let timerOfInterval = setInterval(() => {
+				progress_bar_timer.innerText = `${seconds}`;
+				timer.innerHTML = `your cheat sheet is ready to download in ${seconds} seconds.`;
+				seconds--;
+				if (seconds == -2) {
+					timer.style.display = 'none';
+					clearInterval(timerOfInterval);
+				}
+			}, 1000);
+			// console.log(`cheat sheet download for ${languageName}`);
+		}
+		function downloadRedirecting() {
+			document.getElementById('downloadSection').display = 'block';
+			downloadSection.style.display = 'block';
+			downloadCheatSheets.style.display = 'none';
+		}
 
-			let addAdsForDownloadButtons=document.querySelector('.addAdsForDownloadButtons');
+		let addAdsForDownloadButtons = document.querySelector('.addAdsForDownloadButtons');
 
-			function displayDownloadButtons(number_of_pdfs, language_name){
-				setTimeout(() => {
+		function displayDownloadButtons(number_of_pdfs, language_name) {
+			setTimeout(() => {
 				document.getElementById('uniqueAdsTimer1').style.display = 'block';
-					// addAds(addAdsForDownloadButtons);
-					// addAds(document.querySelector('.addAdsForDownloadButtons'));
-					// addAds(document.querySelector('.addAdsForDownloadButtons'));
-					container__progressbars.style.display='none';
-					waiting.innerText=`Refresh this page to download more cheat sheets...`;
-					document.querySelector('.language_name_box').style.display='block';
-					document.querySelector('.language_name_box').innerText=`${language_name}`;
-					for(let i=0; i<number_of_pdfs; i++){
-						let downloadBtn=document.createElement('a');
-						downloadBtn.setAttribute('class','downloadButton');
-						downloadBtn.innerText=`Cheat-Sheet ${i+1}`;
-						if(language_name=='all-programming'){
-							downloadBtn.setAttribute('href',`../pdf/${language_name}.jpg`);
-						}
-						else if(number_of_pdfs==1){
-							downloadBtn.setAttribute('href',`../pdf/${language_name}.pdf`);
-						}
-						else{
-							downloadBtn.setAttribute('href',`../pdf/${language_name}${i+1}.pdf`);
-							if(language_name=='python'&& i==4){
-								downloadBtn.removeAttribute('href');
-								downloadBtn.setAttribute('href',`../pdf/${language_name}${i+1}.png`);
-							}
-						}
-						document.querySelector('.downloadButtons').appendChild(downloadBtn);
+				// addAds(addAdsForDownloadButtons);
+				// addAds(document.querySelector('.addAdsForDownloadButtons'));
+				// addAds(document.querySelector('.addAdsForDownloadButtons'));
+				container__progressbars.style.display = 'none';
+				waiting.innerText = `Refresh this page to download more cheat sheets...`;
+				document.querySelector('.language_name_box').style.display = 'block';
+				document.querySelector('.language_name_box').innerText = `${language_name}`;
+				for (let i = 0; i < number_of_pdfs; i++) {
+					let downloadBtn = document.createElement('a');
+					downloadBtn.setAttribute('class', 'downloadButton');
+					downloadBtn.innerText = `Cheat-Sheet ${i + 1}`;
+					if (language_name == 'all-programming') {
+						downloadBtn.setAttribute('href', `../pdf/${language_name}.jpg`);
 					}
-				}, `${(seconds*1000)+2000}`);
-			}
+					else if (number_of_pdfs == 1) {
+						downloadBtn.setAttribute('href', `../pdf/${language_name}.pdf`);
+					}
+					else {
+						downloadBtn.setAttribute('href', `../pdf/${language_name}${i + 1}.pdf`);
+						if (language_name == 'python' && i == 4) {
+							downloadBtn.removeAttribute('href');
+							downloadBtn.setAttribute('href', `../pdf/${language_name}${i + 1}.png`);
+						}
+					}
+					document.querySelector('.downloadButtons').appendChild(downloadBtn);
+				}
+			}, `${(seconds * 1000) + 2000}`);
+		}
 
-		</script>
+	</script>
 
-		
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ2W80HJX8"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-EZ2W80HJX8');
-      </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ2W80HJX8"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196503761-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+		gtag('config', 'G-EZ2W80HJX8');
+	</script>
 
-        gtag('config', 'UA-196503761-1');
-      </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-196503761-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-		<!-- bootstrap scripts -->
-		<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		gtag('config', 'UA-196503761-1');
+	</script>
+
+	<!-- bootstrap scripts -->
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-	</body>
+</body>
+
 </html>
