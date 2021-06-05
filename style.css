@@ -189,7 +189,7 @@ html{
     /* background: linear-gradient(180deg, #00000061, #1bcaa987),url(photos/2.webp); */
     background: linear-gradient(180deg, #00000080, #000000b5),url('photos/4_lower.webp');
     /* Best Wallpapers  :  4 , 8, 11 */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
 }
@@ -488,7 +488,7 @@ html{
 
 #second-section{
 	width: 100%;
-	padding: 30px 0 60px;
+	padding: 40px 0 30px;
     background: #e9fbff !important;
 }
 #second-section h2{
@@ -543,11 +543,13 @@ html{
 
 #third-team{
 	width: 100%;
-	padding: 30px 0;
-    background: linear-gradient(#0000004f ,#0000007a),url(photos/2.webp);
+	padding: 0px 0 30px;
+    /* background: linear-gradient(#0000004f ,#0000007a),url(photos/2.webp); */
+	background: linear-gradient(#ff5c83,#ffbd8b);
+	/* background: linear-gradient(#1a238d,var(--color-blue)); */
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 #third-team h2{
 	color: whitesmoke;
@@ -737,7 +739,7 @@ input[type=text]:focus, textarea:focus {
 }
 #forth-disclaimer{
 	width: 100%;
-	padding: 30px 0;
+	padding: 0px 0 30px;
     /* background: #e6faff; */
     background: #e9fbff;
 }
@@ -767,7 +769,7 @@ input[type=text]:focus, textarea:focus {
 #forth-disclaimer h2{
 	color: var(--color-blue);
 	text-align: center;
-	margin: 0px auto 40px;
+	margin: 20px auto 40px;
 	font-size: 2.4em;
 	font-family: var(--font);
 }

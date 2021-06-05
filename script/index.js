@@ -36,6 +36,6 @@ else {
     img.onload = function () {
         document.getElementById('main-content').style.backdropFilter = 'blur(0px)';
         document.getElementById('first-section').style.background = `linear-gradient(180deg, #00000080, #000000b5),url('photos/4.webp') center center / cover`;
-        document.getElementById('first-section').style.backgroundAttachment = 'fixed';
+        // document.getElementById('first-section').style.backgroundAttachment = 'fixed';
     }
 }
