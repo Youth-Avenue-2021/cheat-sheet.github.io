@@ -540,13 +540,13 @@ html{
 
 /* third section */
 
-
 #third-team{
 	width: 100%;
 	padding: 0px 0 30px;
     /* background: linear-gradient(#0000004f ,#0000007a),url(photos/2.webp); */
-	background: linear-gradient(#ff5c83,#ffbd8b);
-	/* background: linear-gradient(#1a238d,var(--color-blue)); */
+	/* background: linear-gradient(#ff5c83,#ffbd8b); */
+	/* background: linear-gradient(#ff5c83,#ff5c83); */
+	background: linear-gradient(#1a238d,var(--color-blue));
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */
