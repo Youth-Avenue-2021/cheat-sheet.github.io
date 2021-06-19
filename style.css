@@ -92,6 +92,12 @@ html{
 	justify-content: center;
 	align-items: center;
 }
+.flex-column-align-items-flex-start{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 .flex-column-justify-flex-start{
 	display: flex;
 	flex-direction: column;
