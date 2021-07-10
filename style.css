@@ -745,7 +745,7 @@ input[type=text]:focus, textarea:focus {
 }
 #forth-disclaimer{
 	width: 100%;
-	padding: 0px 0 30px;
+	/* padding: 0px 0 30px; */
     /* background: #e6faff; */
     background: #e9fbff;
 }
@@ -757,8 +757,8 @@ input[type=text]:focus, textarea:focus {
 	margin: 0 10px 0 0;
 	font-size: 1em;
 }
-#forth-disclaimer a{
-	margin: 20px auto;
+#forth-disclaimer .pull-btn{
+	margin: 20px auto 50px;
 	padding: 10px 15px;
 	color: whitesmoke;
 	border: none;
