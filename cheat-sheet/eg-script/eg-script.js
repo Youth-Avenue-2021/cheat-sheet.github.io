@@ -36,7 +36,7 @@ let filesData = [
 const downloadMaterialsDiv = document.querySelector('.download-materials');
 let waitingSeconds = 20;
 
-/*
+
 function addAds() {
 
     let createAdDiv=document.createElement('div')
@@ -65,7 +65,7 @@ function addAds() {
     downloadMaterialsDiv.append(createAdDiv)
 
 }
-*/
+
 
 function getFileData(fileName, fileData) {
 
@@ -98,7 +98,7 @@ let timerOfInterval = setInterval(() => {
     egWaitingNote.innerText = `Please wait for ${waitingSeconds} seconds while the data is fetched from the server to download EG-Materials...`
     if (waitingSeconds == -1) {
         waitingTimerDiv.style.display = 'none';
-        // document.getElementById('topAd').style.display = 'none';
+        document.getElementById('topAd').style.display = 'none';
         clearInterval(timerOfInterval);
     }
     waitingSeconds--
