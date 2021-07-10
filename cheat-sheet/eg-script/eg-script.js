@@ -36,6 +36,7 @@ let filesData = [
 const downloadMaterialsDiv = document.querySelector('.download-materials');
 let waitingSeconds = 20;
 
+/*
 function addAds() {
 
     let createAdDiv=document.createElement('div')
@@ -64,6 +65,7 @@ function addAds() {
     downloadMaterialsDiv.append(createAdDiv)
 
 }
+*/
 
 function getFileData(fileName, fileData) {
 
@@ -84,6 +86,7 @@ function getFileData(fileName, fileData) {
     downloadMaterialsDiv.append(createFileData);
 
 }
+
 const progressBarTimer = document.getElementById('progress_bar_timer');
 const egWaitingNote = document.getElementById('eg-waiting-note');
 const waitingTimerDiv = document.querySelector('.waiting-timer-div');
@@ -95,7 +98,7 @@ let timerOfInterval = setInterval(() => {
     egWaitingNote.innerText = `Please wait for ${waitingSeconds} seconds while the data is fetched from the server to download EG-Materials...`
     if (waitingSeconds == -1) {
         waitingTimerDiv.style.display = 'none';
-        document.getElementById('topAd').style.display = 'none';
+        // document.getElementById('topAd').style.display = 'none';
         clearInterval(timerOfInterval);
     }
     waitingSeconds--
@@ -104,9 +107,9 @@ let timerOfInterval = setInterval(() => {
 setTimeout(() => {
     filesData.forEach(file => {
         getFileData(file.fileName, file.fileData)
-        if (i % 2 == 0) {
-            addAds()
-        }
-        i++
+        // if (i % 2 == 0) {
+        //     addAds()
+        // }
+        // i++
     })
 }, (waitingSeconds + 2) * 1000);

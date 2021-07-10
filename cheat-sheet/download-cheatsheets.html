@@ -285,9 +285,9 @@
 		}
 		let index = 0;
 		Array.from(jsonData).forEach(function (e, index) {
-			if (index % 6 == 0) {
-				addAds(downloadCheatSheets);
-			}
+			// if (index % 6 == 0) {
+			// 	addAds(downloadCheatSheets);
+			// }
 			downloadCheatSheets.innerHTML += `
 
 				<div class="saparate-cheat-sheet flex-column" id="saparate_cheat_sheet_1">
@@ -442,13 +442,14 @@
 			// console.log(`cheat sheet download for ${languageName}`);
 		}
 		function downloadRedirecting() {
+			document.querySelector('.download-eg-files').style.display='none';
 			document.getElementById('downloadSection').display = 'block';
 			downloadSection.style.display = 'block';
 			downloadCheatSheets.style.display = 'none';
 			let addAdsForWaitingTimer = document.querySelector('.addAdsForWaitingTimer');
 			let addAdsForDownloadButtons = document.querySelector('.addAdsForDownloadButtons');
 			addAds(addAdsForWaitingTimer);
-			addAds(addAdsForDownloadButtons);
+			// addAds(addAdsForDownloadButtons);
 		}
 
 		function displayDownloadButtons(number_of_pdfs, language_name) {

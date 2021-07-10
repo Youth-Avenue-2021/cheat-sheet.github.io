@@ -861,6 +861,7 @@ input[type=text]:focus, textarea:focus {
 /* eg materials */
 .waiting-timer-div{
 	width: 100%;
+	padding: 100px 0;
 }
 .waiting-timer-div #eg-waiting-note{
 	margin: 10px auto;
@@ -880,8 +881,9 @@ input[type=text]:focus, textarea:focus {
 }
 .download-materials{
 	width: 100%;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	margin: 10px auto 40px;
+	padding: 100px 0;
 }
 .download-materials .saparate-eg-file .file-desc{
 	width: 100%;
