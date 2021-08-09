@@ -293,6 +293,7 @@ html{
 	bottom: 7%;
 	right: 5%;
 	transition: 0.1s ease;
+  -webkit-backface-visibility: hidden;
 }
 .sidebar-access-btn:active{
 	transform: scale(0.88);
