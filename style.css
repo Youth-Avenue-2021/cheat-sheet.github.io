@@ -290,8 +290,8 @@ html{
 .sidebar-access-btn{
 	z-index: 101;
 	position: fixed;
-	top: 95vh;
-	right: 5vw;
+	bottom: 7%;
+	right: 5%;
 	transition: 0.1s ease;
   -webkit-backface-visibility: hidden;
 }
