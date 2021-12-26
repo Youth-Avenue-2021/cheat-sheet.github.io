@@ -895,6 +895,25 @@ input[type=text]:focus, textarea:focus {
     font-weight: bold;
     text-align: center;
 }
+.rohan-sheets{
+	margin: 2rem auto 0;
+}
+.download-sheet-btn{
+	font-family: var(--font);
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 7px;
+    color: var(--color-blue);
+    background: var(--color-green);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.download-sheet-btn:hover{
+	box-shadow:	inset 0px 0px 20px 8px #00000025;
+}
 .download-materials .saparate-eg-file .eg-download-btn{
 	padding: 15px 30px;
     font-size: 1.3em;
